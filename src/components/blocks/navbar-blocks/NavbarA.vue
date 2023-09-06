@@ -8,7 +8,7 @@ export interface NavbarProps {
 }
 
 const props = withDefaults(defineProps<NavbarProps>(), {
-  fixed: false,
+  fixed: true,
   dropdownBoxed: false,
   mode: 'fade',
 })
@@ -45,6 +45,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
             src="/assets/logo/logo.svg"
             alt="logo"
           >
+          <span class="is-sr-only">Vulk</span>
         </RouterLink>
         <div
           class="navbar-burger"
@@ -60,68 +61,61 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
         class="navbar-menu b-centered-mobile b-centered-tablet-p"
         :class="navbarMenuClasses"
       >
-        <div class="navbar-start">
+        <div class="navbar-start" />
+        <div class="navbar-end">
           <RouterLink
             :to="{ name: 'index' }"
             class="navbar-item has-naver"
           >
-            Features
+            Home
           </RouterLink>
-          <RouterLink
-            :to="{ name: 'index' }"
-            class="navbar-item has-naver"
+          <NavbarDropdown
+            label="Services"
+            :boxed="props.dropdownBoxed"
           >
-            Pricing
-          </RouterLink>
+            <RouterLink
+              :to="{ name: 'education' }"
+              class="navbar-item"
+            >
+              Educational Visas
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'visit' }"
+              class="navbar-item"
+            >
+              Visit Visas
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'consultation' }"
+              class="navbar-item"
+            >
+              Consultations
+            </RouterLink>
+          </NavbarDropdown>
           <RouterLink
-            :to="{ name: 'index' }"
+            :to="{ name: 'about' }"
             class="navbar-item has-naver"
           >
             About
           </RouterLink>
-          <NavbarDropdown
-            label="Company"
-            :boxed="props.dropdownBoxed"
+          <RouterLink
+            :to="{ name: 'blog' }"
+            class="navbar-item has-naver"
           >
-            <RouterLink
-              :to="{ name: 'index' }"
-              class="navbar-item"
-            >
-              About
-            </RouterLink>
-            <RouterLink
-              :to="{ name: 'index' }"
-              class="navbar-item"
-            >
-              Jobs
-            </RouterLink>
-            <RouterLink
-              :to="{ name: 'index' }"
-              class="navbar-item"
-            >
-              Contact
-            </RouterLink>
-            <hr class="navbar-divider">
-            <RouterLink
-              :to="{ name: 'index' }"
-              class="navbar-item"
-            >
-              Report an issue
-            </RouterLink>
-          </NavbarDropdown>
-        </div>
-        <div class="navbar-end">
+            Blogs
+          </RouterLink>
+          <RouterLink
+            :to="{ name: 'contact' }"
+            class="navbar-item has-naver"
+          >
+            Contact
+          </RouterLink>
+
           <div
             class="navbar-item is-flex is-align-items-center is-justify-content-center"
           >
             <ThemeToggle />
           </div>
-          <RouterLink
-            :to="{ name: 'index' }"
-            class="navbar-item has-naver"
-          >
-            Login
-          </RouterLink>
           <div class="navbar-item">
             <Button
               color="primary"
@@ -336,7 +330,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
   }
 }
 
-@media only screen and (width <= 980px) {
+@media only screen and (max-width: 980px) {
   .navbar {
     .navbar-brand {
       .navbar-burger {
@@ -346,7 +340,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
   }
 }
 
-@media only screen and (width <= 767px) {
+@media only screen and (max-width: 767px) {
   .navbar {
     .navbar-brand {
       .navbar-burger {
@@ -375,7 +369,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
   }
 }
 
-@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .navbar {
     .navbar-brand {
       .navbar-burger {

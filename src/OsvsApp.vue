@@ -4,7 +4,7 @@ import { useLayout } from '/@src/composable/useLayout'
 const { LayoutComponent } = useLayout()
 
 useHead({
-  title: 'OSVS - Website',
+  title: 'Onestop Visa Solutions',
   htmlAttrs: {
     lang: 'en-US',
   },
