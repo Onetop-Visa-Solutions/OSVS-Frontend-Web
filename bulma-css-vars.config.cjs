@@ -3,11 +3,11 @@ const { hsl } = require('@cssninja/bulma-css-vars')
 const appColors = {
   white: hsl(0, 0, 100),
   black: hsl(0, 0, 4),
-  primary: hsl(268, 98, 50),
-  dark: hsl(218, 23, 19),
-  link: hsl(268, 98, 50),
+  primary: hsl(191, 100, 88),
+  dark: hsl(191, 94, 34),
+  link: hsl(191, 100, 88),
   info: hsl(211, 82, 48),
-  success: hsl(158, 82, 48),
+  success: hsl(128, 22, 62),
   warning: hsl(41, 88, 58),
   danger: hsl(337, 98, 50),
 }
