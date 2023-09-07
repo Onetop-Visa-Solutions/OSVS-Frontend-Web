@@ -155,6 +155,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
               custom
               href="tel:0966698535"
               icon-left="fa-phone"
+              rounded
             >
               Get in touch
             </Button>
