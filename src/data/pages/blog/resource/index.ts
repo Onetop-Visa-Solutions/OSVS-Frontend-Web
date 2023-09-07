@@ -2,55 +2,55 @@ export const resources = [
   {
     id: 0,
     image: '/assets/posts/post-13.svg',
-    title: '5 Tips to create a successful and secure delivery service',
-    likes: '234',
+    title: 'How to Choose the Right Study Abroad Program for You',
+    likes: '0',
     categories: [
       {
-        name: 'Delivery',
+        name: 'Visas',
       },
       {
-        name: 'Tech',
+        name: 'Programs',
       },
       {
-        name: 'Apps',
+        name: 'Study',
       },
     ],
-    date: 'March 24th, 2022',
+    date: 'July 24th, 2023',
     duration: 2,
   },
   {
     id: 1,
     image: '/assets/posts/post-14.svg',
-    title: 'All you need to know about the One-on-One meeting',
-    likes: '93',
+    title: 'A Guide to US Student Visas: Everything You Need to Know',
+    likes: '0',
     categories: [
       {
-        name: 'Technique',
+        name: 'Student',
       },
       {
-        name: 'Speech',
+        name: 'US',
       },
       {
-        name: 'work',
+        name: 'Study',
       },
     ],
-    date: 'March 18th, 2022',
+    date: 'August 6th, 2023',
     duration: 2,
   },
   {
     id: 2,
     image: '/assets/posts/post-15.svg',
-    title: 'How networking will help boost your company growth',
-    likes: '54',
+    title: 'How We Helped Kalkidan get a study permit to Study in Canada',
+    likes: '0',
     categories: [
       {
-        name: 'Partners',
+        name: 'Study permit',
       },
       {
-        name: 'Team',
+        name: 'Canada',
       },
       {
-        name: 'Business',
+        name: 'Student',
       },
     ],
     date: 'March 11th, 2022',

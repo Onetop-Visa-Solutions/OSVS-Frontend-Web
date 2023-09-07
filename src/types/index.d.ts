@@ -12,13 +12,21 @@ export interface SimpleFeature {
   link: RouteLocationRaw
 }
 
+export interface IconFeature {
+  title: string
+  text: string
+  icon: string
+  color: IconBoxColor
+  link: RouteLocationRaw
+}
+
 export interface SimpleIconFeature {
   title: string
   text: string
   icon: string
 }
 
-export interface IconFeature {
+export interface IconService {
   title: string
   text: string
   icon: string
@@ -82,78 +90,3 @@ export interface Job {
   }
 }
 
-export interface Nft {
-  id: number
-  name: string
-  description: string
-  preview: string
-  slug: string
-  likes: number
-  initialBid: {
-    dollar: number
-    eth: number
-  }
-  currentBid: {
-    dollar: number
-    eth: number
-  }
-  collection: {
-    id: number
-    name: string
-    items: number
-    picture: string
-    thumbnails: {
-      picture: string
-    }[]
-    url: string
-  }
-  seller: {
-    id: number
-    name: string
-    picture: string
-    url: string
-  }
-  biders: {
-    id: number
-    bid: number
-    time: string
-    name: string
-    picture: string
-    url: string
-  }[]
-  comments?: {
-    picture: string
-    name: string
-    url: string
-    text: string
-    time: string
-  }[]
-  auctionEnd: string
-  favorite: boolean
-}
-
-export interface HelpCenterArticle {
-  slug: string
-  title: string
-  subtitle: string
-  abstract?: string
-  updated: string
-  author: {
-    name: string
-    picture: string
-  }
-  content: string
-}
-
-export interface HelpCenterCategory {
-  slug: string
-  icon: string
-  iconColor: string
-  name: string
-  text: string
-  contributors: {
-    name: string
-    picture: string
-  }[]
-  articles: HelpCenterArticle[]
-}
