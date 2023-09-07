@@ -12,7 +12,29 @@ const props = withDefaults(defineProps<NavbarProps>(), {
   dropdownBoxed: false,
   mode: 'fade',
 })
-
+const socialItems = [
+  {
+    icon: 'fa:facebook',
+    label: 'Twitter',
+    link: 'https://twitter.com',
+  },
+  {
+    icon: 'fa-youtube',
+    label: 'Youtube',
+    link: 'https://linkedin.com',
+  },
+  {
+    icon: 'mingcute:tiktok-fill',
+    label: 'Tiktok',
+    link: 'https://github.com',
+  }
+  ,
+  {
+    icon: 'fa:telegram',
+    label: 'Telegram',
+    link: 'https://github.com',
+  },
+]
 const { y } = useWindowScroll()
 const isScrolled = computed(() => {
   return y.value > 60
@@ -117,13 +139,24 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
             <ThemeToggle />
           </div>
           <div class="navbar-item">
+            <NavbarSocialItem
+              v-for="(item, index) in socialItems"
+              :key="index"
+              :icon="item.icon"
+              :label="item.label"
+              :link="item.link"
+            />
+          </div>
+          <div class="navbar-item">
             <Button
               color="primary"
               raised
               bold
               custom
+              href="tel:0966698535"
+              icon-left="fa-phone"
             >
-              Sign Up
+              Get in touch
             </Button>
           </div>
         </div>

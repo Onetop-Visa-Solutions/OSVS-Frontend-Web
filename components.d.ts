@@ -271,7 +271,7 @@ declare module 'vue' {
     NavbarF: (typeof import('./src/components/blocks/navbar-blocks/NavbarF.vue'))['default']
     NavbarG: (typeof import('./src/components/blocks/navbar-blocks/NavbarG.vue'))['default']
     NavbarH: (typeof import('./src/components/blocks/navbar-blocks/NavbarH.vue'))['default']
-    NavbarSocialItem: (typeof import('./src/components/blocks/navbar-blocks/modules/NavbarSocialItem.vue'))['default']
+    NavbarSocialItem: typeof import('./src/components/blocks/navbar-blocks/modules/NavbarSocialItem.vue')['default']
     NavBInverted: (typeof import('./src/layouts/nav-b-inverted.vue'))['default']
     NavC: (typeof import('./src/layouts/nav-c.vue'))['default']
     NavCInverted: (typeof import('./src/layouts/nav-c-inverted.vue'))['default']
