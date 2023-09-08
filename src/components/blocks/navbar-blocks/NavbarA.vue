@@ -16,23 +16,23 @@ const socialItems = [
   {
     icon: 'fa:facebook',
     label: 'Twitter',
-    link: 'https://twitter.com',
+    link: 'https://www.facebook.com/onestoptravelagent1/',
   },
   {
     icon: 'fa-youtube',
     label: 'Youtube',
-    link: 'https://linkedin.com',
+    link: 'https://www.youtube.com/channel/UC_owccQqevMSIczDPKAUkPA',
   },
   {
     icon: 'mingcute:tiktok-fill',
     label: 'Tiktok',
-    link: 'https://github.com',
+    link: 'https://www.tiktok.com/@onestoptravel?lang=en',
   }
   ,
   {
     icon: 'fa:telegram',
     label: 'Telegram',
-    link: 'https://github.com',
+    link: 'https://t.me/oneStopVisaSolutions',
   },
 ]
 const { y } = useWindowScroll()

@@ -6,7 +6,8 @@
 <script setup lang="ts">
 import {ourDifference} from '/@src/data/pages/company'
 import { resources } from '/@src/data/pages/blog/resource'
-
+import { testimonials } from '/@src/data/blocks/advanced/testimonials'
+import { socialLinks } from '/@src/data/blocks/advanced/social'
 </script>
 
 <template>
@@ -66,7 +67,17 @@ import { resources } from '/@src/data/pages/blog/resource'
         </div>
 
         <!-- Testimonials Section -->
+        <TestimonialMarquee
+          :testimonials="testimonials"
+          color="default"
+        />
       </Container>
     </section>
+    <Footer
+      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      color="light"
+      :social-links="socialLinks"
+      bubbles
+    />
   </div>
 </template>

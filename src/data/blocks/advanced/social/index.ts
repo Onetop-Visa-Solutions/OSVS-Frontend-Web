@@ -1,22 +1,22 @@
 export const socialLinks = [
   {
     name: 'Facebook',
-    url: 'https://facebook.com',
+    url: 'https://www.facebook.com/onestoptravelagent1/',
     icon: 'fa:facebook',
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com',
-    icon: 'fa:twitter',
+    name: 'YouTube',
+    url: 'https://www.youtube.com/channel/UC_owccQqevMSIczDPKAUkPA',
+    icon: 'fa-youtube',
   },
   {
-    name: 'Linkedin',
-    url: 'https://linkedin.com',
-    icon: 'fa:linkedin',
+    name: 'Tiktok',
+    url: 'https://www.tiktok.com/@onestoptravel?lang=en',
+    icon: 'mingcute:tiktok-fill',
   },
   {
-    name: 'GitHub',
-    url: 'https://github.com',
-    icon: 'fa:github',
+    name: 'Telegram',
+    url: 'https://t.me/oneStopVisaSolutions',
+    icon: 'fa:telegram',
   },
 ]
