@@ -66,6 +66,7 @@ declare module 'vue' {
     Control: typeof import('./src/components/base/form/control/Control.vue')['default']
     Countdown: (typeof import('./src/components/misc/countdown/Countdown.vue'))['default']
     Counter: typeof import('./src/components/base/counter/Counter.vue')['default']
+    CtaBlock: typeof import('./src/components/blocks/cta-blocks/CtaBlock.vue')['default']
     CtaBlockA: (typeof import('./src/components/blocks/cta-blocks/CtaBlockA.vue'))['default']
     CtaBlockB: (typeof import('./src/components/blocks/cta-blocks/CtaBlockB.vue'))['default']
     CtaBlockC: (typeof import('./src/components/blocks/cta-blocks/CtaBlockC.vue'))['default']

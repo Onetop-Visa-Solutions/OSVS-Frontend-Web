@@ -271,6 +271,7 @@ const footerClasses = computed(() => [
             <Control
               icon="feather:mail"
               expanded
+              rounded
             >
               <VInput
                 placeholder="Email Address"
@@ -281,6 +282,7 @@ const footerClasses = computed(() => [
               <Button
                 color="primary"
                 size="form"
+                rounded
               >
                 Subscribe
               </Button>

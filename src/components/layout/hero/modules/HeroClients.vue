@@ -28,6 +28,7 @@ const listClasses = computed(() => [props.inverted && 'is-inverted'])
       <img
         :src="logo.logo"
         alt="Hero client logo"
+        class="image"
         width="300"
         height="88"
       >
@@ -50,5 +51,9 @@ ul {
   ul li img {
     filter: invert(1);
   }
+}
+
+.image{
+  color: green
 }
 </style>

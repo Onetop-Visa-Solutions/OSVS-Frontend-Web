@@ -1,7 +1,7 @@
 export const customerLogos = [
   {
     id: 0,
-    logo: '/assets/brands/asuna.svg',
+    logo: '/assets/customers/lefops.svg',
   },
   {
     id: 1,

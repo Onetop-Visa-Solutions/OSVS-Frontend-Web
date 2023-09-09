@@ -72,6 +72,22 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
           :testimonials="testimonials"
           color="default"
         />
+
+
+        <!-- Contact US CTA -->
+        <CtaBlock
+          title-primary="Explore Now!"
+          content-primary="From study abroad programs to visa assistance and more, we have everything you need to make your dreams a reality."
+          cta-primary="Our Services"
+          cta-primary-link="/"
+          title-secondary="More info?"
+          content-secondary="Get in touch with our team for personalized assistance and further information."
+          cta-secondary="Contact Us"
+          cta-secondary-link="/"
+          boxed
+          shapes
+          animated
+        />
       </Container>
     </section>
     <Footer
