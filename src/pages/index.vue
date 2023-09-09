@@ -60,6 +60,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
               :long="3"
               raised
               bold
+              rounded
             >
               Load More
             </Button>

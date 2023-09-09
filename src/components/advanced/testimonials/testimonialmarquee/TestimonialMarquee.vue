@@ -22,7 +22,7 @@ export interface TestimonialsProps {
 const props = withDefaults(defineProps<TestimonialsProps>(), {
   testimonials: () => [],
   color: 'default',
-  compact: false,
+  compact: true,
 })
 
 const testimonialClasses = computed(() => [props.color && `is-${props.color}`])
@@ -79,6 +79,7 @@ const testimonialClasses = computed(() => [props.color && `is-${props.color}`])
         elevated
         bold
         custom
+        rounded
       >
         Free Trial
       </Button>
@@ -137,7 +138,7 @@ const testimonialClasses = computed(() => [props.color && `is-${props.color}`])
 
     .row {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       min-width: 2520px;
       max-width: 2520px;
       white-space: normal;
