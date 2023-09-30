@@ -1272,65 +1272,69 @@ export const pricingBlockPlans = [
 export const servicesTabbed = {
   allServices: [
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-5.svg',
+      icon: '/assets/icons/services/study-abroad-icon.svg',
       name: 'Study Abroad',
     },
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-6.svg',
+      icon: '/assets/icons/services/visit-glob-icon.svg',
       name: 'Visit',
     },
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-2.svg',
+      icon: '/assets/icons/services/consult-icon.svg',
       name: 'Consultation',
     },
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-1.svg',
-      name: 'Test Preps',
+      icon: '/assets/icons/services/test-exam-icon.svg',
+      name: 'Test Prep',
     },
   ],
   testServices: [
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-5.svg',
-      name: 'Study Abroad',
-      price: 0,
-      priceBilling: 'Forever',
+      icon: '/assets/icons/services/standard-seedling-icon.svg',
+      name: 'Standard Test Preparation',
+      price: 4000,
+      priceBilling: 'Several Sessions',
       planText:
-        ' Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
-      buttonLabel: 'Get Started Now',
+        ' Our standard test preparation services are designed to help you excel in English proficiency tests such as TOEFL, IELTS, Duolingo English Test or Cambridge exams. ',
+      buttonLabel: 'Book now',
       features: [
-        'Send one campaign per month',
-        'Maintain one subscriber list',
-        'Max of 20 new leads per month',
+        'Structured curriculum',
+        'Experienced instructors',
+        'Practice materials',
+        'Group learning environment',
+        'Progress tracking '
       ],
     },
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-3.svg',
-      name: 'Freelancer',
-      price: 5,
+      icon: '/assets/icons/services/personalized-setting-icon.svg',
+      name: 'Personalized Test Preparation',
+      price: 0,
       priceBilling: 'Per month',
       planText:
-        'Gain more power and increase your marketing and lead generation',
-      buttonLabel: 'Choose Freelancer',
+        'For those seeking a more customized approach, our personalized test preparation services offer individualized instruction and tailored study plans. ',
+      buttonLabel: 'Book now',
       features: [
-        'Send 3 campaigns per month',
-        'Maintain 3 subscriber lists',
-        'Max of 100 new leads per month',
+        'Individualized instruction',
+        'Customized study plans',
+        'Flexible scheduling',
+        'Targeted skill development',
+        'Personalized feedback'
       ],
     },
 
   ],
   coreServices: [
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-6.svg',
+      icon: '/assets/icons/services/study-abroad-icon.svg',
       name: 'Study abroad',
       serviceText:
         'Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
-      buttonLabel: 'Explore More',
+      buttonLabel: 'Explore more',
       relatedPage: '/education',
       features: [
 'Interview Preparation',
 'Post-Acceptance Support',
-'Ongoing Guidance and Support',
+'Ongoing Guidance and Support and more',
 
       ],
       featuresHeader: 'Our Comprehensive Educational Consultancy Services',
@@ -1342,42 +1346,45 @@ export const servicesTabbed = {
       },
     },
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-2.svg',
-      name: 'Enterprise',
-      price: 75,
+      icon: '/assets/icons/services/visit-glob-icon.svg',
+      name: 'Visit Abroad Support',
       serviceText:
-        'Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
-      buttonLabel: 'Schedule Demo',
-      relatedPage: '/education',
+        'Our visit abroad services provide expert guidance to help you navigate the complexities of planning your visit abroad. Whether you\'re seeking a cultural exchange, language immersion, or a memorable travel experience, we empower you to make the most of your time abroad. From itinerary planning to logistics support, our experienced team ensures a seamless and enriching visit abroad.',
+      buttonLabel: 'Explore more',
+      relatedPage: '/visit',
       features: [
-        'Includes everything from Business',
-        'Manage multi tenant organizations',
-        'Professional and customized reports',
+        'Destination Recommendation',
+        'Cultural Immersion Guidance',
+        'Itinerary Planning',
+        'Language and Communication Assistance',
+        'Safety and Security Tips and more'
       ],
       highlight: {
-        title: 'Customer portal',
-        subtitle: "Share your team's progress on a dedicated customer portal",
+        title: 'Discover Your Destination',
+        subtitle: "From iconic landmarks to hidden gems, each country offers a unique blend of history, culture, and natural beauty.",
         image: '/assets/illustrations/pricing/pricing-highlight-2.svg',
         darkImage: '/assets/illustrations/pricing/pricing-highlight-2-dark.svg',
       },
     },
     {
-      icon: '/assets/icons/pricing/custom-pricing-icon-1.svg',
-      name: 'Custom',
+      icon: '/assets/icons/services/consult-icon.svg',
+      name: 'Expert Consultation',
       price: 99,
       serviceText:
-      'Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
-      buttonLabel: 'Schedule Demo',
-      relatedPage: '/education',
+      'Our consultation services cover a wide range of areas, including visiting assistance and study consultation, ensuring a holistic approach to your international experience. We go beyond travel logistics and cultural immersion, providing valuable advice on academic programs, educational institutions, and academic planning. Our team of experts will tailor their guidance to your specific needs, helping you navigate every aspect of your visit abroad and academic journey with confidence.',
+      buttonLabel: 'Schedule a Consultation',
+      relatedPage: '/consultation',
       features: [
-        'Includes everything from Enterprise',
-        'Custom features and implementations',
-        'Personalized software integrations',
+        'Comprehensive Travel Logistics Assistance',
+        'Expert Study Program Consultation',
+        'Strategic Academic Planning and Guidance',
+        'Insider Knowledge of Local Attractions and Experiences',
+        'Tailor-made Itinerary Planning:'
       ],
       highlight: {
-        title: 'On-Demand training',
+        title: 'Customized Assistance',
         subtitle:
-          'Our solution experts will come to your office for a training session',
+          'Our consultation services cover a wide range of areas, including visiting assistance and study consultation, ensuring a holistic approach to your international experience.',
         image: '/assets/illustrations/pricing/pricing-highlight-3.svg',
         darkImage: '/assets/illustrations/pricing/pricing-highlight-3-dark.svg',
       },

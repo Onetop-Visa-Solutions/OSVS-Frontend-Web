@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import { servicesTabbed } from '/@src/data/blocks/advanced/services'
-// import { plantValues } from '/@src/data/blocks/advanced/values'
-// import { boxedTestimonials } from '/@src/data/blocks/testimonials'
-// import { genericFaq } from '/@src/data/blocks/advanced/faq'
 import { socialLinks } from '/@src/data/blocks/advanced/social'
 </script>
 
@@ -21,13 +18,6 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
           :test-services="servicesTabbed.testServices"
           :core-services="servicesTabbed.coreServices"
         />
-
-        <!-- <ValuesSection
-          :values="plantValues"
-          image-height="150px"
-        /> -->
-
-        <!-- <TestimonialBlockC :testimonials="boxedTestimonials" /> -->
       </Container>
     </Section>
 

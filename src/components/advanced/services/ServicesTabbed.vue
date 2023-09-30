@@ -89,7 +89,7 @@ const activeTab = ref(0)
             <div class="header">
               <img
                 :src="plan.icon"
-                alt="Pricing icon"
+                alt="Services icon"
               >
               <span>{{ plan.name }}</span>
             </div>
@@ -105,7 +105,7 @@ const activeTab = ref(0)
               </p>
             </div>
             <div class="button-wrap">
-              <RouterL
+              <Button
                 to="/"
                 color="primary"
                 fullwidth
@@ -113,7 +113,7 @@ const activeTab = ref(0)
                 raised
               >
                 {{ plan.buttonLabel }}
-              </RouterL>
+              </Button>
             </div>
             <div class="benefits content">
               <ul>
@@ -142,7 +142,7 @@ const activeTab = ref(0)
             <div class="header">
               <img
                 :src="plan.icon"
-                alt="Pricing icon"
+                alt="Service icon"
               >
               <span>{{ plan.name }}</span>
             </div>
@@ -396,7 +396,7 @@ const activeTab = ref(0)
               color: var(--title-color);
 
               &::before {
-                content: '$';
+                content: 'ETB';
                 position: relative;
                 top: -20px;
                 font-size: 1.2rem;
@@ -528,7 +528,7 @@ const activeTab = ref(0)
 
           .button-wrap {
             width: 100%;
-            padding: 1.5rem 0;
+            padding: 1.0rem 0;
           }
 
           .benefits {
