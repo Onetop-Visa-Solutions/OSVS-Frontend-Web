@@ -1,6 +1,6 @@
 import type { PricingPlan } from '/@src/components/advanced/pricing/pricing-long/PricingLong.vue'
 
-export const plans = [
+export const services = [
   {
     id: 0,
     icon: '/assets/icons/pricing/pricing-1.svg',
@@ -141,7 +141,7 @@ export const plans = [
   },
 ]
 
-export const comparePlans = [
+export const compareServices = [
   {
     logo: '/assets/brands/tribe.svg',
     featured: true,
@@ -220,7 +220,7 @@ export const comparePlans = [
   },
 ]
 
-export const longPlans: PricingPlan[] = [
+export const longServices: PricingPlan[] = [
   {
     name: 'Starter',
     logo: '/assets/brands/tribe.svg',
@@ -1269,33 +1269,33 @@ export const pricingBlockPlans = [
   },
 ]
 
-export const pricingTabbedPlans = {
-  allPlans: [
+export const servicesTabbed = {
+  allServices: [
     {
       icon: '/assets/icons/pricing/custom-pricing-icon-5.svg',
-      name: 'Personal',
+      name: 'Study Abroad',
     },
     {
       icon: '/assets/icons/pricing/custom-pricing-icon-6.svg',
-      name: 'Teams',
+      name: 'Visit',
     },
     {
       icon: '/assets/icons/pricing/custom-pricing-icon-2.svg',
-      name: 'Enterprise',
+      name: 'Consultation',
     },
     {
       icon: '/assets/icons/pricing/custom-pricing-icon-1.svg',
-      name: 'Custom',
+      name: 'Test Preps',
     },
   ],
-  personalPlans: [
+  testServices: [
     {
       icon: '/assets/icons/pricing/custom-pricing-icon-5.svg',
-      name: 'Personal',
+      name: 'Study Abroad',
       price: 0,
       priceBilling: 'Forever',
       planText:
-        'Jumpstart your business by conducting small marketing campaigns',
+        ' Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
       buttonLabel: 'Get Started Now',
       features: [
         'Send one campaign per month',
@@ -1317,39 +1317,26 @@ export const pricingTabbedPlans = {
         'Max of 100 new leads per month',
       ],
     },
-    {
-      icon: '/assets/icons/pricing/custom-pricing-icon-4.svg',
-      name: 'Freelancer+',
-      price: 15,
-      priceBilling: 'Per month',
-      planText:
-        'The best choice to boost your internal marketing and lead generation',
-      buttonLabel: 'Upgrade Now',
-      features: [
-        'Send unlimited campaigns',
-        'Maintain unlimited subscriber lists',
-        'Unlimited new leads per month',
-      ],
-    },
+
   ],
-  premiumPlans: [
+  coreServices: [
     {
       icon: '/assets/icons/pricing/custom-pricing-icon-6.svg',
-      name: 'Business',
-      price: 45,
-      priceBilling:
-        'Price per month and per team member. Includes a team owner and 2 team members.',
-      planText:
-        'For established companies with specific needs and internal teams. Estimate your pricing.',
-      buttonLabel: 'Schedule Demo',
+      name: 'Study abroad',
+      serviceText:
+        'Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
+      buttonLabel: 'Explore More',
+      relatedPage: '/education',
       features: [
-        'Includes everything from Personal',
-        'Projects and team management',
-        'Internal team messaging',
+'Interview Preparation',
+'Post-Acceptance Support',
+'Ongoing Guidance and Support',
+
       ],
+      featuresHeader: 'Our Comprehensive Educational Consultancy Services',
       highlight: {
-        title: 'Collaborate easily',
-        subtitle: 'Manage and share documents with your team and work',
+        title: 'Look for your studying destination',
+        subtitle: 'Explore Your Ideal Studying Destination: A World of Opportunities Awaits',
         image: '/assets/illustrations/pricing/pricing-highlight-1.svg',
         darkImage: '/assets/illustrations/pricing/pricing-highlight-1-dark.svg',
       },
@@ -1358,11 +1345,10 @@ export const pricingTabbedPlans = {
       icon: '/assets/icons/pricing/custom-pricing-icon-2.svg',
       name: 'Enterprise',
       price: 75,
-      priceBilling:
-        'Price per month and per team member. Includes a team owner and 6 team members.',
-      planText:
-        'For bigger and comlpex companies with multiple teams and departments. Estimate your pricing.',
+      serviceText:
+        'Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
       buttonLabel: 'Schedule Demo',
+      relatedPage: '/education',
       features: [
         'Includes everything from Business',
         'Manage multi tenant organizations',
@@ -1379,11 +1365,10 @@ export const pricingTabbedPlans = {
       icon: '/assets/icons/pricing/custom-pricing-icon-1.svg',
       name: 'Custom',
       price: 99,
-      priceBilling:
-        'Contact us to discuss planning of your business needs and your project scope.',
-      planText:
-        'Get everything from the Enterprise plan and ask for personalized implementations and development.',
+      serviceText:
+      'Our educational consultancy service provides expert guidance to help you navigate the complexities of academic choices. From program selection to application support, we empower you to reach your educational goals with confidence.',
       buttonLabel: 'Schedule Demo',
+      relatedPage: '/education',
       features: [
         'Includes everything from Enterprise',
         'Custom features and implementations',

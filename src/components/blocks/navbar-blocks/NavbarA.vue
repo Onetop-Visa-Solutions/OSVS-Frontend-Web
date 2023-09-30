@@ -154,6 +154,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
               bold
               custom
               href="tel:0966698535"
+              target="_blank"
               icon-left="fa-phone"
               rounded
             >

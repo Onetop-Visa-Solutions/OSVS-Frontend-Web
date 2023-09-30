@@ -350,6 +350,7 @@ declare module 'vue' {
     SectionTitle: typeof import('./src/components/base/title/SectionTitle.vue')['default']
     Serpentin: (typeof import('./src/components/misc/geometry/Serpentin.vue'))['default']
     ServiceBlock: typeof import('./src/components/blocks/service-blocks/ServiceBlock.vue')['default']
+    ServicesTabbed: typeof import('./src/components/advanced/services/ServicesTabbed.vue')['default']
     SideBenefits: (typeof import('./src/components/advanced/features/side-benefits/SideBenefits.vue'))['default']
     SideContact: (typeof import('./src/components/advanced/contact/contact-side/SideContact.vue'))['default']
     SideSection: (typeof import('./src/components/advanced/features/side-section/SideSection.vue'))['default']
