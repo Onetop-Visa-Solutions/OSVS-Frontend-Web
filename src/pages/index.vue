@@ -1,6 +1,6 @@
 <route lang="yaml">
   meta:
-    layout:
+    layout: home
   </route>
 
 <script setup lang="ts">

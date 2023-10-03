@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { servicesTabbed } from '/@src/data/blocks/advanced/services'
 import { socialLinks } from '/@src/data/blocks/advanced/social'
+import { servicesFaq } from '/@src/data/blocks/advanced/faq'
+
 </script>
 
 <template>
@@ -31,28 +33,15 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
           subtitle="Have a Question?"
         />
 
-        <!-- <FaqListBoxed :items="genericFaq" /> -->
-
-        <CtaBlockB
-          title-primary="Start Now!"
-          content-primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-          cta-primary="Free Trial"
-          cta-primary-link="/"
-          title-secondary="More info?"
-          content-secondary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-          cta-secondary="Contact Us"
-          cta-secondary-link="/"
-          boxed
-          shapes
-          animated
-        />
+        <FaqListBoxed :items="servicesFaq" />
       </Container>
     </Section>
 
-    <FooterD
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negare
-              non possum. Apparet statim, quae sint officia, quae actiones."
+    <Footer
+      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      color="light"
       :social-links="socialLinks"
+      bubbles
     />
   </div>
 </template>

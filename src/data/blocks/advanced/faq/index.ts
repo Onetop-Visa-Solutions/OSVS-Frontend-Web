@@ -1,32 +1,28 @@
-export const genericFaq = [
+export const servicesFaq = [
   {
-    title: 'How does it work?',
+    title: 'What types of travel services do you provide?',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+      'We provide assistance with flight bookings, hotel reservations, transportation arrangements, travel itinerary planning, and travel insurance options.',
   },
   {
-    title: "What's included with membership?",
+    title: "Can you help with visa applications and documentation?",
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+      'Yes, we offer support and guidance for visa applications, including providing the necessary documentation and information required for your destination.',
   },
   {
-    title: 'All the free API services really unlimited?',
+    title: 'What education services do you provide?',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+      'Our education services include academic counseling, assistance with college applications, test preparation, tutoring services for various subjects, and guidance on choosing the right educational institutions.',
   },
   {
-    title: 'How does billing work?',
+    title: 'Can you help with selecting the right school or university?',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+      'Yes, our educational consultants will work closely with you to understand your goals and preferences. They will provide personalized guidance to help you choose the right school or university that aligns with your interests and aspirations.',
   },
   {
-    title: 'Can I sign up for dedicated support?',
+    title: 'How can I access your education or any other services? ',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
+      'You can contact our education consultants through our website or by reaching out to our customer service team. They will guide you through the process and connect you with the appropriate resources.',
   },
-  {
-    title: 'How do I upgrade my account?',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile homini. Quae diligentissime contra Aristonem dicuntur a Chryippo. Qua tu etiam inprudens utebare non numquam. Paria sunt igitur. Idemne, quod iucunde.',
-  },
+
 ]

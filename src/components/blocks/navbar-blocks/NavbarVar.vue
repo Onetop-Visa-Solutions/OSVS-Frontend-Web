@@ -10,7 +10,7 @@ export interface NavbarProps {
 const props = withDefaults(defineProps<NavbarProps>(), {
   fixed: true,
   dropdownBoxed: false,
-  mode: 'solid',
+  mode: 'fade',
 })
 const socialItems = [
   {

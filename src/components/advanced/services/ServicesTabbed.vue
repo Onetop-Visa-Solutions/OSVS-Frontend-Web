@@ -1,5 +1,3 @@
-
-import { plans } from '/@src/data/blocks/advanced/pricing';
 <script setup lang="ts">
 export interface ServicesTab {
   icon: string
@@ -591,6 +589,7 @@ const activeTab = ref(0)
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media (max-width: 767px) {
   .pricing-wrapper {
     .pricing-tabs {
@@ -640,6 +639,7 @@ const activeTab = ref(0)
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .pricing-container {
     .container-inner {
