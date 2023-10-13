@@ -79,7 +79,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
           title-primary="Explore Now!"
           content-primary="From study abroad programs to visa assistance and more, we have everything you need to make your dreams a reality."
           cta-primary="Our Services"
-          cta-primary-link="/"
+          cta-primary-link="/services"
           title-secondary="More info?"
           content-secondary="Get in touch with our team for personalized assistance and further information."
           cta-secondary="Contact Us"

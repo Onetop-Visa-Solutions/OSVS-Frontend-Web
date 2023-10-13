@@ -171,6 +171,7 @@ const activeTab = ref(0)
               </Button>
             </div>
           </div>
+
           <div class="right-side">
             <div class="feature-highlight">
               <!--Carousel item-->
@@ -187,14 +188,10 @@ const activeTab = ref(0)
                     </p>
                   </div>
                 </div>
-                <DarkImage
-                  class="highlight-image"
-                  :src="plan.highlight.image"
-                  :src-dark="plan.highlight.darkImage"
-                  alt="Feature highlight"
-                  image-width="668"
-                  image-height="454"
-                />
+
+                <div class="hero-box-grid">
+                  <CountryCard />
+                </div>
               </div>
             </div>
           </div>
@@ -589,6 +586,16 @@ const activeTab = ref(0)
   }
 }
 
+.hero-box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+  padding-top: 1.5rem;
+  max-width: 580px;
+}
+
+
+
 /* stylelint-disable-next-line media-feature-range-notation */
 @media (max-width: 767px) {
   .pricing-wrapper {
@@ -637,6 +644,15 @@ const activeTab = ref(0)
       }
     }
   }
+
+  .hero-box-grid {
+    max-width: 100%;
+
+    .hero-box-item {
+      width: calc(100% - 1rem);
+      padding: 1rem;
+    }
+  }
 }
 
 /* stylelint-disable-next-line media-feature-range-notation */
@@ -653,6 +669,11 @@ const activeTab = ref(0)
         }
       }
     }
+  }
+
+  .hero-box-grid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

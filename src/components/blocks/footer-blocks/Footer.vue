@@ -80,22 +80,6 @@ const footerClasses = computed(() => [
                         Experiences
                       </RouterLink>
                     </li>
-                    <!-- <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Sign Up
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Sign In
-                      </RouterLink>
-                    </li> -->
                   </ul>
                 </slot>
               </div>
@@ -136,22 +120,6 @@ const footerClasses = computed(() => [
                         Explore Partnerships
                       </RouterLink>
                     </li>
-                    <!-- <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        FAQs
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Contact
-                      </RouterLink>
-                    </li> -->
                   </ul>
                 </slot>
               </div>
@@ -192,22 +160,6 @@ const footerClasses = computed(() => [
                         Privacy Policy
                       </RouterLink>
                     </li>
-                    <!-- <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Terms
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Privacy
-                      </RouterLink>
-                    </li> -->
                   </ul>
                 </slot>
               </div>

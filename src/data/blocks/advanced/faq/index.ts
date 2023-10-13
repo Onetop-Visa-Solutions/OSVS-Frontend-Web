@@ -12,7 +12,7 @@ export const servicesFaq = [
   {
     title: 'What education services do you provide?',
     content:
-      'Our education services include academic counseling, assistance with college applications, test preparation, tutoring services for various subjects, and guidance on choosing the right educational institutions.',
+      'Our education services include academic counseling, assistance with college applications, test preparation, and guidance on choosing the right educational institutions.',
   },
   {
     title: 'Can you help with selecting the right school or university?',

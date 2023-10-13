@@ -6,12 +6,11 @@ import { nftAvatars } from '/@src/data/pages/nft'
 <template>
   <Hero
     v-background="{
-      src: '/assets/demo/img/bg/4.jpeg',
+      src: '/assets/backgrounds/collage.png',
       placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
     }"
     class="has-top-bg is-right"
     alignment="center"
-    size="fullheight"
     color="grey"
     shape-orientation="right"
   >

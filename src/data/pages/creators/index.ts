@@ -59,25 +59,25 @@ export const creatorFeatures: IconFeature[] = [
   },
 ]
 
-export const successFeatures: SimpleFeature[] = [
+export const educationFeatures: SimpleFeature[] = [
   {
-    title: 'Memberships',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Academic Advising',
+    text: 'Personalized guidance to help you make informed decisions about your academic journey.',
     link: '/',
   },
   {
-    title: 'Coaching',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'College Application Support',
+    text: 'Expert assistance in navigating the college application process.',
     link: '/',
   },
   {
-    title: 'Microschools',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Test Preparation',
+    text: 'Targeted preparation for english proficiency tests such as IELTS, TOEFL, or Duolingo English Tests.',
     link: '/',
   },
   {
-    title: 'Products',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Career Counseling',
+    text: 'Insightful guidance to explore career options and align your academic choices with your professional goals.',
     link: '/',
   },
 ]
