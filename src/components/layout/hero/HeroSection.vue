@@ -74,7 +74,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
                 <!--Service card-->
                 <div class="service-card">
                   <DarkImage
-                    src="/assets/demo/img/service/dog-6.png"
+                    src="/assets/services/education/study-abroad-2.jpg"
                     alt="Service image"
                     width="600"
                     height="510"
@@ -116,7 +116,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
                 <!--Service card-->
                 <div class="service-card">
                   <DarkImage
-                    src="/assets/demo/img/service/eagle-2.png"
+                    src="/assets/services/visit/visit-1.jpg"
                     alt="Service image"
                     width="600"
                     height="510"
@@ -142,7 +142,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
                 <!--Service card-->
                 <div class="service-card pushed">
                   <DarkImage
-                    src="/assets/demo/img/service/skull-3.png"
+                    src="/assets/services/consultation/consultation-1.jpg"
                     alt="Service image"
                     width="600"
                     height="510"
@@ -166,7 +166,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
                 <!--Panel Card-->
                 <div class="panel-card popular-card">
                   <AvatarSimple
-                    picture="/assets/nft/avatars/egg.svg"
+                    picture="/assets/services/solutions.png"
                     size="medium"
                   />
                   <div class="meta">
@@ -183,7 +183,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
                 <!--Service card-->
                 <div class="service-card">
                   <DarkImage
-                    src="/assets/demo/img/service/pepe-6.png"
+                    src="/assets/services/test-prep/test-prep-2.jpg"
                     alt="Service image"
                     width="600"
                     height="510"
