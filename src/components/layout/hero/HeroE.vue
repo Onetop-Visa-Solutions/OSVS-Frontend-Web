@@ -38,6 +38,7 @@
                 :long="2"
                 raised
                 bold
+                rounded
               >
                 Explore Destinations
               </Button>
@@ -45,6 +46,7 @@
                 elevated
                 bold
                 :long="2"
+                rounded
               >
                 Book Consultation
               </Button>

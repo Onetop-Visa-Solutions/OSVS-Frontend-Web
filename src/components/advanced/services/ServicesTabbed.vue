@@ -109,6 +109,7 @@ const activeTab = ref(0)
                 fullwidth
                 bold
                 raised
+                rounded
               >
                 {{ plan.buttonLabel }}
               </Button>
@@ -165,6 +166,7 @@ const activeTab = ref(0)
                 color="primary"
                 fullwidth
                 bold
+                rounded
                 raised
               >
                 {{ plan.buttonLabel }}
