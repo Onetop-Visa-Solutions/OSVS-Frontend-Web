@@ -18,7 +18,7 @@ export interface TestServices {
   priceBilling: string
   planText: string
   buttonLabel: string
-  relatedPage: string
+  // relatedPage: string
   features: string[]
 }
 
@@ -192,7 +192,7 @@ const activeTab = ref(0)
                 </div>
 
                 <div class="hero-box-grid">
-                  <CountryCard />
+                  <CountryCard content="USA" />
                 </div>
               </div>
             </div>

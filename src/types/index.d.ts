@@ -90,3 +90,12 @@ export interface Job {
   }
 }
 
+
+export interface Country {
+  id: number
+  name: string
+  description: string
+  image: string
+  slug: string
+
+}

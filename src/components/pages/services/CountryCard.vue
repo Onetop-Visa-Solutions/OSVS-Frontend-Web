@@ -14,14 +14,21 @@
         weight="semi"
         narrow
       >
-        Italy
+        {{ props.content }}
       </Title>
       <div
         class="go-icon"
       >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
+        <RouterLink
+          :to="{
+            name: 'education-destinations-slug',
+            params: { slug: props.content },
+          }"
+        >
+          <Button>
+            <i-ion-arrow-forward-outline />
+          </Button>
+        </RouterLink>
       </div>
     </div>
   </div><div class="hero-box-item">
@@ -100,7 +107,13 @@
 </template>
 
 <script setup lang="ts">
-
+export interface ProductCardProps {
+  content: any
+  flat?: boolean
+}
+const props = withDefaults(defineProps<ProductCardProps>(), {
+  flat: false,
+})
 </script>
 
 <style scoped>
