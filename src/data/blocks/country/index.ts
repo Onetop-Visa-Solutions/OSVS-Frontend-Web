@@ -1,4 +1,4 @@
-export const allCountries = {
+export const allCountriesData = {
   name: "United States of America",
   alias: "USA",
   slugs: "united-states",

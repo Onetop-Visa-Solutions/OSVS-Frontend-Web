@@ -1,24 +1,19 @@
+import { type Country } from './../../types/index.d';
 import sleep from '/@src/utils/sleep'
 import { useCountryStore } from '/@src/stores/country'
-const country = useCountryStore()
-const allCountries = country.allCountries
+const countryData = useCountryStore()
+const allCountries = countryData.allCountries
 
 export async function getCountry(slug: string) {
-  const product = allCountries.find((country: any) => country.slug === slug)
+  const country = allCountries.find((country: Country) => country.slug === slug)
 
   // simulate api call
   await sleep(200)
 
-  if (!product) {
-    return Promise.reject(new Error(`Job ${slug} not found`))
+  if (!country) {
+    return Promise.reject(new Error(`Country ${slug} not found`))
   }
 
-  return Promise.resolve(product)
+  return Promise.resolve(country)
 }
 
-export async function getNfts() {
-  // simulate api call
-  await sleep(200)
-
-  return Promise.resolve(allCountries.map((product: any) => product))
-}

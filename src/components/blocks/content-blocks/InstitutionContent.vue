@@ -1,17 +1,13 @@
 <script setup lang="ts">
 import type { RouteLocationRaw } from 'vue-router'
-
-export interface ContentBlockAImage {
-  url: string
-  label: string
-}
+import {computed} from 'vue'
 
 export interface ContentBlockAProps {
   title: string
   text: string
   link?: RouteLocationRaw
   linkLabel?: string
-  images: ContentBlockAImage[]
+  images: string[]
   squared?: boolean
   inverted?: boolean
 }
@@ -54,12 +50,12 @@ const textClasses = computed(() => [props.inverted && 'text-light'])
             class="mx-auto is-flex is-justify-content-center is-flex-wrap-wrap"
           >
             <div
-              v-for="(image, index) in props.images.slice(0, 10)"
+              v-for="(image, index) in props.images"
               :key="index"
               class="image-wrap"
             >
               <AvatarSimple
-                :picture="image.url"
+                :picture="image"
                 :squared="props.squared"
               />
             </div>

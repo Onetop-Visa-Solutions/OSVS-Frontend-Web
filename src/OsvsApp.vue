@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import { useLayout } from '/@src/composable/useLayout'
+import { useCountryStore } from '/@src/stores/country'
+
+const country = useCountryStore()
+const fetchCountriesData =   country.fetchCountries
 
 const { LayoutComponent } = useLayout()
+
+onMounted(() =>{
+  fetchCountriesData()
+})
 
 useHead({
   title: 'Onestop Visa Solutions',
@@ -51,7 +59,7 @@ useHead({
     <ReloadPrompt app-name="Onestop Visa Solutions">
       <template #logo>
         <img
-          src="/assets/logo/logo.svg"
+          src="/assets/logo/logo.png"
           alt="logo"
           width="80"
           height="80"

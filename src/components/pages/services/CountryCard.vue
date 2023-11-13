@@ -1,5 +1,6 @@
 <template>
   <!--Grid item-->
+
   <div class="hero-box-item">
     <div class="box-inner">
       <IconBox
@@ -14,7 +15,7 @@
         weight="semi"
         narrow
       >
-        {{ props.content }}
+        {{ props.country.name }}
       </Title>
       <div
         class="go-icon"
@@ -22,7 +23,7 @@
         <RouterLink
           :to="{
             name: 'education-destinations-slug',
-            params: { slug: props.content },
+            params: { slug: props.country.slug },
           }"
         >
           <Button>
@@ -31,84 +32,12 @@
         </RouterLink>
       </div>
     </div>
-  </div><div class="hero-box-item">
-    <div class="box-inner">
-      <IconBox
-        color="primary"
-        rounded
-      >
-        <i-ion-medkit-outline />
-      </IconBox>
-      <Title
-        tag="h3"
-        :size="7"
-        weight="semi"
-        narrow
-      >
-        Italy
-      </Title>
-      <div
-        class="go-icon"
-      >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
-      </div>
-    </div>
-  </div><div class="hero-box-item">
-    <div class="box-inner">
-      <IconBox
-        color="primary"
-        rounded
-      >
-        <i-ion-medkit-outline />
-      </IconBox>
-      <Title
-        tag="h3"
-        :size="7"
-        weight="semi"
-        narrow
-      >
-        Italy
-      </Title>
-      <div
-        class="go-icon"
-      >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
-      </div>
-    </div>
-  </div><div class="hero-box-item">
-    <div class="box-inner">
-      <IconBox
-        color="primary"
-        rounded
-      >
-        <i-ion-medkit-outline />
-      </IconBox>
-      <Title
-        tag="h3"
-        :size="7"
-        weight="semi"
-        narrow
-      >
-        United States
-      </Title>
-      <div
-        class="go-icon"
-      >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
-      </div>
-    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 export interface ProductCardProps {
-  content: any
+  country: any
   flat?: boolean
 }
 const props = withDefaults(defineProps<ProductCardProps>(), {

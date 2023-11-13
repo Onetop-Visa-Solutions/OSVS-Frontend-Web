@@ -92,10 +92,77 @@ export interface Job {
 
 
 export interface Country {
-  id: number
   name: string
-  description: string
-  image: string
+  alias: string
   slug: string
+  flagImage: string
+  description: string
+  descriptionImages: string[]
+  visitPackages: []
+  educationalPackage: {
+    name: string
+    institutions: {
+      name: string
+      icon: string
+    }[]
+    institutionsDescription: string
+    requirements: {
+      undergradRequirements:{
+        title: string
+        name: string
+        requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: content
+          }[]
+        }[]
+      }
+      highSchoolRequirements:{
+        title: string
+        name: string
+        requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: content
+          }[]
+        }[]
+      }
+     gradRequirements:{
+        title: string
+        name: string
+        requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: content
+          }[]
+        }[]
+      }
+
+    }[]
+    scholarshipsAndFunding:{
+      description: string
+      minimumTuitionCost: number
+      maximumTuitionCost: number
+      averageLivingCost: number
+      costLabel: string
+      scholarships: {
+        name: string
+        minimumAmount:number
+        maximumAmount: number}[]
+    }
+  }
+  aboutCountry:{
+    currency: string
+    currencySymbol: string
+    advantages: {
+      name: string
+      image: string
+      description: string
+    }[]
+  }
+  testimonialVideo: string
 
 }
