@@ -1,5 +1,6 @@
 <template>
   <!--Grid item-->
+
   <div class="hero-box-item">
     <div class="box-inner">
       <IconBox
@@ -14,93 +15,34 @@
         weight="semi"
         narrow
       >
-        Italy
+        {{ props.country.name }}
       </Title>
       <div
         class="go-icon"
       >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
-      </div>
-    </div>
-  </div><div class="hero-box-item">
-    <div class="box-inner">
-      <IconBox
-        color="primary"
-        rounded
-      >
-        <i-ion-medkit-outline />
-      </IconBox>
-      <Title
-        tag="h3"
-        :size="7"
-        weight="semi"
-        narrow
-      >
-        Italy
-      </Title>
-      <div
-        class="go-icon"
-      >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
-      </div>
-    </div>
-  </div><div class="hero-box-item">
-    <div class="box-inner">
-      <IconBox
-        color="primary"
-        rounded
-      >
-        <i-ion-medkit-outline />
-      </IconBox>
-      <Title
-        tag="h3"
-        :size="7"
-        weight="semi"
-        narrow
-      >
-        Italy
-      </Title>
-      <div
-        class="go-icon"
-      >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
-      </div>
-    </div>
-  </div><div class="hero-box-item">
-    <div class="box-inner">
-      <IconBox
-        color="primary"
-        rounded
-      >
-        <i-ion-medkit-outline />
-      </IconBox>
-      <Title
-        tag="h3"
-        :size="7"
-        weight="semi"
-        narrow
-      >
-        United States
-      </Title>
-      <div
-        class="go-icon"
-      >
-        <Button to="#">
-          <i-ion-arrow-forward-outline />
-        </Button>
+        <RouterLink
+          :to="{
+            name: 'education-destinations-slug',
+            params: { slug: props.country.slug },
+          }"
+        >
+          <Button>
+            <i-ion-arrow-forward-outline />
+          </Button>
+        </RouterLink>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+export interface ProductCardProps {
+  country: any
+  flat?: boolean
+}
+const props = withDefaults(defineProps<ProductCardProps>(), {
+  flat: false,
+})
 </script>
 
 <style scoped>

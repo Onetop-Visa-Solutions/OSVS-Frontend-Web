@@ -90,3 +90,56 @@ export interface Job {
   }
 }
 
+
+export interface Country {
+  name: string
+  alias: string
+  slug: string
+  flagImage: string
+  description: string
+  descriptionImages: string[]
+  visitPackages: []
+  educationalPackage: {
+    name: string
+    institutions: {
+      name: string
+      icon: string
+      link: string
+    }[]
+    institutionsDescription: string
+    requirements: {
+        title: string
+        name: string
+        requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: content
+          }[]
+        }[]
+    }[]
+    requirementsDescription: string
+    scholarshipsAndFunding:{
+      description: string
+      minimumTuitionCost: number
+      maximumTuitionCost: number
+      averageLivingCost: number
+      costLabel: string
+      scholarships: {
+        name: string
+        minimumAmount:number
+        maximumAmount: number}[]
+    }
+  }
+  aboutCountry:{
+    currency: string
+    currencySymbol: string
+    advantages: {
+      name: string
+      image: string
+      description: string
+    }[]
+  }
+  testimonialVideo: string
+
+}
