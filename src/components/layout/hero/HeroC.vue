@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import type { RouteLocationRaw } from 'vue-router'
 
 export interface SideSectionProps {
   title: string
   subtitle: string
   content: string
-  to?: RouteLocationRaw
-  cta?: string
   image: string
   darkImage?: string
   imageWidth?: string
@@ -75,17 +72,7 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
             >
               {{ props.content }}
             </p>
-            <RouterLink
-              v-if="props.cta && props.to"
-              :to="props.to"
-              class="rem-115"
-            >
-              <span class="action-link">{{ props.cta }}</span>
-              <i
-                class="iconify"
-                data-icon="feather:arrow-right"
-              />
-            </RouterLink>
+
             <slot name="content" />
           </div>
           <div class="column is-6 has-text-centered is-relative is-offset-1">

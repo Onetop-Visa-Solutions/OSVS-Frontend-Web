@@ -104,10 +104,10 @@ export interface Country {
     institutions: {
       name: string
       icon: string
+      link: string
     }[]
     institutionsDescription: string
     requirements: {
-      undergradRequirements:{
         title: string
         name: string
         requirementsList: {
@@ -117,31 +117,8 @@ export interface Country {
             content: content
           }[]
         }[]
-      }
-      highSchoolRequirements:{
-        title: string
-        name: string
-        requirementsList: {
-          title: string
-          detail:{
-            name: string
-            content: content
-          }[]
-        }[]
-      }
-     gradRequirements:{
-        title: string
-        name: string
-        requirementsList: {
-          title: string
-          detail:{
-            name: string
-            content: content
-          }[]
-        }[]
-      }
-
     }[]
+    requirementsDescription: string
     scholarshipsAndFunding:{
       description: string
       minimumTuitionCost: number

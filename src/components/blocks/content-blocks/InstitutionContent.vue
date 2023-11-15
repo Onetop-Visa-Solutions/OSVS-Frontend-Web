@@ -7,7 +7,7 @@ export interface ContentBlockAProps {
   text: string
   link?: RouteLocationRaw
   linkLabel?: string
-  images: string[]
+  images: {name: string, icon: string, link:string}[]
   squared?: boolean
   inverted?: boolean
 }
@@ -54,10 +54,15 @@ const textClasses = computed(() => [props.inverted && 'text-light'])
               :key="index"
               class="image-wrap"
             >
+              <!-- <RouterLink
+                :to="image.link
+                "
+              > -->
               <AvatarSimple
-                :picture="image"
+                :picture="image.icon"
                 :squared="props.squared"
               />
+              <!-- </RouterLink> -->
             </div>
           </div>
         </slot>

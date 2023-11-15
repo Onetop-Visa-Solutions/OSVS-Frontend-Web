@@ -349,6 +349,8 @@ declare module 'vue' {
     QuickJobSearch: (typeof import('./src/components/form/quick-job-search/QuickJobSearch.vue'))['default']
     Radio: typeof import('./src/components/base/form/radio/Radio.vue')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
+    RequirementsListE: typeof import('./src/components/advanced/requirements/RequirementsListE.vue')['default']
+    RequirementsTabbed: typeof import('./src/components/advanced/requirements/requirements-list/RequirementsTabbed.vue')['default']
     ResourceGrid: typeof import('./src/components/advanced/blog/resource-grid/ResourceGrid.vue')['default']
     ResourceGridItem: typeof import('./src/components/advanced/blog/resource-grid-item/ResourceGridItem.vue')['default']
     ResourcesMegamenu: (typeof import('./src/components/navigation/navbar/megamenu/ResourcesMegamenu.vue'))['default']
