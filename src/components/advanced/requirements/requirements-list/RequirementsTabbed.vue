@@ -87,7 +87,7 @@ const activeBox = ref(0)
         role="button"
         tabindex="0"
         class="pricing-inner-box"
-        :class="activeBox === index && 'is-active'"
+        :class="activeBox === p && 'is-active'"
         @mouseover="() => (activeBox = p)"
         @focusin="() => (activeBox = p)"
       >
