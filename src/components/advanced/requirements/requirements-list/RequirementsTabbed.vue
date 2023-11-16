@@ -25,60 +25,6 @@ const activeBox = ref(0)
 </script>
 
 <template>
-  <!-- <div class="requirement-wrapper">
-
-    <div class="requirement-container">
-      <div class="container-inner">
-        <div class="solo-plans">
-          Requirement
-          <div
-            v-for="(item, p) in props.requirements"
-            :key="p"
-            class="solo-plan"
-          >
-            <div class="header">
-              <img
-                :src="item.name"
-                alt="Services icon"
-              >
-              <span>{{ item.title }}</span>
-            </div>
-
-            <div class="plan-tagline">
-              <p>
-                {{ item.title }}
-              </p>
-            </div>
-
-            <div class="benefits content">
-              <ul>
-                <li
-                  v-for="(det, k) in item.requirementsList"
-                  :key="k"
-                >
-                  {{ det.title }}
-                </li>
-              </ul>
-            </div>
-            <div class="button-wrap">
-              <Button
-                to="/"
-                color="primary"
-                fullwidth
-                bold
-                raised
-              >
-                Learn More
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-  <!-- TWO -->
   <div class="pricing-compact">
     <div class="pricing-compact-box">
       <div
@@ -99,24 +45,11 @@ const activeBox = ref(0)
           <span>{{ item.title }}</span>
         </Title>
         <p class="paragraph rem-80 mx-auto max-w-2">
-          {{ item.title }}
+          {{ item.description }}
         </p>
-        <!-- <div class="price">
-        <span v-if="billing.length > 0">{{ plan.yearlyPrice }}</span>
-        <span v-else>{{ plan.monthlyPrice }}</span>
-      </div> -->
-        <!-- <div class="billing">
-        <p class="paragraph rem-80">
-          per user, per
-          <span v-if="billing.length > 0">year</span>
-          <span v-else>month</span>
-        </p>
-        <p class="paragraph rem-80">
-          when billed
-          <span v-if="billing.length > 0">yearly</span>
-          <span v-else>monthly</span>
-        </p>
-      </div> -->
+
+        <RequirementsListSolo :check-list="item.requirementsList" />
+
         <div class="action">
           <Button
             color="primary"
