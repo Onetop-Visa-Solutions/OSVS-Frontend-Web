@@ -19,6 +19,8 @@
     <InstitutionContent
       title="Educational Institutions In"
       :text="country.name"
+      :alias="country.alias"
+      :institutions-description="country.educationalPackage.institutionsDescription"
       link="/"
       :images="country.educationalPackage.institutions"
     />
