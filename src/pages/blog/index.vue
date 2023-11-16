@@ -1,41 +1,74 @@
 <template>
-  <div class="mt-12">
-    <MainSectionHeader title="Our Latest News" subtitle="Company Blog"
-      text="Welcome to our company blog, where you can stay up-to-date with our latest news and updates. We are excited to share with you the latest happenings within our organization." />
-  </div>
-
-  <Container>
-    <div class="columns is-mobile is-multiline">
-      <div class="column is-8">
-        
-        <div class="columns is-multiline" >
-          <div v-for="i in items" class="column is-half">
-            <ResourceCard :posts="i"/>
-          </div>
-        </div>
-      
-      </div>
-      <div class="column">
-        <div class="relative search-box">
-          <img src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="32" height="32"/>
-          <input type="search" name="" placeholder="Search posts..." id="">
-        </div>
-
-        <h3 class="title text text-primary my-12">Recent Posts</h3>
-        <div class="suggest-card">
-          <img src="" class="" alt="">
-          <div class="d-flex">
-            <p class="is-size-5 suggest-title">Blog title placeholder sample one </p>
-            <span>2 hrs ago</span>
-          </div>
-        </div>
-      </div>
+  <div>
+    <div class="mt-12">
+      <MainSectionHeader
+        title="Our Latest News"
+        subtitle="Company Blog"
+        text="Welcome to our company blog, where you can stay up-to-date with our latest news and updates. We are excited to share with you the latest happenings within our organization."
+      />
     </div>
-  </Container>
+    <Section>
+      <Container>
+        <div class="columns is-mobile is-multiline">
+          <div class="column is-8">
+            <div class="columns is-multiline">
+              <div
+                v-for="i in items"
+                :key="i.id"
+                class="column is-half"
+              >
+                <ResourceCard :posts="i" />
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="relative search-box">
+              <img
+                src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000"
+                alt="relative search"
+                width="32"
+                height="32"
+              >
+              <input
+                id=""
+                type="search"
+                name=""
+                placeholder="Search posts..."
+              >
+            </div>
+
+            <h3 class="title text text-primary my-12">
+              Recent Posts
+            </h3>
+            <div class="suggest-card">
+              <img
+                src=""
+                class=""
+                alt=""
+              >
+              <div class="d-flex">
+                <p class="is-size-5 suggest-title">
+                  Blog title placeholder sample one
+                </p>
+                <span>2 hrs ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </Section>
+    <Footer
+      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      color="light"
+      :social-links="socialLinks"
+      bubbles
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { socialLinks } from '/@src/data/blocks/advanced/social'
 
 const items = ref([
   {
@@ -81,6 +114,7 @@ const items = ref([
     top: 0;
     left: 5;
   }
+
   input {
     border: none;
     position: absolute;
