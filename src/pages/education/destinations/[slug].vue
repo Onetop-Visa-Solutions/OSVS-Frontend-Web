@@ -32,7 +32,7 @@
         :text="country.educationalPackage.requirementsDescription"
       />
       <RequirementsListE
-        :requirements-list="country.educationalPackage.requirements"
+        :requirements-item="country.educationalPackage.requirements"
       />
     </Section>
   </div>

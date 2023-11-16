@@ -1,33 +1,33 @@
 <script setup lang="ts">
 export interface RequirementsSoloCenteredProps {
-    title: string
-    detail:{
-      name:string
-      content:string}[]
+  requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: string
+          }[]
+        }[],
 }
 
 const props = withDefaults(defineProps<RequirementsSoloCenteredProps>(), {
-  checkList: () => [],
+  requirementsList: () => [],
 
 })
 </script>
 
 <template>
-  <div>{{ item }}</div>
   <div class="requirement-solo">
     <div class="requirement-solo-content">
       <div class="requirement-solo-card">
         <div class="left">
           <div class="inner-features">
-            {{ props.checkList }} H
             <div
-              v-for="(item, index) in props.checkList"
+              v-for="(item, index) in props.requirementsList"
               :key="index"
               class="feature-item"
             >
               <i-cil-check-circle class="rem-125 text-secondary mr-2" />
-              <span>{{ item }}</span>
-              <span>H</span>
+              <span class="paragraph">{{ item.title }}</span>
             </div>
           </div>
         </div>
@@ -45,9 +45,6 @@ const props = withDefaults(defineProps<RequirementsSoloCenteredProps>(), {
   .requirement-solo-content {
     .requirement-solo-card {
       display: flex;
-      background: var(--card-bg-color);
-      // border: 1px solid var(--card-border-color);
-      border-radius: 1rem;
       overflow: hidden;
       transition: box-shadow 0.3s;
 
@@ -55,8 +52,8 @@ const props = withDefaults(defineProps<RequirementsSoloCenteredProps>(), {
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 3.5rem 2.75rem;
-        // background: var(--wrap-muted-color-heavy);
+        padding: 2rem 0;
+        margin-left: 0.8rem;
 
         .inner-features {
           display: flex;
@@ -67,7 +64,7 @@ const props = withDefaults(defineProps<RequirementsSoloCenteredProps>(), {
             display: flex;
             align-items: center;
             font-family: var(--font);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: var(--title-color);
             width: 100%;
 
@@ -78,47 +75,7 @@ const props = withDefaults(defineProps<RequirementsSoloCenteredProps>(), {
         }
       }
 
-      .right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        padding: 3.5rem 2.75rem;
-        border-left: 1px solid var(--card-border-color);
-        text-align: center;
-
-        > div {
-          width: 100%;
-        }
-
-        .price {
-          .price-value {
-            position: relative;
-            left: -12px;
-            font-family: var(--font);
-            font-weight: 500;
-            font-size: 5.75rem;
-            color: var(--title-color);
-            line-height: 1;
-
-            span::before {
-              position: relative;
-              top: -50px;
-              content: '$';
-              font-weight: 500;
-              font-size: 1.5rem;
-            }
-          }
-        }
-
-        .action {
-          margin-top: 2rem;
-
-          :deep(.button) {
-            min-width: 220px;
-          }
-        }
-      }
+      //
 
       &:hover {
         box-shadow: var(--spread-shadow);

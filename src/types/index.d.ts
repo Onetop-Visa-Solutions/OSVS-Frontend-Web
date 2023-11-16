@@ -114,9 +114,10 @@ export interface Country {
           title: string
           detail:{
             name: string
-            content: content
+            content: string
           }[]
         }[]
+        description: string
     }[]
     requirementsDescription: string
     scholarshipsAndFunding:{

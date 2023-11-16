@@ -1,19 +1,21 @@
 <script setup lang="ts">
 export interface RequirementProps {
-  title: string
-  name: string
-  requirementsList: {
-    title: string
-    detail:{
-      name:string
-      content:string}[]
-  }[]
-  description: string
-
+  requirementsItem: {
+        title: string
+        name: string
+        requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: string
+          }[]
+        }[],
+        description: string
+      }[]
 }
 
 const props = withDefaults(defineProps<RequirementProps>(), {
-  requirementsList: () => [],
+  requirementsItem: () => [],
 
 })
 
@@ -45,7 +47,7 @@ const activePricing = ref('requirement')
       v-if="activePricing === 'requirement'"
     >
       <RequirementsTabbed
-        :requirements="props.requirementsList"
+        :requirements-content="props.requirementsItem"
       />
     </div>
     <div v-else>

@@ -1,23 +1,22 @@
 <script setup lang="ts">
 export interface RequirementOption {
-  title: string
-  name: string
-  requirementsList: {
-    title: string
-    detail:{
-      name:string
-      content:string}[]
-  }[]
-  description: string
-}
+  requirementsContent: {title: string
+        name: string
+        requirementsList: {
+          title: string
+          detail:{
+            name: string
+            content: string
+          }[]
+        }[],
+        description: string
+      }[]
+    }
 
 
-export interface RequirementTabbedProps {
-  requirements: RequirementOption[]
-}
 
-const props = withDefaults(defineProps<RequirementTabbedProps>(), {
-  requirements: () => [],
+const props = withDefaults(defineProps<RequirementOption>(), {
+  requirementsContent: () => [],
 
 })
 const activeBox = ref(0)
@@ -28,7 +27,7 @@ const activeBox = ref(0)
   <div class="pricing-compact">
     <div class="pricing-compact-box">
       <div
-        v-for="(item, p) in props.requirements"
+        v-for="(item, p) in props.requirementsContent"
         :key="p"
         role="button"
         tabindex="0"
@@ -47,8 +46,8 @@ const activeBox = ref(0)
         <p class="paragraph rem-80 mx-auto max-w-2">
           {{ item.description }}
         </p>
-
-        <RequirementsListSolo :check-list="item.requirementsList" />
+        <!-- <p>{{ }}</p> -->
+        <RequirementsListSolo :requirements-list="item.requirementsList" />
 
         <div class="action">
           <Button
