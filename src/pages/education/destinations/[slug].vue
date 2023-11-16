@@ -16,14 +16,12 @@
     />
 
     <!-- Institutions List Content Block -->
-    <Section>
-      <InstitutionContent
-        title="Educational Institutions In"
-        :text="country.name"
-        link="/"
-        :images="country.educationalPackage.institutions"
-      />
-    </Section>
+    <InstitutionContent
+      title="Educational Institutions In"
+      :text="country.name"
+      link="/"
+      :images="country.educationalPackage.institutions"
+    />
 
     <Section>
       <PageTitle

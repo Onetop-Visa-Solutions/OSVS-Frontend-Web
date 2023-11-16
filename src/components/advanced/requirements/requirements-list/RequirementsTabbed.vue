@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<RequirementOption>(), {
   requirementsContent: () => [],
 
 })
-const activeBox = ref(0)
+const activeBox = ref(1)
 
 </script>
 
@@ -46,7 +46,7 @@ const activeBox = ref(0)
         <p class="paragraph rem-80 mx-auto max-w-2">
           {{ item.description }}
         </p>
-        <!-- <p>{{ }}</p> -->
+
         <RequirementsListSolo :requirements-list="item.requirementsList" />
 
         <div class="action">
@@ -95,7 +95,7 @@ const activeBox = ref(0)
       top: 0;
       left: 0;
       height: 100%;
-      width: 33%;
+      width: 32.5%;
       // background: var(--dark-bg);
     background: brown;
     margin-left: 2rem;
@@ -105,16 +105,16 @@ const activeBox = ref(0)
       transition: margin 0.3s, width 0.3s;
 
       &.naver-0 {
-        margin-left: 3%;
-        width: 29%;
+        margin-left: 1.5%;
+        // width: 29%;
       }
 
       &.naver-1 {
-        margin-left: 32.4%;
+        margin-left: 32.8%;
       }
 
       &.naver-2 {
-        margin-left: 64.5%;
+        margin-left: 64.8%;
       }
     }
 
@@ -122,7 +122,6 @@ const activeBox = ref(0)
       position: relative;
       padding: 1.5rem;
       text-align: center;
-    // background: yellow;
       width: 33%;
       z-index: 2;
 

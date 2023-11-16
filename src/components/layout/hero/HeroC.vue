@@ -40,7 +40,7 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
 <template>
   <Hero
     class="country-hero"
-    size="fullheight"
+    size="medium"
   >
     <template #body>
       <div
