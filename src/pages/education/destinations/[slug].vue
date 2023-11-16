@@ -23,6 +23,7 @@
       :images="country.educationalPackage.institutions"
     />
 
+    <!-- Requirements Section -->
     <Section>
       <PageTitle
         title="Requirements for Programs"
@@ -32,6 +33,19 @@
       <RequirementsListE
         :requirements-item="country.educationalPackage.requirements"
       />
+    </Section>
+
+    <!-- Why This Country Section -->
+    <Section>
+      <Container>
+        <SectionTitle
+          title="Discover the Advantages of Studying"
+          :name="country.name"
+          subtitle="Why Choose Education in"
+        />
+
+        <CountryAdvantage :advantage-list="country.aboutCountry.advantages" />
+      </Container>
     </Section>
   </div>
 </template>

@@ -24,6 +24,7 @@ declare module 'vue' {
     Container: typeof import('./src/components/layout/container/Container.vue')['default']
     Control: typeof import('./src/components/base/form/control/Control.vue')['default']
     Counter: typeof import('./src/components/base/counter/Counter.vue')['default']
+    CountryAdvantage: typeof import('./src/components/pages/destinations/country/CountryAdvantage.vue')['default']
     CountryCard: typeof import('./src/components/pages/services/CountryCard.vue')['default']
     CountryCardGrid: typeof import('./src/components/pages/services/CountryCardGrid.vue')['default']
     CtaBlock: typeof import('./src/components/blocks/cta-blocks/CtaBlock.vue')['default']

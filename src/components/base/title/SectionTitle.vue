@@ -2,6 +2,7 @@
 export interface SectionTitleProps {
   title: string
   subtitle: string
+  name: string
   inverted?: boolean
   spaced?: boolean
 }
@@ -33,7 +34,7 @@ const subtitleClasses = computed(() => [
       weight="bold"
     >
       <span :class="subtitleClasses">
-        <slot name="subtitle">{{ props.subtitle }}</slot>
+        <slot name="subtitle">{{ props.subtitle }}  {{ props.name }}</slot>
       </span>
     </Subtitle>
     <Title
@@ -43,7 +44,7 @@ const subtitleClasses = computed(() => [
       :class="titleClasses"
     >
       <span>
-        <slot>{{ props.title }}</slot>
+        <slot>{{ props.title }} {{ props.name }}</slot>
       </span>
     </Title>
   </div>
