@@ -216,3 +216,4 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
   }
 }
 </style>
+

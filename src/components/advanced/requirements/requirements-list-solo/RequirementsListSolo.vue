@@ -26,7 +26,7 @@ const props = withDefaults(defineProps<RequirementsSoloCenteredProps>(), {
               :key="index"
               class="feature-item"
             >
-              <i-cil-check-circle class="rem-125 text-secondary mr-2" />
+              <i-cil-check-circle class="rem-125 text-primary mr-2" />
               <span class="paragraph">{{ item.title }}</span>
             </div>
           </div>

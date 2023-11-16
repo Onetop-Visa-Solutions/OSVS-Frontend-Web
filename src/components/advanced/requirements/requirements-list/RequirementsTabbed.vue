@@ -24,14 +24,14 @@ const activeBox = ref(0)
 </script>
 
 <template>
-  <div class="pricing-compact">
-    <div class="pricing-compact-box">
+  <div class="requirements-compact">
+    <div class="requirements-compact-box">
       <div
         v-for="(item, p) in props.requirementsContent"
         :key="p"
         role="button"
         tabindex="0"
-        class="pricing-inner-box"
+        class="requirements-inner-box"
         :class="activeBox === p && 'is-active'"
         @mouseover="() => (activeBox = p)"
         @focusin="() => (activeBox = p)"
@@ -74,12 +74,12 @@ const activeBox = ref(0)
 </template>
 
 <style scoped lang="scss">
-.pricing-compact {
+.requirements-compact {
   position: relative;
   margin-bottom: 3rem;
 
 
-  .pricing-compact-box {
+  .requirements-compact-box {
     position: relative;
     display: flex;
     width: 100%;
@@ -118,7 +118,7 @@ const activeBox = ref(0)
       }
     }
 
-    .pricing-inner-box {
+    .requirements-inner-box {
       position: relative;
       padding: 1.5rem;
       text-align: center;
@@ -182,15 +182,15 @@ const activeBox = ref(0)
 
 /* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (max-width: 767px) {
-  .pricing-compact {
-    .pricing-compact-box {
+  .requirements-compact {
+    .requirements-compact-box {
       flex-direction: column;
 
       .naver-box {
         display: none;
       }
 
-      .pricing-inner-box {
+      .requirements-inner-box {
         width: 100% !important;
 
         &.is-active {
@@ -211,15 +211,15 @@ const activeBox = ref(0)
 
 /* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .pricing-compact {
-    .pricing-compact-box {
+  .requirements-compact {
+    .requirements-compact-box {
       flex-wrap: wrap;
 
       .naver-box {
         display: none;
       }
 
-      .pricing-inner-box {
+      .requirements-inner-box {
         width: 50% !important;
 
         &.is-active {
