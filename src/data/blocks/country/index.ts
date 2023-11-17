@@ -271,3 +271,29 @@ export const allCountriesData = {
   },
   testimonialVideo: "abc-video"
 }
+
+import type { IconFeature } from '/@src/types'
+
+export const countryTestimonials: IconFeature[] = [
+  {
+    title: 'Hit the Road',
+    text: 'We believe in delivering exceptional service without requiring prepayment. We will begin work immediately upon your approval and invoice you for payment only after the project is complete to your satisfaction.',
+    color: 'success',
+    icon: 'ph:car-duotone',
+    link: '/',
+  },
+  {
+    title: 'Pay at the End',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.',
+    color: 'orange',
+    icon: 'ph:coins-duotone',
+    link: '/',
+  },
+  {
+    title: 'Earn Free Miles',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed videbimus.',
+    color: 'info',
+    icon: 'ph:globe-hemisphere-west-duotone',
+    link: '/',
+  },
+]

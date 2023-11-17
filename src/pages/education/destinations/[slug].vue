@@ -49,13 +49,33 @@
         <CountryAdvantage :advantage-list="country.aboutCountry.advantages" />
       </Container>
     </Section>
+
+    <!-- Video Testimonial -->
+    <Section
+      wave="wave-1"
+      shape-color="grey"
+    >
+      <Container>
+        <SectionTitle
+          title="Words from our clients"
+          subtitle="Testimonial"
+        />
+
+        <VideoBlockB
+          title="Our Product"
+          :features="countryTestimonials"
+          source="/assets/video/meeting.mp4"
+          poster="/assets/demo/img/posters/poster-2h.jpg"
+        />
+      </Container>
+    </Section>
   </div>
 </template>
 
 <script setup lang="ts">
+import { countryTestimonials } from '../../../data/pages/country'
 import { getCountry } from '/@src/utils/api/country'
 import { type Country } from '/@src/types'
-
 const route = useRoute()
 const router = useRouter()
 const slug = route.params.slug as string
