@@ -6,7 +6,7 @@ export const countryTestimonials: IconFeature[] = [
     title: 'Achieve Study Abroad',
     text: 'Receive guidance from our study abroad advisors to gain admission to international universities you want to attend.',
     color: 'success',
-    icon: 'ph:car-duotone',
+    icon: 'ph:book',
     link: '/',
   },
   {
@@ -18,7 +18,7 @@ export const countryTestimonials: IconFeature[] = [
   },
   {
     title: 'Worry-Free Study Abroad Planning',
-    text: 'Let our experts handle every step of the study abroad process - from counseling to applications.',
+    text: 'Let our experts handle every step of the study abroad process from counseling to applications.',
     color: 'info',
     icon: 'ph:globe-hemisphere-west-duotone',
     link: '/',

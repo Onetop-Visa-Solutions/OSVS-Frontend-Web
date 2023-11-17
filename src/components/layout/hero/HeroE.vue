@@ -36,6 +36,7 @@
               <Button
                 color="primary"
                 :long="2"
+                to="/education/destinations"
                 raised
                 bold
                 rounded
