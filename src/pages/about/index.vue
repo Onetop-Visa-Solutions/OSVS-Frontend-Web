@@ -7,7 +7,6 @@ import { values } from '/@src/data/blocks/advanced/values'
 import { team } from '/@src/data/blocks/advanced/team'
 import { boxedGallery } from '/@src/data/blocks/gallery'
 import { press } from '/@src/data/blocks/advanced/press'
-import { footer } from '/@src/data/footer'
 </script>
 
 <template>
@@ -50,5 +49,89 @@ import { footer } from '/@src/data/footer'
         </div>
       </Container>
     </Section>
+    <!--
+    <Section
+      wave="wave-1"
+      shape-color="grey"
+    >
+      <Container>
+        <SectionTitle
+          title="Meet our leadership team"
+          subtitle="A Talented Team"
+        />
+
+        <div class="mt-6">
+          <TeamSection :members="team" />
+        </div>
+      </Container>
+    </Section> -->
+
+    <Section
+      color="grey"
+      wave="wave-1"
+      shape-color="white"
+    >
+      <Container>
+        <div class="pb-6">
+          <SideSectionVideo
+            subtitle="Our Company"
+            title=" Your Guide to Personal, Academic, and Career Success!"
+            content=" From general consultations to visiting guidance and educational consultation, our services are designed to provide valuable insights, support, and guidance to help you achieve your goals. Get ready to unlock your full potential as we take you through the various aspects of our services."
+            source="/assets/video/meeting.mp4"
+            poster="/assets/demo/img/posters/poster-1c.jpg"
+            to="/"
+            blob
+          />
+        </div>
+
+        <NumbersSection
+          subtitle="Our Stats in Number"
+          title="A Glimpse into Our Impressive Figures"
+          content="Discover the impact of our exceptional services through these compelling statistics that showcase our commitment to excellence and client satisfaction. Explore our remarkable figures and see why we are the trusted choice for all your consultation needs."
+          :numbers="stats"
+          animated
+        />
+      </Container>
+    </Section>
+
+    <!-- <Section>
+      <Container>
+        <div class="mb-6">
+          <SectionTitle
+            title="What makes us who we are"
+            subtitle="The values that make us who we are"
+          />
+        </div>
+
+        <ValuesSection
+          :values="values"
+          image-height="130px"
+        />
+      </Container>
+    </Section>
+
+    <Section grey>
+      <Container>
+        <div class="mb-6">
+          <SectionTitle
+            title="We are in the press"
+            subtitle="They talk about us"
+          />
+        </div>
+
+        <PressSection :releases="press" />
+      </Container>
+    </Section>
+
+    <Section>
+      <Container>
+        <LogoSection
+          title="WE DRIVE RESULTS FOR ENTREPRENEURS TO THE FORTUNE 500"
+          :logos="customerLogos"
+        />
+        <GalleryBlockC :items="boxedGallery" />
+        <div class="mb-12" />
+      </Container>
+    </Section> -->
   </div>
 </template>
