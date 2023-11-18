@@ -94,7 +94,7 @@ import { press } from '/@src/data/blocks/advanced/press'
       </Container>
     </Section>
 
-    <!-- <Section>
+    <Section>
       <Container>
         <div class="mb-6">
           <SectionTitle
@@ -110,6 +110,7 @@ import { press } from '/@src/data/blocks/advanced/press'
       </Container>
     </Section>
 
+    <!--
     <Section grey>
       <Container>
         <div class="mb-6">

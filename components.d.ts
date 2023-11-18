@@ -107,6 +107,7 @@ declare module 'vue' {
     Title: typeof import('./src/components/base/title/Title.vue')['default']
     TongueOne: typeof import('./src/components/misc/shapes/TongueOne.vue')['default']
     TongueTwo: typeof import('./src/components/misc/shapes/TongueTwo.vue')['default']
+    ValuesSection: typeof import('./src/components/advanced/text/values-section/ValuesSection.vue')['default']
     VideoBlockB: typeof import('./src/components/blocks/video-blocks/VideoBlockB.vue')['default']
     VideoBlockE: typeof import('./src/components/blocks/video-blocks/VideoBlockE.vue')['default']
     VInput: typeof import('./src/components/base/form/input/VInput.vue')['default']

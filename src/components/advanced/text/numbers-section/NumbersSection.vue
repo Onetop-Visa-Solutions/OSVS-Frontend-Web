@@ -31,10 +31,21 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
   <div class="py-6 z-1">
     <div class="columns is-multiline">
       <div class="column is-12">
-        <Subtitle tag="h3" :size="5" weight="bold" narrow class="pb-5">
+        <Subtitle
+          tag="h3"
+          :size="5"
+          weight="bold"
+          narrow
+          class="pb-5"
+        >
           <span class="text-gradient">{{ props.subtitle }}</span>
         </Subtitle>
-        <Title tag="h3" :size="2" weight="bold" :class="textClasses">
+        <Title
+          tag="h3"
+          :size="2"
+          weight="bold"
+          :class="textClasses"
+        >
           {{ props.title }}
         </Title>
         <p
@@ -50,13 +61,25 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
         class="column is-3"
       >
         <div class="py-4">
-          <Title tag="h3" :size="1" weight="bold" :class="textClasses">
+          <Title
+            tag="h3"
+            :size="1"
+            weight="bold"
+            :class="textClasses"
+          >
             <span>{{ number.prefix }}</span>
-            <Counter v-if="props.animated" :number="number.value" />
+            <Counter
+              v-if="props.animated"
+              :number="number.value"
+            />
             <span v-else>{{ number.value }}</span>
             <span>{{ number.suffix }}</span>
           </Title>
-          <Subtitle tag="h3" :size="6" class="pb-4 text-light">
+          <Subtitle
+            tag="h3"
+            :size="6"
+            class="pb-4 text-light"
+          >
             {{ number.text }}
           </Subtitle>
         </div>
@@ -66,6 +89,7 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
 </template>
 
 <style lang="scss" scoped>
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .columns {
     display: flex;
