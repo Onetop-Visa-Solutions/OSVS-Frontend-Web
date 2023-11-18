@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandler'
-
+import { socialLinks } from '/@src/data/blocks/advanced/social'
 import { customerLogos } from '/@src/data/pages/logos'
 import { stats } from '/@src/data/blocks/advanced/stats'
 import { values } from '/@src/data/blocks/advanced/values'
-import { team } from '/@src/data/blocks/advanced/team'
-import { boxedGallery } from '/@src/data/blocks/gallery'
-import { press } from '/@src/data/blocks/advanced/press'
+// import { team } from '/@src/data/blocks/advanced/team'
+// import { boxedGallery } from '/@src/data/blocks/gallery'
+// import { press } from '/@src/data/blocks/advanced/press'
 </script>
 
 <template>
@@ -134,5 +134,11 @@ import { press } from '/@src/data/blocks/advanced/press'
         <div class="mb-12" />
       </Container>
     </Section> -->
+    <Footer
+      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      color="light"
+      :social-links="socialLinks"
+      bubbles
+    />
   </div>
 </template>
