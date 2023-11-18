@@ -67,6 +67,7 @@ declare module 'vue' {
     PlaceloadText: typeof import('./src/components/base/placeload/PlaceloadText.vue')['default']
     Player: typeof import('./src/components/base/player/Player.vue')['default']
     Popover: typeof import('./src/components/base/popover/Popover.vue')['default']
+    PricingCard: typeof import('./src/components/base/card/PricingCard.vue')['default']
     Radio: typeof import('./src/components/base/form/radio/Radio.vue')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     ResourceCard: typeof import('./src/components/advanced/blog/resource-card/ResourceCard.vue')['default']
