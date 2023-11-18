@@ -34,10 +34,17 @@ const props = withDefaults(defineProps<CompanyValueProps>(), {
             :src-dark="value.darkImage"
             alt="Illustration"
           />
-          <Title tag="h3" :size="5" leading :inverted="props.inverted">
+          <Title
+            tag="h3"
+            :size="5"
+            leading
+            :inverted="props.inverted"
+          >
             {{ value.title }}
           </Title>
-          <p class="pb-4 mx-auto max-w-3">{{ value.content }}</p>
+          <p class="pb-4 mx-auto max-w-3">
+            {{ value.content }}
+          </p>
         </div>
       </div>
     </div>
