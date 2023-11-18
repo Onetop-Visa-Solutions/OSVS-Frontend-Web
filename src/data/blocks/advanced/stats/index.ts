@@ -4,7 +4,7 @@ export const stats = [
     prefix: '',
     suffix: ' YEARS',
     value: 10,
-    text: 'Adequate experience',
+    text: 'Of adequate experience',
   },
   {
     id: 1,
