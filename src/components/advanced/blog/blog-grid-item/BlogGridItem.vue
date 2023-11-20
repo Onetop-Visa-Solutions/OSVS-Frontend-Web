@@ -81,9 +81,11 @@ const props = withDefaults(defineProps<PostItemProps>(), {
       >
         <div>
           <RouterLink
-            to="/blog/post/"
-            class="is-flex is-align-items-center"
-          >
+          :to="{
+            name: 'blog-id',
+            params: { id: props.post.id },
+          }"
+        >
             <span class="mr-2">Read More</span>
             <i
               class="iconify"
