@@ -42,7 +42,6 @@
       <Container>
         <SectionTitle
           title="Discover the Advantages of Studying"
-          :name="country.name"
           subtitle="Why Choose Education in"
         />
 
@@ -58,6 +57,7 @@
         <SectionTitle
           title="Words from our clients"
           subtitle="Testimonial"
+          :name="country.alias"
         />
 
         <VideoBlockB
@@ -81,6 +81,8 @@
 import { countryTestimonials } from '../../../data/pages/country'
 import { getCountry } from '/@src/utils/api/country'
 import { type Country } from '/@src/types'
+import { socialLinks } from '/@src/data/blocks/advanced/social'
+
 const route = useRoute()
 const router = useRouter()
 const slug = route.params.slug as string

@@ -17,6 +17,7 @@ declare module 'vue' {
     BlogCategories: typeof import('./src/components/advanced/blog/blog-meta/BlogCategories.vue')['default']
     BlogGrid: typeof import('./src/components/advanced/blog/blog-grid/BlogGrid.vue')['default']
     BlogGridItem: typeof import('./src/components/advanced/blog/blog-grid-item/BlogGridItem.vue')['default']
+    BlogPost: typeof import('./src/components/advanced/blog/blog-post/BlogPost.vue')['default']
     BlogRecentPosts: typeof import('./src/components/advanced/blog/blog-meta/BlogRecentPosts.vue')['default']
     BlogRecentResources: typeof import('./src/components/advanced/blog/blog-meta/BlogRecentResources.vue')['default']
     BlogSearch: typeof import('./src/components/advanced/blog/blog-meta/BlogSearch.vue')['default']

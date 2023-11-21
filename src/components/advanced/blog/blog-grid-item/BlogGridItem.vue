@@ -4,7 +4,6 @@ import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandl
 export interface PostGridItemAuthor {
   photo: string
   name: string
-  role: string
 }
 
 export interface PostItem {
@@ -14,7 +13,6 @@ export interface PostItem {
   title: string
   abstract: string
   image: string
-  views: string
   content: string
   date: string
   duration: number
@@ -81,11 +79,11 @@ const props = withDefaults(defineProps<PostItemProps>(), {
       >
         <div>
           <RouterLink
-          :to="{
-            name: 'blog-id',
-            params: { id: props.post.id },
-          }"
-        >
+            :to="{
+              name: 'blog-id',
+              params: { id: props.post.id },
+            }"
+          >
             <span class="mr-2">Read More</span>
             <i
               class="iconify"
