@@ -248,12 +248,13 @@ const props = defineProps<SinglePostProps>()
       h2 {
         font-family: var(--font-alt);
         color: var(--blog-post-heading-color) !important;
-      }
+             }
 
       p {
         font-family: var(--font);
         font-size: 1.15rem;
         color: var(--blog-post-text-color) !important;
+        text-align: justify;
       }
     }
   }
