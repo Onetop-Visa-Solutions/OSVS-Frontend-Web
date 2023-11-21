@@ -1,9 +1,9 @@
-export const posts =  [
+export const posts = [
   {
     id: 0,
     image: '/assets/posts/post-1.jpg',
     title: 'Achieve Your Study Abroad Dreams Before Paying',
-    abstract: 'Work with our advisors to get accepted to your ideal university abroad. You’ll only pay our reasonable fees after receiving an offer of admission.',
+    abstract: 'Work with our advisors to get accepted to your ideal university abroad. You\'ll only pay our reasonable fees after receiving an offer of admission.',
     category: 'Study Abroad',
     date: 'March 31st, 2022',
     duration: 3,
@@ -11,7 +11,32 @@ export const posts =  [
       name: 'Onestop Visa Solutions',
       photo: '/assets/logo/logo.png'
     },
-    content: `<p>Studying abroad can be an amazing yet challenging experience. Finding the right university, submitting applications, and managing documentation can get overwhelming. That's why our study abroad advisors are here to help every step of the way - without any upfront costs.</p><p>First, we'll help you identify the best study abroad programs that match your interests and career goals. Next, we'll provide guidance on applications, write essays, collect documents, and submit outstanding applications on your behalf.</p><p>Throughout this process, you'll get regular updates so you can track your progress. And you pay absolutely nothing until you've secured an offer of admission from your dream international university.</p><p>Only once you've achieved your study abroad ambitions will our reasonable service fees be due. So don't let money concerns stop you from having the experience of a lifetime. Contact our advisors today to get started on your educational journey abroad!</p>`
+    content: `
+      <h1>Achieve Your Study Abroad Dreams Without Upfront Costs</h1>
+
+      <h2>Our Experienced Advisors Guide You Every Step of the Way</h2>
+
+      <p>Studying abroad opens doors to incredible opportunities and experiences. But the application process can be complex, from choosing the right program to compiling documents and nailing interviews.</p>
+
+      <p>That's why our team of study abroad experts is here to help. We provide end-to-end guidance so you can achieve your international education goals without hassle or upfront costs.</p>
+
+      <h3>Tailored University and Program Selection</h3>
+
+      <p>First, we get to know you and your interests. Then, we help identify study abroad programs that match your goals and aspirations, whether you dream of becoming fluent in Spanish in Madrid or earning your Master's at the London School of Economics.</p>
+
+      <p>With access to our extensive database and connections with universities worldwide, we ensure you apply to institutions where you have strong chances of admission.</p>
+
+      <h3>Expert Application Strategy and Submission</h3>
+
+      <p>Next, we provide specialized assistance with the application process. From proofreading admissions essays to compiling supporting documents, we handle all time-consuming details.</p>
+
+      <p>Our team stays by your side, tracking application status, coordinating with universities, and ultimately submitting outstanding completed applications on your behalf.</p>
+
+      <h3>Affordable, Success-Based Pricing</h3>
+
+      <p>You pay absolutely nothing out of pocket until you've secured admission from your target school abroad. Only then are our reasonable service fees due.</p>
+
+      <p>In other words, you only pay after achieving acceptance and realizing your study abroad ambitions. So don't let money concerns get in the way. Contact our advisors to get started on your journey today!</p>`
   },
 
   {
@@ -26,7 +51,50 @@ export const posts =  [
       name: 'Onestop Visa Solutions',
       photo: '/assets/logo/logo.png'
     },
-    content: `<p>Studying abroad is an enriching experience. But with countless programs and locations to choose from, how do you select the right one?</p><p>Here are some tips to help find a study abroad program that fits your needs:</p><ul><li>Consider your interests and career goals. Look for opportunities in your field of study or locale relevant to your aspirations.</li><li>Identify your priorities - traveling, academics, cultural immersion? Find a program catering to what matters most.</li><li>Research the university and destination city thoroughly to understand the vibe and lifestyle.</li><li>Compare program structure - courses, internships, activities. Pick an agenda matching your learning preferences.</li><li>Evaluate housing options - dorm, homestay, apartment? Choose the type of accommodation you'd be most comfortable with.</li><li>Factor in duration and semester timing. A summer, semester or year abroad may be best for you.</li></ul><p>Narrow down promising programs, then speak to advisers and past participants. This will provide insider perspectives and help finalize your selection.</p><p>With careful consideration of all the options, you can find a study abroad program that caters to your specific goals, interests and needs. The right fit will provide you with an enriching, unforgettable experience.</p>`
+    content: `
+      <h1>Choosing the Perfect Study Abroad Program for Your Needs</h1>
+
+      <h2>Set Your Priorities and Preference to Find the Ideal Fit</h2>
+
+      <p>Studying abroad lets you immerse in a new culture while progressing towards your academic and career ambitions. But with countless destinations and programs available, selecting the right one can be overwhelming.</p>
+
+      <p>By outlining your priorities upfront, you can effectively narrow down options to find the perfect study abroad program for you. Here's a step-by-step guide:</p>
+
+      <h3>Step 1: Define Your Core Interests and Goals</h3>
+
+      <p>Start by reflecting on what you aim to gain from this experience. Consider factors like:</p>
+
+      <ul>
+        <li>Academic area of interest (business, STEM, arts etc.) </li>
+        <li>Future career aspirations</li>
+        <li>Countries and cultures you want exposure to</li>
+        <li>Personal passions and hobbies to pursue abroad</li>
+      </ul>
+
+      <h3>Step 2: Determine Program Priorities and Preferences</h3>
+
+      <p>Next, outline preferences on program setup and structure by assessing:</p>
+
+      <ul>
+        <li>Duration - summer session, a quarter, semester or full year?</li>
+        <li>Timing - match with your current academic calendar</li>
+        <li>Course format - classes, internship, research etc.</li>
+        <li>Language of instruction if aiming to build fluency</li>
+        <li>Housing - dorm, homestay, or independent?</li>
+      </ul>
+
+      <h3>Step 3: Extensively Research Your Top Contenders</h3>
+
+      <p>Use your priorities as a filter to shortlist study abroad programs that may be a good fit. Then conduct in-depth research into each option by:</p>
+
+      <ul>
+        <li>Reviewing program site, brochures and alumni outcomes</li>
+        <li>Reaching out to school program advisors for guidance</li>
+        <li>Connecting with past participants for first-hand experiences</li>
+      </ul>
+
+      <p>Evaluate all parameters from academics to lifestyle and student experience. This background will help confirm the perfect program match for your goals and interests.</p>
+    `
   },
 
   {
@@ -41,31 +109,48 @@ export const posts =  [
       name: 'Onestop Visa Solutions',
       photo: '/assets/logo/logo.png'
     },
-    content: `<p>Planning to study in the US? The first step is understanding the visa application process. Here's an overview of the main US student visa types:</p>
+    content: `
+      <h1>Your Comprehensive Guide to US Student Visas</h1>
 
-    <h3>F-1 Student Visa</h3>
-    <p>- For full-time academic programs like bachelor's, master's degrees, etc.</p>
-    <p>- Extensive eligibility documentation required related to academics, finances, English proficiency.</p>
-    <p>- Multi-step visa interview process.</p>
+      <h2>Demystifying Eligibility, Applications, and Interviews for Each Type </h2>
 
-    <h3>J-1 Exchange Visitor Visa</h3>
-    <p>- For short-term exchange programs, like au pair, summer camps, research.</p>
-    <p>- Sponsor organization handles eligibility verification and paperwork.</p>
-    <p>- Single visa interview, relatively quick process.</p>
+      <p>Are you an international student planning to study in the US? The first step is understanding the visa application process, which can be confusing.</p>
 
-    <h3>M-1 Student Visa</h3>
-    <p>- For non-academic vocational programs like trade school, language classes.</p>
-    <p>- Requires acceptance letter from accredited vocational institution.</p>
-    <p>- Streamlined visa interview, obtained fairly easily.</p>
+      <p>This comprehensive guide breaks down all you need to know about the different US student visa programs available:</p>
 
-    <p>Each student visa type has specific purposes, requirements, and application processes. Consulting with an expert adviser can help you identify the right option and navigate each step seamlessly.</p>`
+      <h3>F-1 Student Visa</h3>
+
+      <ul>
+        <li><b>Purpose:</b> Full-time academic degree programs like bachelor's, master's etc.</li>
+        <li><b>Eligibility Proof:</b> Finances, English test scores, academic preparedness.</li>
+        <li><b>Process:</b> Multi-step, extensive documentation and visa interview.</li>
+      </ul>
+
+      <h3>J-1 Exchange Visitor Visa </h3>
+
+      <ul>
+        <li><b>Purpose:</b> Short cultural exchange programs like camps, au pair.</li>
+        <li><b>Eligibility:</b> Handled by sponsor organization.</li>
+        <li><b>Process:</b> Streamlined, single interview.</li>
+      </ul>
+
+      <h3>M-1 Student Visa</h3>
+
+      <ul>
+        <li><b>Purpose:</b> Vocational programs like language classes, trade school.</li>
+        <li><b>Eligibility:</b> Acceptance letter from accredited institution.</li>
+        <li><b>Process:</b> Fairly easy to obtain.</li>
+      </ul>
+
+      <p>Each US student visa has varying application processes and document requirements. Connecting with an expert advisor simplifies navigation so you can focus on your studies.</p>
+    `
   },
 
   {
     id: 3,
     image: '/assets/posts/post-4.jpg',
-    title: 'How We Helped Kalkidan Get a Study Permit to Study in Canada',
-    abstract: 'Read about Kalkidan\'s experience working with our advisors to successfully obtain her Canadian study permit and fulfill her dream of studying in Canada.',
+    title: 'How We Helped Kalkidan Obtain a Canadian Study Permit',
+    abstract: 'Read Kalkidan\'s experience working with our team to succesfully secure her Canadian study permit, enabling her dream of studying Engineering in Toronto.',
     category: 'Student Visa Success Stories',
     date: 'June 5th, 2022',
     duration: 6,
@@ -73,18 +158,35 @@ export const posts =  [
       name: 'Onestop Visa Solutions',
       photo: '/assets/logo/logo.png'
     },
-    content: `<p>Kalkidan was accepted to study Engineering at the University of Toronto. However, being an international student from Ethiopia, she needed to obtain a Canadian study permit first.</p>
+    content: `
+      <h1>Kalkidan's Story: Securing a Canadian Study Permit with Expert Guidance</h1>
 
-    <p>The application process seemed daunting. But then she contacted our advisors for guidance. Here's what we helped her with:</p>
+      <h2>Read How We Helped Her Overcome Visa Challenges to Fulfill Her Dream</h2>
 
-    <ul>
-      <li>Reviewed her acceptance letter and other documents for visa eligibility.</li>
-      <li>Completed all paperwork and forms required by the Canadian government.</li>
-      <li>Prepared a strong application file to submit to the visa office.</li>
-      <li>Coached her on what documents to carry and how to ace the visa interview.</li>
-    </ul>
+      <p>When Kalkidan was accepted into a prestigious Engineering program at the University of Toronto, she was thrilled at the opportunity. However, being an international student from Ethiopia, she needed to navigate the complex Canadian study permit application process first.</p>
 
-    <p>Within 7 weeks, Kalkidan's Canadian study permit was approved! She was thrilled to achieve her dream of studying in Canada with support from our advisors. Her visa success story is an inspiration to other students hoping to study abroad.</p>`
+      <p>Unsure where to begin compiling her visa documentation, Kalkidan reached out to our team. Read about the dedicated guidance we provided:</p>
+
+      <h3>Step 1: Assessing Overall Visa Readiness</h3>
+
+      <p>First, our advisors thoroughly reviewed Kalkidan's acceptance letter, grades, English test scores and financial docs to confirm her eligibility.</p>
+
+      <p>We also assessed factors like her background, responses for visa interviews and created a personalized checklist of requirements.</p>
+
+      <h3>Step 2: Strategizing Her Visa Application</h3>
+
+      <p>Next, we handled all paperwork like visa forms, written explanation letters and evidence files to build Kalkidan's case.</p>
+
+      <p>These documents clearly validated why she met qualifications to study her chosen program in Canada's top engineering school.</p>
+
+      <h3>Step 3: Preparing Her Interview Responses</h3>
+
+      <p>Finally, we conducted mock visa interview sessions so Kalkidan could practice articulating her plans convincingly.</p>
+
+      <p>We covered likely questions about her program choice, future goals, and finances to ensure strong, assurance responses.</p>
+
+      <p>Within 7 weeks, Kalkidan's Canadian study permit got approved! She credited our dedicated guidance and looks forward to beginning her studies soon.</p>
+    `
   },
 
   {
@@ -100,31 +202,41 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Planning to study in the UK? Here is a step-by-step guide to obtaining your UK student visa:</p>
+      <h1>Your Step-by-Step Guide to Getting a UK Student Visa</h1>
 
-      <h3>Eligibility Criteria</h3>
+      <h2>Follow These Tried-and-True Strategies For Stress-Free Approval</h2>
 
-      <p>- Confirm acceptance at a UK university.</p>
-      <p>- Show sufficient funds to cover tuition and living costs.</p>
-      <p>- Meet English language proficiency requirements.</p>
+      <p>Have your sights set on studying in the UK? As an international student, you'll need to obtain a valid UK student visa first. Here is a failproof step-by-step guide:</p>
 
-      <h3>Documents Required</h3>
+      <h3>Ensure You Meet All Eligibility Requirements</h3>
 
-      <p>- Offer letter from university.</p>
-      <p>- Proof of funds - bank statements, scholarships.</p>
-      <p>- English test scores - IELTS, TOEFL, etc.</p>
+      <p>Getting a head start on eligibility gives your application the best head start. You'll need to have:</p>
 
-      <h3>Visa Application Process</h3>
+      <ul>
+        <li>An unconditional offer letter from your UK university </li>
+        <li>Sufficient financial documents proving your ability to cover tuition + living expenses</li>
+        <li>Valid English language proficiency scores (IELTS/TOEFL)</li>
+      </ul>
 
-      <p>- Complete online visa application form.</p>
-      <p>- Schedule your biometrics appointment.</p>
-      <p>- Attend visa interview at consulate.</p>
+      <h3>Compile All Required Supporting Documents</h3>
 
-      <h3>Tips for Visa Interview</h3>
+      <p>In addition to your eligibility papers, your visa application must include:</p>
 
-      <p>- Practice responses to common questions.</p>
-      <p>- Bring all required documents.</p>
-      <p>- Be confident in proving your eligibility.</p>
+      <ul>
+        <li>Educational background transcripts</li>
+        <li>Passport biodata page photocopy</li>
+        <li>Written statement of purpose for studying in the UK</li>
+      </ul>
+
+      <h3>Complete Your Online Visa Application</h3>
+
+      <p>Register on the UK Visas portal to fill out your application form accurately. Triple check all information entered!</p>
+
+      <h3>Prepare for the Visa Interview at the Consulate</h3>
+
+      <p>Attend your biometrics appointment then gear up for the visa interview questions. We cover exact strategies for assurance and success!</p>
+
+      <p>Following these key steps with diligence sets you up for a smooth visa approval experience. Contact our experts for personalized assistance!</p>
     `
   },
 
@@ -141,33 +253,36 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Preparing for your F-1 student visa interview? Use these tips to make a strong impression and get your visa approved:</p>
+      <h1>Expert Tips to Ace Your F-1 Visa Interview</h1>
 
-      <h4>Dos:</h4>
+      <h2>How to Confidently Prove Your Eligibility During Scrutiny</h2>
 
-      <ul>
-        <li>Research the school and course to answer questions confidently</li>
-        <li>Practice responses to common interview questions</li>
-        <li>Bring all required documentation to the interview</li>
-      </ul>
+      <p>The F-1 student visa interview at your local US consulate can be daunting. Equip yourself to make a stellar impression so you can get hassle-free approval.</p>
 
-      <h4>Don'ts:</h4>
+      <h3>Do's: Best Practices for Success</h3>
 
       <ul>
-        <li>Don't provide short or vague answers</li>
-        <li>Don't show gaps in your knowledge about the program</li>
-        <li>Don't appear unsure about your plans and eligibility</li>
+        <li>Research your program and responses to common questions</li>
+        <li>Prepare a convincing narrative about your goals</li>
+        <li>Collect all documents and keep them handy</li>
+        <li>Project confidence through body language and answers</li>
       </ul>
 
-      <p>Preparation is key to nailing your F-1 visa interview. With the right strategies, you can showcase your eligibility and gain approval.</p>
+      <h3>Don'ts: Blunders That Will Cost You</h3>
+
+      <ul>
+        <li>Don't provide rote, generic answers without context</li>
+        <li>Don't get flustered by intense lines of questioning</li>
+        <li>Don't make unsupported statements or lie</li>
+      </ul>
+
+      <p>With thorough preparation, you can anticipate the F-1 visa interview experience and shine. Contact our experts for the exact tactics to get approved hassle-free!</p>
     `
-  },
-
-  {
+  }, {
     id: 6,
     image: '/assets/posts/post-7.jpg',
-    title: 'Managing Finances as an International Student',
-    abstract: 'Tips on budgeting, finding scholarships, working on campus, and making the most of your money while studying abroad as an international student.',
+    title: 'Financial Planning Strategies for International Students',
+    abstract: 'Expert tips on budgeting, finding scholarships, working, and money management to financially prepare for studying abroad.',
     category: 'Student Tips',
     date: 'September 1st, 2022',
     duration: 7,
@@ -176,26 +291,47 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Studying abroad can be expensive. Here are some tips for international students to better manage finances:</p>
+      <h1>Financial Planning Guide for International Students</h1>
+
+      <h2>Budgeting, Saving & Earning Strategies to Afford Studying Abroad</h2>
+
+      <p>Studying overseas is an exciting opportunity, but can be financial burden without diligent money management. Use this financial planning playbook to afford thriving as an international student.</p>
+
+      <h3>Step 1: Create a Comprehensive Budget</h3>
+
+      <p>Forecast your income and expected costs in your study destination for housing, tuition, food, textbooks, travel and personal expenses. This gives you a realistic picture of what you need to fund your abroad education.</p>
+
+      <h3>Step 2: Explore Funding and Savings Options</h3>
+
+      <p>Consider all resources that can contribute towards costs like:</p>
 
       <ul>
-        <li>Create a budget tracking income and expenses.</li>
-        <li>Apply for scholarships - many options exist for international students.</li>
-        <li>Consider getting a part-time on-campus job.</li>
-        <li>Open a bank account in your study country to avoid fees.</li>
-        <li>Cook meals at home rather than eating out.</li>
-        <li>Find discounts on textbooks, transportation and other costs.</li>
+        <li>Savings from summer jobs or gaps years</li>
+        <li>Scholarships and financial aid opportunities</li>
+        <li>Student loans with favorable terms</li>
+        <li>Family contributions if possible</li>
       </ul>
 
-      <p>Finding ways to supplement your income and reduce costs will help make the most of your money abroad as an international student.</p>
+      <h3>Step 3: Manage Spending Habits Abroad</h3>
+
+      <p>Once on campus, be frugal with non-essentials. Easy lifestyle cutbacks include:</p>
+
+      <ul>
+        <li>Buy used textbooks or share with peers</li>
+        <li>Cook meals rather than eating out</li>
+        <li>Use student discounts and public transport</li>
+        <li>Find free activities - films, concerts, events</li>
+      </ul>
+
+      <p>Follow these financial planning basics for international students to study stress-free abroad!</p>
     `
   },
 
   {
     id: 7,
     image: '/assets/posts/post-8.jpg',
-    title: 'Top 10 Countries for Studying Abroad',
-    abstract: 'Ranking the most popular destinations for international students based on quality education, affordability, culture, etc.',
+    title: 'Top 10 Dream Destinations to Study Abroad',
+    abstract: 'Our guide to the best countries worldwide for international students - ranking study destinations on academics, affordability, quality of living and global immersion.',
     category: 'Study Abroad',
     date: 'October 12th, 2022',
     duration: 8,
@@ -204,30 +340,51 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Here is our ranking of the top 10 countries for international students to study abroad:</p>
+      <h1>The 10 Best Countries to Study Abroad Worldwide</h1>
 
-      <ol>
-        <li>United States - World-class universities, diverse culture.</li>
-        <li>United Kingdom - Prestigious educational institutions, English speaking.</li>
-        <li>Canada - Affordable tuition, easy post-study work options.</li>
-        <li>Australia - Leading tech and research schools, outdoor lifestyle.</li>
-        <li>Germany - Low or no tuition fees, strong engineering programs.</li>
-        <li>France - Rich culture, shorter degree programs.</li>
-        <li>Singapore - Global business hub, high quality of life.</li>
-        <li>Hong Kong - Cosmopolitan city, wide range of programs.</li>
-        <li>Spain - Vibrant culture, affordable living costs.</li>
-        <li>Japan - Innovative technologies, unique cultural experience.</li>
-      </ol>
+      <h2>Our Definitive Ranking Based on Key Student Priorities</h2>
 
-      <p>Choosing from this list of top study abroad countries can provide international students with an enriching educational experience.</p>
+      <p>Deciding where to study abroad is exciting yet challenging with so many options worldwide. Discover the 10 best destinations for international students ranked on core priorities:</p>
+
+      <h3>#1 United States</h3>
+      <p>Home to Ivy League universities, vibrant diversity and abundant scholarships for internationals.</p>
+
+      <h3>#2 United Kingdom </h3>
+      <p>With outstanding academics and major multicultural hubs like London.</p>
+
+      <h3>#3 Canada</h3>
+      <p>For world-class education paired with easy post-study work and immigration.</p>
+
+      <h3>#4 Australia</h3>
+      <p>Offering a laidback lifestyle alongside top tech and research institutes.</p>
+
+      <h3>#5 Germany </h3>
+      <p>Where overseas students enjoy little to no tuition fees.</p>
+
+      <h3>#6 France</h3>
+      <p>To immerse in rich culture and language at discounted European rates.</p>
+
+      <h3>#7 Singapore</h3>
+      <p>An ideal base as a global business launch-pad with high living standards.</p>
+
+      <h3>#8 Hong Kong</h3>
+      <p>Blending bustling cosmopolitan vibes with flexible degree options.</p>
+
+      <h3>#9 Spain </h3>
+      <p>Where vibrant culture thrives amidst affordable lifestyle and scenic beauty.</p>
+
+      <h3>#10 Japan </h3>
+      <p>Offering unique cultural immersion alongside sci-tech innovations.</p>
+
+      <p>This definitive list offers top contenders to launch your global education journey!</p>
     `
   },
 
   {
     id: 8,
     image: '/assets/posts/post-9.jpg',
-    title: 'Tips for Handling Student Visa Delays and Denials',
-    abstract: 'Guidance on steps to take if your student visa application faces delays or denial.',
+    title: 'Responding to Student Visa Delays and Denials',
+    abstract: 'An expert playbook on troubleshooting strategies when your study abroad visa application faces processing delays or outright rejection.',
     category: 'Student Visas',
     date: 'November 22nd, 2022',
     duration: 9,
@@ -236,36 +393,51 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Student visa applications sometimes face delays and denials. Here are tips on steps to take if this happens to you:</p>
+      <h1>Playbook for Handling Student Visa Setbacks</h1>
 
-      <h3>Visa Delays</h3>
+      <h2>Step-By-Step Game Plan to Resolve Delays and Overturn Denials</h2>
 
-      <ul>
-        <li>Contact the embassy/consulate to check status</li>
-        <li>Get updated enrollment/financial documents if requested</li>
-        <li>Follow up politely via phone, email to show interest</li>
-        <li>Extend course/accommodation start dates if possible</li>
-        <li>Be patient and keep waiting, delays are common</li>
-      </ul>
+      <p>Despite meticulous applications, study permits sometimes face delays and denials. Arm yourself to swiftly overcome these common setbacks:</p>
 
-      <h3>Visa Denials</h3>
+      <h3>Root Cause Analysis for Delays</h3>
+
+      <p>If your visa approval is on hold, typical reasons include:</p>
 
       <ul>
-        <li>Request detailed reasons for the denial</li>
-        <li>Review documents to identify any gaps</li>
-        <li>Consult with your university's international office</li>
-        <li>Reapply addressing the reasons your visa was denied</li>
+        <li>Missing or incorrect documents</li>
+        <li>Background verification checks</li>
+        <li>Heavy application volumes slowing processing</li>
       </ul>
 
-      <p>Stay positive, determined and proactive if your student visa application faces any setbacks. With persistence, you can get the delay resolved or denial overturned.</p>
+      <h3>Strategic Response Protocol</h3>
+
+      <p>Follow this action sequence to get delays back on track:</p>
+
+      <ol>
+        <li>Email consulate requesting expected processing timeline</li>
+        <li>Provide any additional docs needed to strengthen case</li>
+        <li>Secure admission/accommodation deadline extensions</li>
+        <li>Follow-up tactfully via phone, email to spur faster resolution</li>
+      </ol>
+
+      <h3>Learning From Rejection</h3>
+
+      <p>For outright rejections, digestion is key. Ensure you receive:</p>
+
+      <ul>
+        <li>The detailed RFE (Request for Evidence) outlining all reasons for denial </li>
+        <li>Recommended remedial steps to address vulnerabilities for reapplication</li>
+      </ul>
+
+      <p>Implementing the right protocols in the face of delays and rejection is vital for getting your study dreams back on track!</p>
     `
   },
 
   {
     id: 9,
     image: '/assets/posts/post-10.jpg',
-    title: 'Applying for Student Accommodation from Overseas',
-    abstract: 'Step-by-step advice on how to search for and secure student housing before arriving to study internationally.',
+    title: 'Guide to Finding Housing Before Studying Abroad',
+    abstract: 'Step-by-step playbook on strategies to successfully search and secure accommodation remotely before arriving at your overseas university.',
     category: 'Student Tips',
     date: 'December 2nd, 2022',
     duration: 10,
@@ -274,26 +446,41 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Searching for housing before studying abroad? Here is a guide to applying for student accommodation from overseas:</p>
+      <h1> Master Class: Finding Student Housing Overseas Before Arrival</h1>
 
-      <ol>
-        <li>Research your options - university dorms, private rentals, homestays.</li>
-        <li>Check student housing websites and university portals.</li>
-        <li>Contact landlords or providers to ask questions.</li>
-        <li>Submit applications/deposits for your preferred housing.</li>
-        <li>Complete paperwork and contracts digitally.</li>
-        <li>Arrange for a proxy (like a school coordinator) to view in person.</li>
-      </ol>
+      <p>Finding suitable student accommodation is vital for adjustment abroad. Here is an exhaustive guide to evaluating options and applying from overseas:</p>
 
-      <p>Securing student accommodation in advance ensures you have a place to stay upon arrival. With planning, you can handle it smoothly from overseas.</p>
+      <h3>Comparison Research Your Choices</h3>
+
+      <p>Weigh pros and cons of:</p>
+
+      <ul>
+        <li><b>University dorms: </b>Ease of logistics but less control over environment.</li>
+        <li><b>Private rentals:</b> More independence but requires local navigation.  </li>
+        <li><b>Homestays: </b>Total cultural immersion with built-in support.</li>
+      </ul>
+
+      <h3> Virtual Tools for Your Search </h3>
+
+      <p>Scan housing websites, online groups and university portals showcasing verified listings with photos, reviews and direct contacts. Virtual platforms enable fully remote searching.</p>
+
+      <h3> Ask Detailed Questions Before Committing</h3>
+
+      <p>Seeking clarity directly from landlords or providers via email or virtual calls is key for finding your perfect match. Probe on all factors vital for your comfort!</p>
+
+      <h3>Secure Housing with Digital Paperwork </h3>
+
+      <p>Submit applications, contracts and deposits through online mediums. If viable, appoint uni housing staff as proxies for in-person visits to finalize.</p>
+
+      <p>Through these best practices, students can successfully arrange overseas accommodations entirely remotely pre-arrival!</p>
     `
   },
 
   {
     id: 10,
     image: '/assets/posts/post-11.jpg',
-    title: 'Handling Culture Shock as a Study Abroad Student',
-    abstract: 'Coping strategies and self-care tips to adjust to life in a new country as an international student living abroad.',
+    title: 'Coping Strategies for Culture Shock Abroad',
+    abstract: 'Actionable self-care tips for international students to push past culture shock, homesickness and other transitional struggles.',
     category: 'Student Tips',
     date: 'January 11th, 2023',
     duration: 11,
@@ -302,25 +489,35 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>Moving overseas for school can lead to culture shock. Here are some tips for adjusting:</p>
+      <h1>An International Student's Guide to Coping With Culture Shock</h1>
 
-      <ul>
-        <li>Immerse yourself in the local culture and make new friends.</li>
-        <li>Join clubs and find activities aligned with your interests.</li>
-        <li>Try new foods and experiences with an open mind.</li>
-        <li>Accept that culture shock is normal and will take time to overcome.</li>
-        <li>Communicate with loved ones back home to ease homesickness.</li>
-        <li>Take care of your mental and physical health.</li>
-      </ul>
+      <h2>Practical Self-Care Strategies to Adapt to Life Abroad</h2>
 
-      <p>Don't worry - culture shock will pass. Embracing the local culture and taking care of yourself will help you thrive in your new home abroad!</p>
+      <p>Culture shock can tremendously impact the mental health of students abroad handling transitional stress on top of intensive academics.</p>
+
+      <p>Use these actionable coping mechanisms not just to survive but actively thrive while pushing past common hurdles overseas:</p>
+
+      <h3> Fully Immerse in Local Student Experiences</h3>
+
+      <p>Embrace campus culture by joining clubs, befriending peers and attending events tailored for international newcomers. Feel the spirit!</p>
+
+      <h3> Discover Meaningful Hobbies Aligning Personal Passions </h3>
+
+      <p>Counter homesickness by invest time pursuing existing interests or learning new skills via fun classes to ground yourself.</p>
+
+      <h3>Bond With Those Back Home</h3>
+
+      <p>Proactively calling family and long-distance friends relieves isolation. Share your overseas adventures and challenges to feel validated.</p>
+
+      <p>By wholeheartedly embracing your new environment abroad fueled with self-care, students can truly flourish overseas!</p>
     `
   },
+
   {
     id: 11,
     image: '/assets/posts/post-12.jpg',
-    title: 'Maintaining Student Visa Status While Studying Abroad',
-    abstract: 'Tips for international students to follow student visa rules and keep legal status while studying in a foreign country.',
+    title: 'Avoid Losing Student Visa Status Through Vigilance',
+    abstract: 'An international student\'s guide to strictly follow overseas study permit rules – from maintaining enrollment to proper paperwork upkeep.',
     category: 'Student Visas',
     date: 'February 15th, 2023',
     duration: 12,
@@ -329,20 +526,29 @@ export const posts =  [
       photo: '/assets/logo/logo.png'
     },
     content: `
-      <p>As an international student, you must abide by your visa's terms to maintain legal student status abroad. Here are some tips:</p>
+      <h1>Foolproof Guide to Maintain Legal Student Status Abroad </h1>
 
-      <ul>
-        <li>Attend classes and meet course requirements to progress academically</li>
-        <li>Update school and visa officials about changes to your details</li>
-        <li>Follow visa rules on permitted working hours and activities</li>
-        <li>Keep your passport, I-20, and other visa documents valid</li>
-        <li>Respect the laws of the country you are studying in</li>
-      </ul>
+      <h2>Diligently Follow Every Visa Regulation to Avoid Severe Consequences</h2>
 
-      <p>Violating student visa conditions can lead to serious consequences like visa cancellation or deportation. Stay vigilant and comply with all requirements to safely keep your legal student status.</p>
+      <p>As an international student, you must vigilantly adhere to the precise terms of your overseas study permit. Falling out of status leads to cancellation or even deportation.</p>
+
+      <p>Safeguard your legal student standing through strict compliance:</p>
+
+      <h3>Actively Progress Towards Your Degree</h3>
+
+      <p>Attending classes and passing assessments to make satisfactory academic progress is fundamental. Report extended leaves or part-time loads which require approval.</p>
+
+      <h3>Promptly Update Your School & Government With Changes</h3>
+
+      <p>Inform officials if you change visa details, address, program switches or campus transfers to keep all paperwork current.</p>
+
+      <h3>Follow All Visa Guidelines for Working and Activities</h3>
+
+      <p>Carefully abide by rules regarding internships, campus jobs and voluntary gigs which differ across permits. Log hours and duties!</p>
+
+      <p>Remaining vigilant gives students peace of mind to focus on thriving abroad, not just surviving!</p>
     `
   }
-
 ];
 
 export const demoPosts1 = [
