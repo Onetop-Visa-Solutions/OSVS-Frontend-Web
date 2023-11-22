@@ -17,7 +17,7 @@ export interface PostItem {
   related?: PostItem[]
 }
 export interface SinglePostProps {
-  post: PostItem
+  post?: PostItem
   centered?: boolean
 }
 const props = defineProps<SinglePostProps>()
