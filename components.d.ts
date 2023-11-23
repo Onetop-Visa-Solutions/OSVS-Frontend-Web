@@ -31,6 +31,7 @@ declare module 'vue' {
     Collapse: typeof import('./src/components/base/collapse/Collapse.vue')['default']
     CollectionTitle: typeof import('./src/components/base/title/CollectionTitle.vue')['default']
     ContactForm: typeof import('./src/components/advanced/contact/contact-form/ContactForm.vue')['default']
+    ContactInfo: typeof import('./src/components/advanced/contact/contact-info/ContactInfo.vue')['default']
     Container: typeof import('./src/components/layout/container/Container.vue')['default']
     Control: typeof import('./src/components/base/form/control/Control.vue')['default']
     Counter: typeof import('./src/components/base/counter/Counter.vue')['default']

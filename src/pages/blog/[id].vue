@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { getPost } from '/@src/utils/api/blog'
+import { socialLinks } from '/@src/data/blocks/advanced/social'
 
 const route = useRoute()
 const router = useRouter()
@@ -49,6 +50,15 @@ watch(() => route.fullPath, fetchPost)
     <BlogPost
       :post="post"
       :centered="true"
+    />
+    <Footer
+      v-background="{
+        src: '/assets/shapes/lowpoly-pattern-blue.jpg',
+        placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
+      }"
+      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      color="light"
+      :social-links="socialLinks"
     />
   </div>
 </template>

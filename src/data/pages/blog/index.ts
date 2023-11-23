@@ -9,7 +9,7 @@ export const posts = [
     duration: 3,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Achieve Your Study Abroad Dreams Without Upfront Costs</h1>
@@ -49,7 +49,7 @@ export const posts = [
     duration: 4,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Choosing the Perfect Study Abroad Program for Your Needs</h1>
@@ -107,7 +107,7 @@ export const posts = [
     duration: 5,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Your Comprehensive Guide to US Student Visas</h1>
@@ -156,7 +156,7 @@ export const posts = [
     duration: 6,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Kalkidan's Story: Securing a Canadian Study Permit with Expert Guidance</h1>
@@ -199,7 +199,7 @@ export const posts = [
     duration: 5,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Your Step-by-Step Guide to Getting a UK Student Visa</h1>
@@ -250,7 +250,7 @@ export const posts = [
     duration: 6,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Expert Tips to Ace Your F-1 Visa Interview</h1>
@@ -288,7 +288,7 @@ export const posts = [
     duration: 7,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Financial Planning Guide for International Students</h1>
@@ -337,7 +337,7 @@ export const posts = [
     duration: 8,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>The 10 Best Countries to Study Abroad Worldwide</h1>
@@ -390,7 +390,7 @@ export const posts = [
     duration: 9,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Playbook for Handling Student Visa Setbacks</h1>
@@ -443,7 +443,7 @@ export const posts = [
     duration: 10,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1> Master Class: Finding Student Housing Overseas Before Arrival</h1>
@@ -486,7 +486,7 @@ export const posts = [
     duration: 11,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>An International Student's Guide to Coping With Culture Shock</h1>
@@ -523,7 +523,7 @@ export const posts = [
     duration: 12,
     author: {
       name: 'Onestop Visa Solutions',
-      photo: '/assets/logo/logo.png'
+      photo: '/assets/logo/logo.svg'
     },
     content: `
       <h1>Foolproof Guide to Maintain Legal Student Status Abroad </h1>

@@ -58,11 +58,12 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
             <Button
               color="primary"
               :long="3"
+              to="/blog"
               raised
               bold
               rounded
             >
-              Load More
+              Show More
             </Button>
           </div>
         </div>

@@ -5,6 +5,7 @@
 
   <script setup lang="ts">
   import { socialLinks } from '/@src/data/blocks/advanced/social'  </script>
+  import { contactInfo } from '/@src/data/pages/contact'
 
 <template>
   <div>
@@ -16,45 +17,12 @@
       :zoom="16"
     />
 
-    <!-- <Section color="grey">
+    <Section color="grey">
       <Container>
         <ContactInfo :infos="contactInfo" />
-
-        <ValuesSection
-          :values="plantValues"
-          image-height="120px"
-        />
       </Container>
     </Section>
 
-    <Section
-      color="grey"
-      wave="wave-1"
-      shape-color="white"
-    >
-      <Container>
-        <SectionTitle
-          title="Read our FAQs"
-          subtitle="Have a Question?"
-        />
-
-        <FaqListBoxed :items="genericFaq" />
-
-        <CtaBlockB
-          title-primary="Start Now!"
-          content-primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-          cta-primary="Free Trial"
-          cta-primary-link="/"
-          title-secondary="More info?"
-          content-secondary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est tam dissimile?"
-          cta-secondary="Contact Us"
-          cta-secondary-link="/"
-          boxed
-          shapes
-          animated
-        />
-      </Container>
-    </Section> -->
 
     <Footer
       v-background="{
