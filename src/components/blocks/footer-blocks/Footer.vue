@@ -49,7 +49,7 @@ const footerClasses = computed(() => [
                     tag="h3"
                     :size="6"
                     weight="thin"
-                    :inverted="props.color === 'dark'"
+                    :inverted="props.color === 'light'"
                   >
                     <span>Discover
 
@@ -91,7 +91,7 @@ const footerClasses = computed(() => [
                     tag="h3"
                     :size="6"
                     weight="thin"
-                    :inverted="props.color === 'dark'"
+                    :inverted="props.color === 'light'"
                   >
                     <span>Company</span>
                   </Title>
@@ -131,7 +131,7 @@ const footerClasses = computed(() => [
                     tag="h3"
                     :size="6"
                     weight="thin"
-                    :inverted="props.color === 'dark'"
+                    :inverted="props.color === 'light'"
                   >
                     <span>Support</span>
                   </Title>
@@ -325,6 +325,7 @@ const footerClasses = computed(() => [
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (max-width: 767px) {
   .footer {
     :deep(.level-item) {
@@ -338,6 +339,7 @@ const footerClasses = computed(() => [
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .footer {
     :deep(.level-item) {

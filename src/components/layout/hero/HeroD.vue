@@ -36,6 +36,7 @@ const countriesList = country.allCountries
             </div>
 
 
+            <!-- Destinations List -->
             <div
               v-for="item in countriesList"
               :key="item.slug"
