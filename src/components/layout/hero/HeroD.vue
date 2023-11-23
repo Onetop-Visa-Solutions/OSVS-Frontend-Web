@@ -61,7 +61,14 @@ const countriesList = country.allCountries
                       {{ item.name }}
                     </Title>
                     <div class="go-icon">
-                      <i-ion-arrow-forward-outline />
+                      <RouterLink
+                        :to="{
+                          name: 'education-destinations-slug',
+                          params: { slug: item.slug },
+                        }"
+                      >
+                        <i-ion-arrow-forward-outline />
+                      </RouterLink>
                     </div>
                   </div>
                 </div>
