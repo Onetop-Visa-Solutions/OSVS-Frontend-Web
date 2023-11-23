@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { customerLogos } from '/@src/data/pages/logos'
-import { nftAvatars } from '/@src/data/pages/nft'
+import { serviceAvatars } from '/@src/data/pages/home/services'
 </script>
 
 <template>
@@ -107,7 +107,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
                   </Title>
                   <AvatarGroup
                     size="medium"
-                    :avatars="nftAvatars"
+                    :avatars="serviceAvatars"
                     :limit="5"
                     compact
                     counter
