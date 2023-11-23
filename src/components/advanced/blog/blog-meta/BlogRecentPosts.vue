@@ -28,7 +28,10 @@ const props = withDefaults(defineProps<RecentPostsProps>(), {
       <RouterLink
         v-for="(post, index) in props.posts.slice(0, props.limit)"
         :key="index"
-        to="/blog/post/"
+        :to="{
+          name: 'blog-id',
+          params: { id: post.id },
+        }"
         class="blog-recent-post"
       >
         <div class="post-image">

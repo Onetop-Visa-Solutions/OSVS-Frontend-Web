@@ -1,7 +1,7 @@
 export const posts = [
   {
     id: 0,
-    image: '/assets/posts/post-1.jpg',
+    image: '/assets/pages/blog/post-1.jpg',
     title: 'Achieve Your Study Abroad Dreams Before Paying',
     abstract: 'Work with our advisors to get accepted to your ideal university abroad. You\'ll only pay our reasonable fees after receiving an offer of admission.',
     category: 'Study Abroad',
@@ -41,7 +41,7 @@ export const posts = [
 
   {
     id: 1,
-    image: '/assets/posts/post-2.jpg',
+    image: '/assets/pages/blog/us-student-visa.jpg',
     title: 'How to Choose the Right Study Abroad Program for You',
     abstract: 'With so many options, selecting the ideal study abroad program can be daunting. Follow these tips to find the perfect fit for your goals and interests.',
     category: 'Study Abroad',
@@ -99,7 +99,7 @@ export const posts = [
 
   {
     id: 2,
-    image: '/assets/posts/post-3.jpg',
+    image: '/assets/pages/blog/us-student-visa.jpg',
     title: 'A Guide to US Student Visas: Everything You Need to Know',
     abstract: 'Navigating the various types of US student visas can be confusing. This guide covers eligibility requirements, application processes, and tips for each one.',
     category: 'Student Visas',
