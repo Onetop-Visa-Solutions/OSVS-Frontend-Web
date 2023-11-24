@@ -21,8 +21,8 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
 
         <StackedSection
           :features="destinationInfo"
-          image="/assets/services/ideal-destination/ideal-destination-6.svg"
-          dark-image="/assets/services/ideal-destination/ideal-destination-8.svg"
+          image="/assets/services/ideal-destination/ideal-destination-9.svg"
+          dark-image="/assets/services/ideal-destination/ideal-destination-9.svg"
           rounded
         />
       </Container>
