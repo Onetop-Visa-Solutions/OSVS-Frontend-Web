@@ -23,7 +23,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
         <!-- Why choose us section -->
         <StackedSection
           :features="ourDifference"
-          image="/assets/illustrations/features/ensuring.svg"
+          image="/assets/services/exceptional-service/exceptional-service-6.svg"
           dark-image="/assets/illustrations/features/ensuring-dark.svg"
           rounded
         />

@@ -132,6 +132,7 @@ const shapeClasses = computed(() => [props.inverted && 'opacity-10'])
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .stacked-section {
     .color-box {
