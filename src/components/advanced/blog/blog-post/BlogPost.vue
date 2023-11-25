@@ -107,33 +107,45 @@ const props = defineProps<SinglePostProps>()
         />
       </div>
       <div class="sharing-options">
-        <a>
+        <a
+          href="https://www.facebook.com/onestoptravelagent1/"
+          target="_blank"
+        >
           <i
             class="iconify"
             data-icon="fa-brands:facebook-f"
           />
           <span class="is-sr-only">Facebook</span>
         </a>
-        <a>
+        <a
+          href="https://www.youtube.com/channel/UC_owccQqevMSIczDPKAUkPA"
+          target="_blank"
+        >
           <i
             class="iconify"
-            data-icon="fa-brands:twitter"
+            data-icon="fa-youtube"
           />
-          <span class="is-sr-only">Twitter</span>
+          <span class="is-sr-only">Youtube</span>
         </a>
-        <a>
+        <a
+          href="https://www.tiktok.com/@onestoptravel?lang=en"
+          target="_blank"
+        >
           <i
             class="iconify"
-            data-icon="fa-brands:linkedin-in"
+            data-icon="mingcute:tiktok-fill"
           />
-          <span class="is-sr-only">Linkedin</span>
+          <span class="is-sr-only">Tiktok</span>
         </a>
-        <a>
+        <a
+          href="https://t.me/oneStopVisaSolutions"
+          target="_blank"
+        >
           <i
             class="iconify"
-            data-icon="fa-solid:envelope"
+            data-icon="fa:telegram"
           />
-          <span class="is-sr-only">Email</span>
+          <span class="is-sr-only">Telegram</span>
         </a>
       </div>
     </div>
