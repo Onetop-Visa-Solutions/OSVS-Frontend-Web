@@ -43,7 +43,10 @@ const props = withDefaults(defineProps<PricingTabbedProps>(), {
   TestServices: () => [],
   coreServices: () => [],
 })
+import { useCountryStore } from '/@src/stores/country'
+const country = useCountryStore()
 
+const countriesList = country.allCountries
 const activeTab = ref(0)
 </script>
 
@@ -191,8 +194,8 @@ const activeTab = ref(0)
                   </div>
                 </div>
 
-                <div class="hero-box-grid">
-                  <CountryCard content="USA" />
+                <div >
+                  <CountryCard :country="countriesList" />
                 </div>
               </div>
             </div>

@@ -352,4 +352,3 @@ const countriesList = country.allCountries
   }
 }
 </style>
-s
