@@ -19,7 +19,7 @@ export interface PostItem {
   content: string
   date: string
   duration: number
-  related?: PostItem[]
+  related?: number[]
 }
 
 const id = route.params.id as string

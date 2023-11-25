@@ -14,7 +14,7 @@ export interface PostItem {
   content: string
   date: string
   duration: number
-  related?: PostItem[]
+  related?: number[]
 }
 export interface SinglePostProps {
   post?: PostItem
@@ -149,7 +149,7 @@ const props = defineProps<SinglePostProps>()
         </a>
       </div>
     </div>
-    <Title
+    <!-- <Title
       tag="h2"
       :size="3"
       weight="bold"
@@ -158,7 +158,7 @@ const props = defineProps<SinglePostProps>()
       Related Posts
     </Title>
     <BlogGrid :posts="props.post.related" />
-    <div class="py-12" />
+    <div class="py-12" /> -->
   </div>
 </template>
 

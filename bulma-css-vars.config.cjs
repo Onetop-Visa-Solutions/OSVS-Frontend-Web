@@ -5,7 +5,7 @@ const appColors = {
   black: hsl(0, 0, 4),
   primary: hsl(191, 100, 88),
   dark: hsl(191, 94, 34),
-  link: hsl(191, 100, 88),
+  link: hsl(208, 90, 61),
   info: hsl(211, 82, 48),
   success: hsl(128, 22, 62),
   warning: hsl(41, 88, 58),

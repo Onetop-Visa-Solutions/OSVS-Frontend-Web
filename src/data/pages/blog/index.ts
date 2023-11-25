@@ -36,7 +36,8 @@ export const posts = [
 
       <p>You pay absolutely nothing out of pocket until you've secured admission from your target school abroad. Only then are our reasonable service fees due.</p>
 
-      <p>In other words, you only pay after achieving acceptance and realizing your study abroad ambitions. So don't let money concerns get in the way. Contact our advisors to get started on your journey today!</p>`
+      <p>In other words, you only pay after achieving acceptance and realizing your study abroad ambitions. So don't let money concerns get in the way. Contact our advisors to get started on your journey today!</p>`,
+      related: [1,2,3]
   },
 
   {
@@ -94,7 +95,9 @@ export const posts = [
       </ul>
 
       <p>Evaluate all parameters from academics to lifestyle and student experience. This background will help confirm the perfect program match for your goals and interests.</p>
-    `
+    `,
+    related: [0,2,3]
+
   },
 
   {
@@ -143,7 +146,9 @@ export const posts = [
       </ul>
 
       <p>Each US student visa has varying application processes and document requirements. Connecting with an expert advisor simplifies navigation so you can focus on your studies.</p>
-    `
+    `,
+    related: [0,1,3]
+
   },
 
   {
@@ -186,7 +191,9 @@ export const posts = [
       <p>We covered likely questions about her program choice, future goals, and finances to ensure strong, assurance responses.</p>
 
       <p>Within 7 weeks, Kalkidan's Canadian study permit got approved! She credited our dedicated guidance and looks forward to beginning her studies soon.</p>
-    `
+    `,
+    related: [0,1,4]
+
   },
 
   {
@@ -237,7 +244,9 @@ export const posts = [
       <p>Attend your biometrics appointment then gear up for the visa interview questions. We cover exact strategies for assurance and success!</p>
 
       <p>Following these key steps with diligence sets you up for a smooth visa approval experience. Contact our experts for personalized assistance!</p>
-    `
+    `,
+    related: [2,1,3]
+
   },
 
   {
@@ -324,7 +333,9 @@ export const posts = [
       </ul>
 
       <p>Follow these financial planning basics for international students to study stress-free abroad!</p>
-    `
+    `,
+    related: [2,4,3]
+
   },
 
   {
@@ -377,7 +388,9 @@ export const posts = [
       <p>Offering unique cultural immersion alongside sci-tech innovations.</p>
 
       <p>This definitive list offers top contenders to launch your global education journey!</p>
-    `
+    `,
+    related: [2,1,3]
+
   },
 
   {
@@ -430,7 +443,9 @@ export const posts = [
       </ul>
 
       <p>Implementing the right protocols in the face of delays and rejection is vital for getting your study dreams back on track!</p>
-    `
+    `,
+    related: [2,1,3]
+
   },
 
   {
@@ -473,7 +488,9 @@ export const posts = [
       <p>Submit applications, contracts and deposits through online mediums. If viable, appoint uni housing staff as proxies for in-person visits to finalize.</p>
 
       <p>Through these best practices, students can successfully arrange overseas accommodations entirely remotely pre-arrival!</p>
-    `
+    `,
+    related: [2,1,3]
+
   },
 
   {
@@ -510,7 +527,9 @@ export const posts = [
       <p>Proactively calling family and long-distance friends relieves isolation. Share your overseas adventures and challenges to feel validated.</p>
 
       <p>By wholeheartedly embracing your new environment abroad fueled with self-care, students can truly flourish overseas!</p>
-    `
+    `,
+    related: [2,1,3]
+
   },
 
   {
@@ -547,326 +566,8 @@ export const posts = [
       <p>Carefully abide by rules regarding internships, campus jobs and voluntary gigs which differ across permits. Log hours and duties!</p>
 
       <p>Remaining vigilant gives students peace of mind to focus on thriving abroad, not just surviving!</p>
-    `
+    `,
+    related: [2,1,3]
+
   }
 ];
-
-export const demoPosts1 = [
-  {
-    id: 0,
-    image: '/assets/illustrations/blog/landscape-abstract-7.svg',
-    title: 'How to Conduct an Amazon Competitor Analysis',
-    abstract:
-      'Selling on Amazon is a battle you are constantly fighting, both when it comes to managing your own operations...',
-    views: '1.1k',
-    category: 'business',
-    date: 'March 17th, 2022',
-    duration: 2,
-    author: {
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      role: 'Author',
-      name: 'John Doe',
-    },
-    content:
-      '<p> Today, investing in advertising is part of the cost of doing business, but if performance takes a while to materialize, it could put you in a hole that’s difficult to dig out of. Many small businesses come to Vulk to solve this exact problem – to improve their ads performance as they begin ramping up their spend on Amazon ads. </p><h2 class="title is-3"> Value of the Vulk bidder for small businesses </h2> <p> A new analysis shows why more and more brands are moving towards Vulk and our advanced bidding engine. Vulk’ software helps the vast majority of sellers drive dramatically more revenue in a matter of months, even if their advertising activity prior to coming to Vulk was low or non-existent. </p><p> Hundreds of sellers signed up for Vulk last year having spent $315 or less on advertising in the prior 60 days. </p><p> Just 60 days after turning on Vulk and our bidding technology, those same sellers experienced median sales jumps of more than 24X from the previous period. </p><p> For smaller sellers, this analysis shows how Vulk software can put you in the best position to scale your advertising on Amazon, and improve sales dramatically, without sacrificing time or efficiency. Even if you are new to advertising on Amazon, our software and bidding technology can help take you to the next level, and make the most out of your investment. </p><h2 class="title is-3">Methodology</h2> <p> This analysis is restricted to 350 Amazon sellers using Vulk for the first time in 2020. The data examined spans both the 60 days prior to using Vulk, along with the first 60 days using the platform and associated bidder. For ease of comparison, sellers were grouped according to their pre-Vulk advertising spend amounts. See the companion study for data on larger brands. </p>',
-  },
-  {
-    id: 1,
-    image: '/assets/illustrations/blog/landscape-abstract-8.svg',
-    title: 'How to Request Reviews on Amazon (Safely)',
-    abstract:
-      'Reviews are integral to the success of your ecommerce business, particularly if you sell on Amazon. Online...',
-    views: '1.1k',
-    category: 'business',
-    date: 'March 17th, 2022',
-    duration: 2,
-    author: {
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      role: 'Author',
-      name: 'John Doe',
-    },
-    content:
-      '<p> Today, investing in advertising is part of the cost of doing business, but if performance takes a while to materialize, it could put you in a hole that’s difficult to dig out of. Many small businesses come to Vulk to solve this exact problem – to improve their ads performance as they begin ramping up their spend on Amazon ads. </p><h2 class="title is-3"> Value of the Vulk bidder for small businesses </h2> <p> A new analysis shows why more and more brands are moving towards Vulk and our advanced bidding engine. Vulk’ software helps the vast majority of sellers drive dramatically more revenue in a matter of months, even if their advertising activity prior to coming to Vulk was low or non-existent. </p><p> Hundreds of sellers signed up for Vulk last year having spent $315 or less on advertising in the prior 60 days. </p><p> Just 60 days after turning on Vulk and our bidding technology, those same sellers experienced median sales jumps of more than 24X from the previous period. </p><p> For smaller sellers, this analysis shows how Vulk software can put you in the best position to scale your advertising on Amazon, and improve sales dramatically, without sacrificing time or efficiency. Even if you are new to advertising on Amazon, our software and bidding technology can help take you to the next level, and make the most out of your investment. </p><h2 class="title is-3">Methodology</h2> <p> This analysis is restricted to 350 Amazon sellers using Vulk for the first time in 2020. The data examined spans both the 60 days prior to using Vulk, along with the first 60 days using the platform and associated bidder. For ease of comparison, sellers were grouped according to their pre-Vulk advertising spend amounts. See the companion study for data on larger brands. </p>',
-  },
-  {
-    id: 2,
-    image: '/assets/illustrations/blog/landscape-abstract-9.svg',
-    title: 'How Amazon Supply Chain Works',
-    abstract:
-      'Whether you’re a larger or smaller company looking to scale your online operations, Amazon is a...',
-    views: '1.2k',
-    category: 'business',
-    date: 'March 17th, 2022',
-    duration: 2,
-    author: {
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      role: 'Author',
-      name: 'John Doe',
-    },
-    content:
-      '<p> Today, investing in advertising is part of the cost of doing business, but if performance takes a while to materialize, it could put you in a hole that’s difficult to dig out of. Many small businesses come to Vulk to solve this exact problem – to improve their ads performance as they begin ramping up their spend on Amazon ads. </p><h2 class="title is-3"> Value of the Vulk bidder for small businesses </h2> <p> A new analysis shows why more and more brands are moving towards Vulk and our advanced bidding engine. Vulk’ software helps the vast majority of sellers drive dramatically more revenue in a matter of months, even if their advertising activity prior to coming to Vulk was low or non-existent. </p><p> Hundreds of sellers signed up for Vulk last year having spent $315 or less on advertising in the prior 60 days. </p><p> Just 60 days after turning on Vulk and our bidding technology, those same sellers experienced median sales jumps of more than 24X from the previous period. </p><p> For smaller sellers, this analysis shows how Vulk software can put you in the best position to scale your advertising on Amazon, and improve sales dramatically, without sacrificing time or efficiency. Even if you are new to advertising on Amazon, our software and bidding technology can help take you to the next level, and make the most out of your investment. </p><h2 class="title is-3">Methodology</h2> <p> This analysis is restricted to 350 Amazon sellers using Vulk for the first time in 2020. The data examined spans both the 60 days prior to using Vulk, along with the first 60 days using the platform and associated bidder. For ease of comparison, sellers were grouped according to their pre-Vulk advertising spend amounts. See the companion study for data on larger brands. </p>',
-  },
-]
-
-export const demoPosts2 = [
-  {
-    id: 0,
-    image: '/assets/illustrations/blog/landscape-abstract-10.svg',
-    title: 'How to Conduct an Amazon Competitor Analysis',
-    abstract:
-      'Selling on Amazon is a battle you are constantly fighting, both when it comes to managing your own operations...',
-    views: '1.1k',
-    category: 'business',
-    date: 'March 17th, 2022',
-    duration: 2,
-    author: {
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      role: 'Author',
-      name: 'John Doe',
-    },
-    content:
-      '<p> Today, investing in advertising is part of the cost of doing business, but if performance takes a while to materialize, it could put you in a hole that’s difficult to dig out of. Many small businesses come to Vulk to solve this exact problem – to improve their ads performance as they begin ramping up their spend on Amazon ads. </p><h2 class="title is-3"> Value of the Vulk bidder for small businesses </h2> <p> A new analysis shows why more and more brands are moving towards Vulk and our advanced bidding engine. Vulk’ software helps the vast majority of sellers drive dramatically more revenue in a matter of months, even if their advertising activity prior to coming to Vulk was low or non-existent. </p><p> Hundreds of sellers signed up for Vulk last year having spent $315 or less on advertising in the prior 60 days. </p><p> Just 60 days after turning on Vulk and our bidding technology, those same sellers experienced median sales jumps of more than 24X from the previous period. </p><p> For smaller sellers, this analysis shows how Vulk software can put you in the best position to scale your advertising on Amazon, and improve sales dramatically, without sacrificing time or efficiency. Even if you are new to advertising on Amazon, our software and bidding technology can help take you to the next level, and make the most out of your investment. </p><h2 class="title is-3">Methodology</h2> <p> This analysis is restricted to 350 Amazon sellers using Vulk for the first time in 2020. The data examined spans both the 60 days prior to using Vulk, along with the first 60 days using the platform and associated bidder. For ease of comparison, sellers were grouped according to their pre-Vulk advertising spend amounts. See the companion study for data on larger brands. </p>',
-  },
-  {
-    id: 1,
-    image: '/assets/illustrations/blog/landscape-abstract-11.svg',
-    title: 'How to Request Reviews on Amazon (Safely)',
-    abstract:
-      'Reviews are integral to the success of your ecommerce business, particularly if you sell on Amazon. Online...',
-    views: '1.1k',
-    category: 'business',
-    date: 'March 17th, 2022',
-    duration: 2,
-    author: {
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      role: 'Author',
-      name: 'John Doe',
-    },
-    content:
-      '<p> Today, investing in advertising is part of the cost of doing business, but if performance takes a while to materialize, it could put you in a hole that’s difficult to dig out of. Many small businesses come to Vulk to solve this exact problem – to improve their ads performance as they begin ramping up their spend on Amazon ads. </p><h2 class="title is-3"> Value of the Vulk bidder for small businesses </h2> <p> A new analysis shows why more and more brands are moving towards Vulk and our advanced bidding engine. Vulk’ software helps the vast majority of sellers drive dramatically more revenue in a matter of months, even if their advertising activity prior to coming to Vulk was low or non-existent. </p><p> Hundreds of sellers signed up for Vulk last year having spent $315 or less on advertising in the prior 60 days. </p><p> Just 60 days after turning on Vulk and our bidding technology, those same sellers experienced median sales jumps of more than 24X from the previous period. </p><p> For smaller sellers, this analysis shows how Vulk software can put you in the best position to scale your advertising on Amazon, and improve sales dramatically, without sacrificing time or efficiency. Even if you are new to advertising on Amazon, our software and bidding technology can help take you to the next level, and make the most out of your investment. </p><h2 class="title is-3">Methodology</h2> <p> This analysis is restricted to 350 Amazon sellers using Vulk for the first time in 2020. The data examined spans both the 60 days prior to using Vulk, along with the first 60 days using the platform and associated bidder. For ease of comparison, sellers were grouped according to their pre-Vulk advertising spend amounts. See the companion study for data on larger brands. </p>',
-  },
-  {
-    id: 2,
-    image: '/assets/illustrations/blog/landscape-abstract-12.svg',
-    title: 'How Amazon Supply Chain Works',
-    abstract:
-      'Whether you’re a larger or smaller company looking to scale your online operations, Amazon is a...',
-    views: '1.2k',
-    category: 'business',
-    date: 'March 17th, 2022',
-    duration: 2,
-    author: {
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      role: 'Author',
-      name: 'John Doe',
-    },
-    content:
-      '<p> Today, investing in advertising is part of the cost of doing business, but if performance takes a while to materialize, it could put you in a hole that’s difficult to dig out of. Many small businesses come to Vulk to solve this exact problem – to improve their ads performance as they begin ramping up their spend on Amazon ads. </p><h2 class="title is-3"> Value of the Vulk bidder for small businesses </h2> <p> A new analysis shows why more and more brands are moving towards Vulk and our advanced bidding engine. Vulk’ software helps the vast majority of sellers drive dramatically more revenue in a matter of months, even if their advertising activity prior to coming to Vulk was low or non-existent. </p><p> Hundreds of sellers signed up for Vulk last year having spent $315 or less on advertising in the prior 60 days. </p><p> Just 60 days after turning on Vulk and our bidding technology, those same sellers experienced median sales jumps of more than 24X from the previous period. </p><p> For smaller sellers, this analysis shows how Vulk software can put you in the best position to scale your advertising on Amazon, and improve sales dramatically, without sacrificing time or efficiency. Even if you are new to advertising on Amazon, our software and bidding technology can help take you to the next level, and make the most out of your investment. </p><h2 class="title is-3">Methodology</h2> <p> This analysis is restricted to 350 Amazon sellers using Vulk for the first time in 2020. The data examined spans both the 60 days prior to using Vulk, along with the first 60 days using the platform and associated bidder. For ease of comparison, sellers were grouped according to their pre-Vulk advertising spend amounts. See the companion study for data on larger brands. </p>',
-  },
-  {
-    id: 11,
-    image: '/assets/posts/post-12.jpg',
-    title: 'Maintaining Student Visa Status While Studying Abroad',
-    abstract: 'Tips for international students to follow student visa rules and keep legal status while studying in a foreign country.',
-    category: 'Student Visas',
-    date: 'February 15th, 2023',
-    duration: 12,
-    author: {
-      name: 'Onestop Visa Solutions'
-    },
-    content: `
-      <p>As an international student, you must abide by your visa's terms to maintain legal student status abroad. Here are some tips:</p>
-
-      <ul>
-        <li>Attend classes and meet course requirements to progress academically</li>
-        <li>Update school and visa officials about changes to your details</li>
-        <li>Follow visa rules on permitted working hours and activities</li>
-        <li>Keep your passport, I-20, and other visa documents valid</li>
-        <li>Respect the laws of the country you are studying in</li>
-      </ul>
-
-      <p>Violating student visa conditions can lead to serious consequences like visa cancellation or deportation. Stay vigilant and comply with all requirements to safely keep your legal student status.</p>
-    `
-  }
-
-]
-
-export const resources = [
-  {
-    id: 0,
-    image: '/assets/illustrations/blog/landscape-abstract-1.svg',
-    title: 'How to run competitive team meetings',
-    likes: '234',
-    categories: [
-      {
-        name: 'Business',
-      },
-      {
-        name: 'Tech',
-      },
-      {
-        name: 'Productivity',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-  {
-    id: 1,
-    image: '/assets/illustrations/blog/landscape-abstract-2.svg',
-    title: 'All you need to know about the One-on-One meeting',
-    likes: '93',
-    categories: [
-      {
-        name: 'Technique',
-      },
-      {
-        name: 'Speech',
-      },
-      {
-        name: 'work',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-  {
-    id: 2,
-    image: '/assets/illustrations/blog/landscape-abstract-3.svg',
-    title: 'Top tips from Jeff Jordan on team management efficiency',
-    likes: '54',
-    categories: [
-      {
-        name: 'Management',
-      },
-      {
-        name: 'Team',
-      },
-      {
-        name: 'HR',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-]
-
-export const resources2 = [
-  {
-    id: 0,
-    image: '/assets/illustrations/blog/landscape-abstract-4.svg',
-    title: 'Learn how UX has hijacked the world of web development',
-    likes: '76',
-    categories: [
-      {
-        name: 'Development',
-      },
-      {
-        name: 'UX',
-      },
-      {
-        name: 'Interface',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-  {
-    id: 1,
-    image: '/assets/illustrations/blog/landscape-abstract-5.svg',
-    title: 'Building an ecommerce website is much more than you think',
-    likes: '319',
-    categories: [
-      {
-        name: 'Ecommerce',
-      },
-      {
-        name: 'Development',
-      },
-      {
-        name: 'Startup',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-  {
-    id: 2,
-    image: '/assets/illustrations/blog/landscape-abstract-6.svg',
-    title: "The long road to optimize your site's SEO and Lighthouse scores",
-    likes: '234',
-    categories: [
-      {
-        name: 'SEO',
-      },
-      {
-        name: 'Lighthouse',
-      },
-      {
-        name: 'Optimization',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-]
-
-export const resources3 = [
-  {
-    id: 0,
-    image: '/assets/illustrations/blog/commerce-1.svg',
-    title: 'Increase conversion rates and learn how to manage abandonned carts',
-    likes: '112',
-    categories: [
-      {
-        name: 'Commerce',
-      },
-      {
-        name: 'Conversion',
-      },
-      {
-        name: 'Profit',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-  {
-    id: 1,
-    image: '/assets/illustrations/blog/commerce-2.svg',
-    title: 'How order bumps can help increasing your revenue and conversions',
-    likes: '319',
-    categories: [
-      {
-        name: 'Orders',
-      },
-      {
-        name: 'Checkout',
-      },
-      {
-        name: 'Conversion',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-  {
-    id: 2,
-    image: '/assets/illustrations/blog/commerce-3.svg',
-    title: 'How a rich and well maintained catalogue easily converts customers',
-    likes: '519',
-    categories: [
-      {
-        name: 'Conversion',
-      },
-      {
-        name: 'Sales',
-      },
-      {
-        name: 'Products',
-      },
-    ],
-    date: 'March 17th, 2022',
-    duration: 2,
-  },
-]

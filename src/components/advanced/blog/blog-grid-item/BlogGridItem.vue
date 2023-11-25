@@ -16,7 +16,7 @@ export interface PostItem {
   content: string
   date: string
   duration: number
-  related?: PostItem[]
+  related?: number[]
 }
 
 export interface PostItemProps {

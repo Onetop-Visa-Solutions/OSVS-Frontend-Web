@@ -251,7 +251,7 @@ html {
 }
 
 a {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .box {
@@ -263,12 +263,12 @@ a {
 }
 
 .button.is-ghost {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-ghost:hover,
 .button.is-ghost.is-hovered {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-white {
@@ -621,103 +621,103 @@ fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
 }
 
 .button.is-link {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link:hover,
 .button.is-link.is-hovered {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link:focus,
 .button.is-link.is-focused {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link:active,
 .button.is-link.is-active {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link[disabled],
 fieldset[disabled] .button.is-link {
-  background-color: rgb(194, 244, 255);
-  border-color: rgb(194, 244, 255);
+  background-color: rgb(66, 162, 245);
+  border-color: rgb(66, 162, 245);
 }
 
 .button.is-link.is-inverted {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: rgb(194, 244, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-link.is-inverted:hover,
 .button.is-link.is-inverted.is-hovered {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(255, 255, 255);
 }
 
 .button.is-link.is-inverted[disabled],
 fieldset[disabled] .button.is-link.is-inverted {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: rgb(194, 244, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-link.is-outlined {
-  border-color: rgb(194, 244, 255);
-  color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-link.is-outlined:hover,
 .button.is-link.is-outlined.is-hovered,
 .button.is-link.is-outlined:focus,
 .button.is-link.is-outlined.is-focused {
-  background-color: rgb(194, 244, 255);
-  border-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  border-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link.is-outlined[disabled],
 fieldset[disabled] .button.is-link.is-outlined {
-  border-color: rgb(194, 244, 255);
-  color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-link.is-inverted.is-outlined {
-  border-color: rgba(0, 0, 0, 0.7);
-  color: rgba(0, 0, 0, 0.7);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link.is-inverted.is-outlined:hover,
 .button.is-link.is-inverted.is-outlined.is-hovered,
 .button.is-link.is-inverted.is-outlined:focus,
 .button.is-link.is-inverted.is-outlined.is-focused {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: rgb(194, 244, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(66, 162, 245);
 }
 
 .button.is-link.is-inverted.is-outlined[disabled],
 fieldset[disabled] .button.is-link.is-inverted.is-outlined {
-  border-color: rgba(0, 0, 0, 0.7);
-  color: rgba(0, 0, 0, 0.7);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .button.is-link.is-light {
-  background-color: rgb(235, 251, 255);
-  color: rgb(0, 121, 148);
+  background-color: rgb(236, 246, 254);
+  color: rgb(9, 98, 174);
 }
 
 .button.is-link.is-light:hover,
 .button.is-link.is-light.is-hovered {
-  background-color: rgb(235, 251, 255);
-  color: rgb(0, 121, 148);
+  background-color: rgb(236, 246, 254);
+  color: rgb(9, 98, 174);
 }
 
 .button.is-link.is-light:active,
 .button.is-link.is-light.is-active {
-  background-color: rgb(235, 251, 255);
-  color: rgb(0, 121, 148);
+  background-color: rgb(236, 246, 254);
+  color: rgb(9, 98, 174);
 }
 
 .button.is-info {
@@ -1156,13 +1156,13 @@ fieldset[disabled] .button {
 }
 
 .notification.is-link {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .notification.is-link.is-light {
-  background-color: rgb(235, 251, 255);
-  color: rgb(0, 121, 148);
+  background-color: rgb(236, 246, 254);
+  color: rgb(9, 98, 174);
 }
 
 .notification.is-info {
@@ -1254,15 +1254,15 @@ fieldset[disabled] .button {
 }
 
 .progress.is-link::-webkit-progress-value {
-  background-color: rgb(194, 244, 255);
+  background-color: rgb(66, 162, 245);
 }
 
 .progress.is-link::-moz-progress-bar {
-  background-color: rgb(194, 244, 255);
+  background-color: rgb(66, 162, 245);
 }
 
 .progress.is-link::-ms-fill {
-  background-color: rgb(194, 244, 255);
+  background-color: rgb(66, 162, 245);
 }
 
 .progress.is-info::-webkit-progress-value {
@@ -1347,9 +1347,9 @@ fieldset[disabled] .button {
 
 .table td.is-link,
 .table th.is-link {
-  background-color: rgb(194, 244, 255);
-  border-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  border-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .table td.is-info,
@@ -1422,13 +1422,13 @@ fieldset[disabled] .button {
 }
 
 .tag:not(body).is-link {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .tag:not(body).is-link.is-light {
-  background-color: rgb(235, 251, 255);
-  color: rgb(0, 121, 148);
+  background-color: rgb(236, 246, 254);
+  color: rgb(9, 98, 174);
 }
 
 .tag:not(body).is-info {
@@ -1489,7 +1489,7 @@ fieldset[disabled] .button {
 .select select.is-active,
 .is-active.textarea,
 .is-active.input {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 .is-white.textarea,
@@ -1514,7 +1514,7 @@ fieldset[disabled] .button {
 
 .is-link.textarea,
 .is-link.input {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 .is-info.textarea,
@@ -1538,7 +1538,7 @@ fieldset[disabled] .button {
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 .select.is-white:not(:hover)::after {
@@ -1594,16 +1594,16 @@ fieldset[disabled] .button {
 }
 
 .select.is-link:not(:hover)::after {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 .select.is-link select {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 .select.is-link select:hover,
 .select.is-link select.is-hovered {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 .select.is-info:not(:hover)::after {
@@ -1747,25 +1747,25 @@ fieldset[disabled] .button {
 }
 
 .file.is-link .file-cta {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .file.is-link:hover .file-cta,
 .file.is-link.is-hovered .file-cta {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .file.is-link:focus .file-cta,
 .file.is-link.is-focused .file-cta {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .file.is-link:active .file-cta,
 .file.is-link.is-active .file-cta {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .file.is-info .file-cta {
@@ -1873,7 +1873,7 @@ fieldset[disabled] .button {
 }
 
 .help.is-link {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .help.is-info {
@@ -1893,7 +1893,7 @@ fieldset[disabled] .button {
 }
 
 .breadcrumb a {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .card {
@@ -1911,13 +1911,13 @@ button.dropdown-item:hover {
 
 a.dropdown-item.is-active,
 button.dropdown-item.is-active {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .menu-list a.is-active {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .message.is-white {
@@ -1974,17 +1974,17 @@ button.dropdown-item.is-active {
 }
 
 .message.is-link {
-  background-color: rgb(235, 251, 255);
+  background-color: rgb(236, 246, 254);
 }
 
 .message.is-link .message-header {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .message.is-link .message-body {
-  border-color: rgb(194, 244, 255);
-  color: rgb(0, 121, 148);
+  border-color: rgb(66, 162, 245);
+  color: rgb(9, 98, 174);
 }
 
 .message.is-info {
@@ -2341,13 +2341,13 @@ button.dropdown-item.is-active {
 }
 
 .navbar.is-link {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .navbar.is-link .navbar-brand > .navbar-item,
 .navbar.is-link .navbar-brand .navbar-link {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .navbar.is-link .navbar-brand > a.navbar-item:focus,
@@ -2356,16 +2356,16 @@ button.dropdown-item.is-active {
 .navbar.is-link .navbar-brand .navbar-link:focus,
 .navbar.is-link .navbar-brand .navbar-link:hover,
 .navbar.is-link .navbar-brand .navbar-link.is-active {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .navbar.is-link .navbar-brand .navbar-link::after {
-  border-color: rgba(0, 0, 0, 0.7);
+  border-color: rgb(255, 255, 255);
 }
 
 .navbar.is-link .navbar-burger {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 1024px) {
@@ -2373,7 +2373,7 @@ button.dropdown-item.is-active {
   .navbar.is-link .navbar-start .navbar-link,
   .navbar.is-link .navbar-end > .navbar-item,
   .navbar.is-link .navbar-end .navbar-link {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
   }
 
   .navbar.is-link .navbar-start > a.navbar-item:focus,
@@ -2388,25 +2388,25 @@ button.dropdown-item.is-active {
   .navbar.is-link .navbar-end .navbar-link:focus,
   .navbar.is-link .navbar-end .navbar-link:hover,
   .navbar.is-link .navbar-end .navbar-link.is-active {
-    background-color: rgb(194, 244, 255);
-    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(66, 162, 245);
+    color: rgb(255, 255, 255);
   }
 
   .navbar.is-link .navbar-start .navbar-link::after,
   .navbar.is-link .navbar-end .navbar-link::after {
-    border-color: rgba(0, 0, 0, 0.7);
+    border-color: rgb(255, 255, 255);
   }
 
   .navbar.is-link .navbar-item.has-dropdown:focus .navbar-link,
   .navbar.is-link .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-link .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: rgb(194, 244, 255);
-    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(66, 162, 245);
+    color: rgb(255, 255, 255);
   }
 
   .navbar.is-link .navbar-dropdown a.navbar-item.is-active {
-    background-color: rgb(194, 244, 255);
-    color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(66, 162, 245);
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -2698,21 +2698,21 @@ a.navbar-item.is-active,
 .navbar-link:focus-within,
 .navbar-link:hover,
 .navbar-link.is-active {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .navbar-item.is-tab:focus,
 .navbar-item.is-tab:hover {
-  border-bottom-color: rgb(194, 244, 255);
+  border-bottom-color: rgb(66, 162, 245);
 }
 
 .navbar-item.is-tab.is-active {
-  border-bottom-color: rgb(194, 244, 255);
-  color: rgb(194, 244, 255);
+  border-bottom-color: rgb(66, 162, 245);
+  color: rgb(66, 162, 245);
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: rgb(194, 244, 255);
+  border-color: rgb(66, 162, 245);
 }
 
 @media screen and (max-width: 1023px) {
@@ -2728,7 +2728,7 @@ a.navbar-item.is-active,
   }
 
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
-    color: rgb(194, 244, 255);
+    color: rgb(66, 162, 245);
   }
 
   .navbar-dropdown {
@@ -2741,7 +2741,7 @@ a.navbar-item.is-active,
   }
 
   .navbar-dropdown a.navbar-item.is-active {
-    color: rgb(194, 244, 255);
+    color: rgb(66, 162, 245);
   }
 
   a.navbar-item.is-active,
@@ -2751,9 +2751,9 @@ a.navbar-item.is-active,
 }
 
 .pagination-link.is-current {
-  background-color: rgb(194, 244, 255);
-  border-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  border-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .panel.is-white .panel-heading {
@@ -2809,16 +2809,16 @@ a.navbar-item.is-active,
 }
 
 .panel.is-link .panel-heading {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .panel.is-link .panel-tabs a.is-active {
-  border-bottom-color: rgb(194, 244, 255);
+  border-bottom-color: rgb(66, 162, 245);
 }
 
 .panel.is-link .panel-block.is-active .panel-icon {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .panel.is-info .panel-heading {
@@ -2874,20 +2874,20 @@ a.navbar-item.is-active,
 }
 
 .panel-list a:hover {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .panel-block.is-active {
-  border-left-color: rgb(194, 244, 255);
+  border-left-color: rgb(66, 162, 245);
 }
 
 .panel-block.is-active .panel-icon {
-  color: rgb(194, 244, 255);
+  color: rgb(66, 162, 245);
 }
 
 .tabs li.is-active a {
-  border-bottom-color: rgb(194, 244, 255);
-  color: rgb(194, 244, 255);
+  border-bottom-color: rgb(66, 162, 245);
+  color: rgb(66, 162, 245);
 }
 
 .tabs.is-boxed li.is-active a {
@@ -2895,9 +2895,9 @@ a.navbar-item.is-active,
 }
 
 .tabs.is-toggle li.is-active a {
-  background-color: rgb(194, 244, 255);
-  border-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  border-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-white {
@@ -3146,49 +3146,49 @@ a.navbar-item.is-active,
 }
 
 .hero.is-link {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link .title {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link .subtitle {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link .subtitle a:not(.button),
 .hero.is-link .subtitle strong {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 1023px) {
   .hero.is-link .navbar-menu {
-    background-color: rgb(194, 244, 255);
+    background-color: rgb(66, 162, 245);
   }
 }
 
 .hero.is-link .navbar-item,
 .hero.is-link .navbar-link {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link a.navbar-item:hover,
 .hero.is-link a.navbar-item.is-active,
 .hero.is-link .navbar-link:hover,
 .hero.is-link .navbar-link.is-active {
-  background-color: rgb(194, 244, 255);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(66, 162, 245);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link .tabs a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link .tabs.is-boxed a,
 .hero.is-link .tabs.is-toggle a {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .hero.is-link .tabs.is-boxed a:hover,
@@ -3200,9 +3200,9 @@ a.navbar-item.is-active,
 .hero.is-link .tabs.is-boxed li.is-active a:hover,
 .hero.is-link .tabs.is-toggle li.is-active a,
 .hero.is-link .tabs.is-toggle li.is-active a:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-  border-color: rgba(0, 0, 0, 0.7);
-  color: rgb(194, 244, 255);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(66, 162, 245);
 }
 
 .hero.is-info {
