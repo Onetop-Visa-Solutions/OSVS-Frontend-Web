@@ -84,7 +84,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
           title-secondary="More info?"
           content-secondary="Get in touch with our team for personalized assistance and further information."
           cta-secondary="Contact Us"
-          cta-secondary-link="/"
+          cta-secondary-link="/contact"
           boxed
           shapes
           animated
