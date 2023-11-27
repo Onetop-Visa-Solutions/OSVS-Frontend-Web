@@ -6,13 +6,14 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 <template>
   <Hero
     v-background="{
-      src: '/assets/backgrounds/collage.png',
+      src: '/assets/backgrounds/background.mp4',
       placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
     }"
     class="has-top-bg is-right"
     alignment="center"
     color="grey"
     shape-orientation="right"
+    video
   >
     <template #body>
       <div class="columns is-vcentered mt-12">
@@ -58,6 +59,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
               <Button
                 elevated
                 bold
+                to="/contact"
                 :long="2"
                 icon-left="ic:baseline-support-agent"
                 rounded
@@ -90,7 +92,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                   </div>
                   <div class="card-foot">
                     <ActionLink
-                      link=""
+                      link="/education"
                       size="small"
                     />
                   </div>
@@ -132,7 +134,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                   </div>
                   <div class="card-foot">
                     <ActionLink
-                      link=""
+                      link="/visit"
                       size="small"
                     />
                   </div>
@@ -158,7 +160,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                   </div>
                   <div class="card-foot">
                     <ActionLink
-                      link=""
+                      link="/consultation"
                       size="small"
                     />
                   </div>
@@ -199,7 +201,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                   </div>
                   <div class="card-foot">
                     <ActionLink
-                      link=""
+                      link="/test"
                       size="small"
                     />
                   </div>

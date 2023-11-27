@@ -14,6 +14,7 @@ export interface HeroProps {
   overlay?: boolean
   starfall?: boolean
   mask?: HeroMask
+  video?: boolean
 }
 
 const slots = useSlots()
@@ -26,6 +27,7 @@ const props = withDefaults(defineProps<HeroProps>(), {
   overlay: false,
   starfall: false,
   mask: undefined,
+  video: false,
 })
 
 const heroClasses = computed(() => [
