@@ -28,8 +28,8 @@ export const testimonials = [
   {
     id: 2,
     customer: {
-      name: 'Michael Brown',
-      photo: 'data:image/gif;base64,replace_with_your_image',
+      name: 'William Misgina',
+      photo: '/public/assets/shapes/william-misigina.jpeg',
       position: 'Student',
       country:"Canada",
       countryFlag: "imagepost.com/canada-flag.png"
@@ -41,8 +41,8 @@ export const testimonials = [
   {
     id: 3,
     customer: {
-      name: 'Emma Johnson',
-      photo: 'data:image/gif;base64,replace_with_your_image',
+      name: 'Meklit Mulugeta',
+      photo: '/assets/testimonials/meklit-mulugeta.HEIC',
       position: 'Student',
       country:"Italy",
       countryFlag: "imagepost.com/italy-flag.png"
@@ -54,7 +54,7 @@ export const testimonials = [
   {
     id: 4,
     customer: {
-      name: 'Alice Green',
+      name: 'Yirgalem Fisseha',
       photo: 'data:image/gif;base64,replace_with_your_image',
       position: 'Visitor',
       country:"Australia",
@@ -67,13 +67,13 @@ export const testimonials = [
   {
     id: 5,
     customer: {
-      name: 'Robert White',
-      photo: 'data:image/gif;base64,replace_with_your_image',
+      name: 'Biruk Shiferaw',
+      photo: '/assets/testimonials/biruk-shiferaw.png',
       position: 'Student',
       country:"Turkey",
       countryFlag: "imagepost.com/turkey-flag.png"
     },
-    logo: '/assets/brands/covenant.svg',
+    logo: '/assets/testimonials/biruk-shiferaw.png',
     content:
       'My experience with their educational consultancy services was exceptional. Their detailed guidance and constant support made my transition to studying in Turkey incredibly smooth.',
   },

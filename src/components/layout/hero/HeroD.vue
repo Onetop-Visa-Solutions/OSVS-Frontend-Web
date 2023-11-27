@@ -43,34 +43,42 @@ const countriesList = country.allCountries
             >
               <div class="hero-box-grid">
                 <!--Grid item-->
+
                 <div class="hero-box-item">
-                  <div class="box-inner">
-                    <IconBox
-                      color="primary"
-                      size="medium"
-                      rounded
-                    >
-                      <i-ion-flag-outline />
-                    </IconBox>
-                    <Title
-                      tag="h3"
-                      :size="7"
-                      weight="semi"
-                      leading
-                    >
-                      {{ item.name }}
-                    </Title>
-                    <div class="go-icon">
-                      <RouterLink
-                        :to="{
-                          name: 'education-destinations-slug',
-                          params: { slug: item.slug },
-                        }"
+                  <RouterLink
+                    :to="{
+                      name: 'education-destinations-slug',
+                      params: { slug: item.slug },
+                    }"
+                  >
+                    <div class="box-inner">
+                      <IconBox
+                        color="primary"
+                        size="medium"
+                        rounded
                       >
-                        <i-ion-arrow-forward-outline />
-                      </RouterLink>
+                        <i-ion-flag-outline />
+                      </IconBox>
+                      <Title
+                        tag="h3"
+                        :size="7"
+                        weight="semi"
+                        leading
+                      >
+                        {{ item.name }}
+                      </Title>
+                      <div class="go-icon">
+                        <RouterLink
+                          :to="{
+                            name: 'education-destinations-slug',
+                            params: { slug: item.slug },
+                          }"
+                        >
+                          <i-ion-arrow-forward-outline />
+                        </RouterLink>
+                      </div>
                     </div>
-                  </div>
+                  </RouterLink>
                 </div>
               </div>
             </div>
