@@ -7,7 +7,7 @@ export const useCountryStore = defineStore("country", () => {
   // Fetch Countries Data
   const fetchCountries = async () => {
     const apiResponse = await fetch(
-      'https://run.mocky.io/v3/2759cc80-33e0-44c6-b80b-c09266e7a99f'
+      'https://run.mocky.io/v3/96f4c11c-7e82-408d-b787-c439b42c7a9e'
     )
     const countries = await apiResponse.json()
     allCountries.push(...countries)

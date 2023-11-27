@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 export interface RequirementProps {
-  advantageList: {
+  advantageList?: {
     name: string
       image: string
       description: string
