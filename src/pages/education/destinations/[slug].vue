@@ -56,8 +56,8 @@
     >
       <Container>
         <SectionTitle
-          title="Words from our clients"
-          subtitle="Testimonial"
+          title="Basic country information"
+          subtitle="Study in"
           :name="country.alias"
         />
 

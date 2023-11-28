@@ -99,19 +99,19 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
               :to="{ name: 'education' }"
               class="navbar-item"
             >
-              Educational Visas
+              Educational Consultation
             </RouterLink>
             <RouterLink
               :to="{ name: 'visit' }"
               class="navbar-item"
             >
-              Visit Visas
+              Tourist Visa Application
             </RouterLink>
             <RouterLink
               :to="{ name: 'consultation' }"
               class="navbar-item"
             >
-              Consultations
+              Visa Application Consultation
             </RouterLink>
           </NavbarDropdown>
           <RouterLink

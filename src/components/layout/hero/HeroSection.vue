@@ -87,7 +87,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                       :size="6"
                       weight="semi"
                     >
-                      Educational Visas
+                      Educational Consultation
                     </Title>
                   </div>
                   <div class="card-foot">
@@ -129,7 +129,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                       :size="6"
                       weight="semi"
                     >
-                      Visit Visas
+                      Tourist Visa Application
                     </Title>
                   </div>
                   <div class="card-foot">
@@ -155,7 +155,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                       :size="6"
                       weight="semi"
                     >
-                      Consultations
+                      Visa Application Consultations
                     </Title>
                   </div>
                   <div class="card-foot">
@@ -196,7 +196,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                       :size="6"
                       weight="semi"
                     >
-                      Test Prep
+                      Test Prep Assistance
                     </Title>
                   </div>
                   <div class="card-foot">

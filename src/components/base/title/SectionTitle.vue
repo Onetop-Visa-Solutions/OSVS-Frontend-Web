@@ -45,7 +45,7 @@ const subtitleClasses = computed(() => [
       :class="titleClasses"
     >
       <span>
-        <slot>{{ props.title }} {{ props.name }}</slot>
+        <slot>{{ props.title }} </slot>
       </span>
     </Title>
   </div>
