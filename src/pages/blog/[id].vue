@@ -16,6 +16,7 @@ export interface PostItem {
   title: string
   abstract: string
   image: string
+  imageFull: string
   content: string
   date: string
   duration: number

@@ -6,7 +6,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 <template>
   <Hero
     v-background="{
-      src: '/assets/backgrounds/bg-main-2.png',
+      src: '/assets/backgrounds/bg-main-3.png',
       placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
     }"
     class="has-top-bg is-right"
@@ -215,7 +215,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
     </template>
     <template #footer>
       <div class="mx-auto max-w-8">
-        <p class="paragraph rem-100 text-light has-text-centered">
+        <p class="paragraph rem-100 text-white has-text-centered">
           Collaborating with companies
         </p>
         <div class="tabs is-centered pb-6">

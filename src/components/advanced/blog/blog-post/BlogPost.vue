@@ -11,6 +11,7 @@ export interface PostItem {
   title: string
   abstract: string
   image: string
+  imageFull: string
   content: string
   date: string
   duration: number
@@ -83,7 +84,7 @@ const props = defineProps<SinglePostProps>()
         >
           <img
             class="post-image"
-            :src="props.post.image"
+            :src="props.post.imageFull"
             alt="Post Image"
           >
         </div>
@@ -97,7 +98,7 @@ const props = defineProps<SinglePostProps>()
         >
           <img
             class="post-image"
-            :src="props.post.image"
+            :src="props.post.imageFull"
             alt="Post Image"
           >
         </div>

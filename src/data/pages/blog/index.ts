@@ -2,6 +2,7 @@ export const posts = [
   {
     id: 0,
     image: '/assets/pages/blog/post-1.jpg',
+    imageFull: "/assets/pages/blog/post-1-full.jpeg",
     title: 'Achieve Your Study Abroad Dreams Before Paying',
     abstract: 'Work with our advisors to get accepted to your ideal university abroad. You\'ll only pay our reasonable fees after receiving an offer of admission.',
     category: 'Study Abroad',
@@ -50,7 +51,8 @@ export const posts = [
 
   {
     id: 1,
-    image: '/assets/pages/blog/us-student-visa.jpg',
+    image: '/assets/pages/blog/post-1.png',
+    imageFull: "/assets/pages/blog/post-1-full.jpeg",
     title: 'How to Choose the Right Study Abroad Program for You',
     abstract: 'With so many options, selecting the ideal study abroad program can be daunting. Follow these tips to find the perfect fit for your goals and interests.',
     category: 'Study Abroad',
@@ -98,7 +100,8 @@ export const posts = [
 
   {
     id: 2,
-    image: '/assets/pages/blog/us-student-visa.jpg',
+    image: '/assets/pages/blog/post-2.png',
+    imageFull: "/assets/pages/blog/post-2-full.jpeg",
     title: 'A Guide to US Student Visas: Everything You Need to Know',
     abstract: 'Navigating the various types of US student visas can be confusing. This guide covers eligibility requirements, application processes, and tips for each one.',
     category: 'Student Visas',
@@ -149,7 +152,8 @@ export const posts = [
 
   {
     id: 3,
-    image: '/assets/posts/post-4.jpg',
+    image: '/assets/pages/blog/post-3.png',
+    imageFull: "/assets/pages/blog/post-3-full.jpeg",
     title: 'How We Helped Kalkidan Obtain a Canadian Study Permit',
     abstract: 'Read Kalkidan\'s experience working with our team to succesfully secure her Canadian study permit, enabling her dream of studying Engineering in Toronto.',
     category: 'Student Visa Success Stories',
@@ -194,7 +198,8 @@ export const posts = [
 
   {
     id: 4,
-    image: '/assets/posts/post-5.jpg',
+    image: '/assets/pages/blog/post-4.png',
+    imageFull: "/assets/pages/blog/post-4-full.jpeg",
     title: 'How to Get a UK Student Visa: A Step-by-Step Guide',
     abstract: 'Overview of eligibility criteria, documents required, application process and interview tips for UK student visas.',
     category: 'Student Visas',
@@ -247,7 +252,8 @@ export const posts = [
 
   {
     id: 5,
-    image: '/assets/posts/post-6.jpg',
+    image: '/assets/pages/blog/post-5.png',
+    imageFull: "/assets/pages/blog/post-5-full.jpeg",
     title: 'Acing Your F-1 Visa Interview: Dos and Don\'ts',
     abstract: 'Strategies to prepare for and successfully pass your F-1 student visa interview at the US consulate. Common mistakes to avoid.',
     category: 'Student Visas',
@@ -285,7 +291,8 @@ export const posts = [
     `
   }, {
     id: 6,
-    image: '/assets/posts/post-7.jpg',
+    image: '/assets/pages/blog/post-6.png',
+    imageFull: "/assets/pages/blog/post-6-full.jpeg",
     title: 'Financial Planning Strategies for International Students',
     abstract: 'Expert tips on budgeting, finding scholarships, working, and money management to financially prepare for studying abroad.',
     category: 'Student Tips',
@@ -336,7 +343,8 @@ export const posts = [
 
   {
     id: 7,
-    image: '/assets/posts/post-8.jpg',
+    image: '/assets/pages/blog/post-7.png',
+    imageFull: "/assets/pages/blog/post-7-full.jpeg",
     title: 'Top 10 Dream Destinations to Study Abroad',
     abstract: 'Our guide to the best countries worldwide for international students - ranking study destinations on academics, affordability, quality of living and global immersion.',
     category: 'Study Abroad',
@@ -391,7 +399,8 @@ export const posts = [
 
   {
     id: 8,
-    image: '/assets/posts/post-9.jpg',
+    image: '/assets/pages/blog/post-8.png',
+    imageFull: "/assets/pages/blog/post-8-full.jpeg",
     title: 'Responding to Student Visa Delays and Denials',
     abstract: 'An expert playbook on troubleshooting strategies when your study abroad visa application faces processing delays or outright rejection.',
     category: 'Student Visas',
@@ -446,7 +455,8 @@ export const posts = [
 
   {
     id: 9,
-    image: '/assets/posts/post-10.jpg',
+    image: '/assets/pages/blog/post-9.png',
+    imageFull: "/assets/pages/blog/post-9-full.jpeg",
     title: 'Guide to Finding Housing Before Studying Abroad',
     abstract: 'Step-by-step playbook on strategies to successfully search and secure accommodation remotely before arriving at your overseas university.',
     category: 'Student Tips',
@@ -491,7 +501,8 @@ export const posts = [
 
   {
     id: 10,
-    image: '/assets/posts/post-11.jpg',
+    image: '/assets/pages/blog/post-10.png',
+    imageFull: "/assets/pages/blog/post-10-full.jpeg",
     title: 'Coping Strategies for Culture Shock Abroad',
     abstract: 'Actionable self-care tips for international students to push past culture shock, homesickness and other transitional struggles.',
     category: 'Student Tips',
@@ -530,7 +541,8 @@ export const posts = [
 
   {
     id: 11,
-    image: '/assets/posts/post-12.jpg',
+    image: '/assets/pages/blog/post-11.jpg',
+    imageFull: "/assets/pages/blog/post-11-full.jpeg",
     title: 'Avoid Losing Student Visa Status Through Vigilance',
     abstract: 'An international student\'s guide to strictly follow overseas study permit rules – from maintaining enrollment to proper paperwork upkeep.',
     category: 'Student Visas',
