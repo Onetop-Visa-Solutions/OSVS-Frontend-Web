@@ -43,6 +43,7 @@
         <SectionTitle
           title="Discover the Advantages of Studying"
           subtitle="Why Choose Education in"
+          :name="country.alias"
         />
 
         <CountryAdvantage :advantage-list="country.aboutCountry.advantages" />
