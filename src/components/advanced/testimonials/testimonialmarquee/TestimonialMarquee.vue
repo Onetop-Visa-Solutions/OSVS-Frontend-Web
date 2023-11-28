@@ -35,7 +35,7 @@ const testimonialClasses = computed(() => [props.color && `is-${props.color}`])
   >
     <MarqueeText
       :repeat="10"
-      :duration="40"
+      :duration="80"
     >
       <div class="marquee-testimonials-inner">
         <div class="row">
@@ -53,13 +53,11 @@ const testimonialClasses = computed(() => [props.color && `is-${props.color}`])
                 <span>{{ testimonial.customer.name }}</span>
                 <span>{{ testimonial.customer.position }}</span>
               </div>
-              <img
+              <AvatarSimple
                 class="logo"
-                :src="testimonial.logo"
-                alt="Testimonial logo"
-                width="90"
-                height="38"
-              >
+                :picture="testimonial.logo"
+                size="medium"
+              />
             </div>
             <div class="body">
               <p>{{ testimonial.content }}</p>
@@ -140,7 +138,7 @@ const testimonialClasses = computed(() => [props.color && `is-${props.color}`])
       display: flex;
       flex-wrap: nowrap;
       min-width: 2520px;
-      max-width: 2520px;
+      max-width: 100000px;
       white-space: normal;
 
       .box {

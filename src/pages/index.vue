@@ -71,6 +71,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
         <!-- Testimonials Section -->
         <TestimonialMarquee
           :testimonials="testimonials"
+          :limit="12"
           color="default"
         />
 
