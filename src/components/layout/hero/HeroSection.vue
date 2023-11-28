@@ -6,7 +6,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 <template>
   <Hero
     v-background="{
-      src: '/assets/backgrounds/bg-main.png',
+      src: '/assets/backgrounds/bg-main-2.png',
       placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
     }"
     class="has-top-bg is-right"
@@ -27,6 +27,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
             </p>
             <Title
               tag="h1"
+              class="text-white"
               :size="1"
               weight="bold"
             >
@@ -40,7 +41,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
               tag="p"
               :size="5"
               weight="thin"
-              class="mx-auto max-w-6 b-centered-tablet-p pt-2"
+              class="mx-auto max-w-6 b-centered-tablet-p pt-2 text-white"
             >
               Embark on unforgettable journeys.
               Let us be your trusted partner in crafting remarkable experiences that exceed your expectations.
