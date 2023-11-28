@@ -105,7 +105,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                     :size="5"
                     weight="bold"
                   >
-                    Our Services
+                    Destinations
                   </Title>
                   <AvatarGroup
                     size="medium"
