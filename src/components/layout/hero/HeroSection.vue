@@ -6,7 +6,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 <template>
   <Hero
     v-background="{
-      src: '/assets/backgrounds/background.mp4',
+      src: '/assets/backgrounds/bg-main.png',
       placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
     }"
     class="has-top-bg is-right"
