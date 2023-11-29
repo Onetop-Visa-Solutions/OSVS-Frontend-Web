@@ -92,7 +92,7 @@ const countriesList = country.allCountries
           <div class="column is-5">
             <div class="hero-image-container">
               <img
-                src="/assets/demo/img/hero/smiling-girl.jpg"
+                src="/assets/pages/destinations/destinations.png"
                 alt="Hero image"
                 width="640"
                 height="960"
