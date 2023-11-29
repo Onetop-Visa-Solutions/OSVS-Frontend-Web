@@ -57,11 +57,13 @@ const countriesList = country.allCountries
                 >
                   <div class="box-inner">
                     <IconBox
-                      color="primary"
+                      color="white"
                       size="medium"
-                      rounded
                     >
-                      <i-ion-flag-outline />
+                      <img
+                        :src="item.flagImage"
+                        alt="country-flag"
+                      >
                     </IconBox>
                     <Title
                       tag="h3"
