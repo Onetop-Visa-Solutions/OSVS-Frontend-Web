@@ -2,6 +2,8 @@
 export interface RequirementOption {
   requirementsContent: {title: string
         name: string
+        slug: string
+        index: number
         requirementsList: {
           title: string
           detail:{
@@ -56,6 +58,10 @@ const activeBox = ref(1)
             bold
             fullwidth
             raised
+            :to="{
+              name: 'education-destinations-requirements-name',
+              params: { name: item.index },
+            }"
           >
             <span>Learn More</span>
           </Button>

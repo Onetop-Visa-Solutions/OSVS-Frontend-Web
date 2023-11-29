@@ -3,6 +3,8 @@ export interface RequirementProps {
   requirementsItem: {
         title: string
         name: string
+        slug: string
+        index: number
         requirementsList: {
           title: string
           detail:{

@@ -106,6 +106,7 @@ declare module 'vue' {
     Popover: typeof import('./src/components/base/popover/Popover.vue')['default']
     Radio: typeof import('./src/components/base/form/radio/Radio.vue')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
+    RequirementDetails: typeof import('./src/components/advanced/requirements/requirement-details.vue/RequirementDetails.vue')['default']
     RequirementsListE: typeof import('./src/components/advanced/requirements/RequirementsListE.vue')['default']
     RequirementsListSolo: typeof import('./src/components/advanced/requirements/requirements-list-solo/RequirementsListSolo.vue')['default']
     RequirementsTabbed: typeof import('./src/components/advanced/requirements/requirements-list/RequirementsTabbed.vue')['default']
