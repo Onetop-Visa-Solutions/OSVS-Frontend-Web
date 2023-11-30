@@ -13,18 +13,13 @@ const props = withDefaults(defineProps<MapHeroProps>(), {
 </script>
 
 <template>
-  <Hero
+  <HeroVariant
     class="map-hero"
     size="fullheight"
     color="grey"
   >
     <template #background>
-      <MapBox
-        :lng="props.lng"
-        :lat="props.lat"
-        :zoom="props.zoom"
-        absolute
-      />
+      <MapBox />
     </template>
     <template #body>
       <div class="columns">
@@ -46,7 +41,7 @@ const props = withDefaults(defineProps<MapHeroProps>(), {
         </div>
       </div>
     </template>
-  </Hero>
+  </HeroVariant>
 </template>
 
 <style scoped lang="scss">

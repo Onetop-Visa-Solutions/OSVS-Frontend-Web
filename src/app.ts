@@ -1,4 +1,5 @@
 import { createApp as createClientApp } from 'vue'
+import VueGoogleMaps from '@fawmi/vue-google-maps';
 
 import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
@@ -33,6 +34,12 @@ export async function createApp() {
     head,
     initialState: {} as Record<string, any>,
   }
+
+  app.use(VueGoogleMaps, {
+    load: {
+      key: 'YOUR_API_KEY',
+    },
+  }).mount('#app');
 
   if (typeof window !== 'undefined') {
     context.initialState = window.__osvs__ ?? {}

@@ -32,8 +32,14 @@ const blockClasses = computed(() => [
 
 <template>
   <div class="py-6">
-    <div class="contact-info" :class="blockClasses">
-      <div v-if="props.polkaDots" class="polka-wrap polka-1">
+    <div
+      class="contact-info"
+      :class="blockClasses"
+    >
+      <div
+        v-if="props.polkaDots"
+        class="polka-wrap polka-1"
+      >
         <PolkaDots />
       </div>
       <div class="contact-info-card">
@@ -48,8 +54,13 @@ const blockClasses = computed(() => [
               class="iconify"
               :data-icon="info.icon"
               :class="`text-${info.color}`"
-            ></i>
-            <Title tag="h3" :size="6" weight="semi" narrow>
+            />
+            <Title
+              tag="h3"
+              :size="6"
+              weight="semi"
+              narrow
+            >
               <span>{{ info.title }}</span>
             </Title>
             <span class="info-block">
@@ -61,7 +72,10 @@ const blockClasses = computed(() => [
           </div>
         </div>
       </div>
-      <div v-if="props.polkaDots" class="polka-wrap polka-2">
+      <div
+        v-if="props.polkaDots"
+        class="polka-wrap polka-2"
+      >
         <PolkaDots />
       </div>
     </div>

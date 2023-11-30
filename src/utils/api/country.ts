@@ -26,7 +26,7 @@ export async function getRequirement(slug: string, id: string) {
   await sleep(200)
 
   if (!country) {
-    return Promise.reject(new Error(`Country ${id} not found`))
+    return Promise.reject(new Error(`Country ${slug} not found`))
   }
 
   return Promise.resolve(country.educationalPackage.requirements[temp_index])
