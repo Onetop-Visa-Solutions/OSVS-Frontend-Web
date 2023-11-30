@@ -24,7 +24,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/it.svg',
     content:
-      'Pursuing my studies in America has been a lifelong dream, yet lacking confidence in my English abilities held me back from even applying. I worried endlessly about struggling through exams or interviews. When I found One Stop Visa Solutions, they understood my frustrations deeply and they guided me through every step - strengthening my language skills and building up my interview confidence until I boldly presented my best self. Now beginning studies in my dream university, I am filled with gratitude as they were true partners who cared intensely about making my wish come true. Their heart is what makes the difference.',
+      'Pursuing my studies in America has been a lifelong dream, yet lacking confidence in my English abilities held me back from even applying. When I found One Stop Visa Solutions, they understood my frustrations and guided me through every step - strengthening my language skills and building up my interview confidence until I boldly presented my best self. Now beginning studies in my dream university, I am filled with gratitude as they were true partners who cared about making my dreams come true.',
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/tr.svg',
     content:
-      'Dreaming of studying abroad on a tight budget, I turned to One Stop Visa Solutions. Understanding my situation, they helped me identify and successfully apply to programs offering substantial international scholarships. Their diligent consultations and guidance in articulating my strengths in a compelling light proved invaluable. Thanks to their efforts, I secured a 70% scholarship to pursue my academic goals in Turkey. To those desiring overseas education with financial limitations, I wholeheartedly recommend consulting One Stop Visa Solutions. Their insight and personalized support make dreams feasible, securing life-changing affiliations and opportunities once seeming impossible.',
+      'Dreaming of studying abroad on a tight budget, I turned to One Stop Visa Solutions. Understanding my situation, they helped me identify and successfully apply to programs offering substantial international scholarships and secured a 70% scholarship for me to pursue my academic goals in Turkey.',
   },
 
 
@@ -65,7 +65,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/ca.svg',
     content:
-      'As a fresh medical radiography graduate seeking to advance my career, I was unsure how to turn my dreams into reality. When I turned to One Stop Visa Solutions, their exceptional guidance made all the difference. With compassion and expertise, they helped me gain admission and funding for a top Canadian university program perfectly tailored to my goals. Thanks to their diligent consultations and insight, I am now enhancing my training at an acclaimed school, preparing for an exciting future.'
+      'As a fresh medical radiography graduate seeking to advance my career, I was unsure how to turn my dreams into reality. When I turned to One Stop Visa Solutions, their exceptional guidance made all the difference. With compassion and expertise, they helped me gain admission and funding for a top Canadian university program perfectly tailored to my goals.'
   },
   {
     id: 4,
@@ -104,7 +104,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/ae.svg',
     content:
-      'As a working parent, I struggled to juggle my demanding visa paperwork amid career and family responsibilities. One Stop Visa Solutions lifted this burden with their stellar consultation services. Their experts guided me in creating a strong, tailored application and thanks to their diligent handling of every intricate detail and clear accentuation of my strengths, I was swiftly approved my visa to study at Lambton College. I unequivocally recommend One Stop Visa Solutions for their attentive support helping parents like me reach educational goals while handling full plates. Their personalized guidance delivers outstanding efficiency and results.',
+      'As a working parent, I struggled to juggle my demanding visa paperwork amid career and family responsibilities. One Stop Visa Solutions lifted this burden with their stellar consultation services. Their experts guided me in creating a strong, tailored application and thanks to their diligent handling of every intricate detail, I was swiftly approved my visa to study at Lambton College.',
   },
 
   {
@@ -118,7 +118,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/gb.svg',
     content:
-      'After having a visa application rejected, I turned to One Stop Visa Solutions before attempting to visit my brother in Canada again. Their consultation services professionally identified issues undermining my previous application and advised me on impressively improving my case. Thanks to their expert help tailored to my situation, I successfully secured a visa. I am now gratefully reunited with family after 10 long years. I unequivocally recommend One Stop to anyone needing diligent, personalized guidance after facing visa obstacles.',
+      'After having a visa application rejected, I turned to One Stop Visa Solutions before attempting to visit my brother in Canada again. Their consultation services professionally identified issues undermining my previous application and advised me on impressively improving my case. Thanks to their expert help tailored to my situation, I successfully secured a visa.',
   },
 
  ]
