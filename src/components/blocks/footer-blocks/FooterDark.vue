@@ -49,11 +49,9 @@ const footerClasses = computed(() => [
                     tag="h3"
                     :size="6"
                     weight="thin"
-                    :inverted="props.color === 'light'"
+                    :inverted="props.color === 'dark'"
                   >
-                    <span>Discover
-
-                    </span>
+                    <span>Discover</span>
                   </Title>
                   <ul class="link-list">
                     <li>
@@ -61,7 +59,7 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Destinations
+                        Get Started
                       </RouterLink>
                     </li>
                     <li>
@@ -69,7 +67,7 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Travel Guides
+                        Product
                       </RouterLink>
                     </li>
                     <li>
@@ -77,7 +75,23 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Experiences
+                        Features
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        Sign Up
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        Sign In
                       </RouterLink>
                     </li>
                   </ul>
@@ -91,7 +105,7 @@ const footerClasses = computed(() => [
                     tag="h3"
                     :size="6"
                     weight="thin"
-                    :inverted="props.color === 'light'"
+                    :inverted="props.color === 'dark'"
                   >
                     <span>Company</span>
                   </Title>
@@ -101,7 +115,7 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Learn About Us
+                        Company
                       </RouterLink>
                     </li>
                     <li>
@@ -109,7 +123,7 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Meet Our Team
+                        About
                       </RouterLink>
                     </li>
                     <li>
@@ -117,7 +131,23 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Explore Partnerships
+                        Training
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        FAQs
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        Contact
                       </RouterLink>
                     </li>
                   </ul>
@@ -131,19 +161,11 @@ const footerClasses = computed(() => [
                     tag="h3"
                     :size="6"
                     weight="thin"
-                    :inverted="props.color === 'light'"
+                    :inverted="props.color === 'dark'"
                   >
                     <span>Support</span>
                   </Title>
                   <ul class="link-list">
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Contact Us
-                      </RouterLink>
-                    </li>
                     <li>
                       <RouterLink
                         :to="{ name: 'index' }"
@@ -157,7 +179,31 @@ const footerClasses = computed(() => [
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
-                        Privacy Policy
+                        Guides
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        API Docs
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        Terms
+                      </RouterLink>
+                    </li>
+                    <li>
+                      <RouterLink
+                        :to="{ name: 'index' }"
+                        class="level-item footer-link"
+                      >
+                        Privacy
                       </RouterLink>
                     </li>
                   </ul>
@@ -185,12 +231,11 @@ const footerClasses = computed(() => [
             </p>
 
             <div class="level is-mobile py-4 max-w-1 small:mx-auto">
-              <a
+              <RouterLink
                 v-for="(link, index) in props.socialLinks"
                 :key="index"
                 class="level-item footer-link"
-                :href="link.url"
-                target="_blank"
+                :to="link.url"
               >
                 <span class="icon">
                   <i
@@ -199,7 +244,7 @@ const footerClasses = computed(() => [
                   />
                   <span class="is-sr-only">{{ link.name }}</span>
                 </span>
-              </a>
+              </RouterLink>
             </div>
           </div>
         </div>
@@ -215,7 +260,7 @@ const footerClasses = computed(() => [
               role="img"
               aria-label="copyright"
             >©</span>
-            2023 Onestop IT Solutions. All rights reserved.
+            2020-2021 Vulk. All rights reserved.
           </span>
         </div>
         <div class="has-text-centered">
@@ -223,7 +268,6 @@ const footerClasses = computed(() => [
             <Control
               icon="feather:mail"
               expanded
-              rounded
             >
               <VInput
                 placeholder="Email Address"
@@ -234,7 +278,6 @@ const footerClasses = computed(() => [
               <Button
                 color="primary"
                 size="form"
-                rounded
               >
                 Subscribe
               </Button>

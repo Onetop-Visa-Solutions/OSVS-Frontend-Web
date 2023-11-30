@@ -7,7 +7,7 @@ const countriesList = country.allCountries
 </script>
 
 <template>
-  <Hero
+  <HeroVariant
     color="grey"
     class="product-hero"
     size="fullheight"
@@ -155,7 +155,7 @@ const countriesList = country.allCountries
         </div>
       </div>
     </template>
-  </Hero>
+  </HeroVariant>
 </template>
 
 <style lang="scss" scoped>

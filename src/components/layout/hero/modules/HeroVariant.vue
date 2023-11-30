@@ -14,7 +14,6 @@ export interface HeroProps {
   overlay?: boolean
   starfall?: boolean
   mask?: HeroMask
-  video?: boolean
 }
 
 const slots = useSlots()
@@ -27,7 +26,6 @@ const props = withDefaults(defineProps<HeroProps>(), {
   overlay: false,
   starfall: false,
   mask: undefined,
-  video: false,
 })
 
 const heroClasses = computed(() => [
@@ -45,16 +43,52 @@ const heroClasses = computed(() => [
     class="hero"
     :class="heroClasses"
   >
-    <VideoBackground
-      source="/assets/backgrounds/background.mp4"
-      img="/assets/backgrounds/bg-main-2.png"
-      style="max-height: 400px; height: 100vh;"
+    <div
+      v-if="props.starfall"
+      class="starfall"
     >
-      <h1>
-        Hello welcome!
-      </h1>
-    </VideoBackground>
-    <!-- <slot name="background" /> -->
+      <div
+        v-for="index in 40"
+        :key="index"
+        class="falling-star"
+      />
+    </div>
+    <img
+      v-if="props.shape"
+      class="top-bg"
+      :src="props.shape"
+      alt="hero shape"
+      width="240"
+      height="150"
+    >
+
+    <div
+      v-if="props.mask === 'circle'"
+      class="hero-mask-circle"
+    >
+      <HeroCircleMask :color="props.color" />
+    </div>
+
+    <div
+      v-if="props.mask === 'wave'"
+      class="hero-mask-wave"
+    >
+      <HeroWaveMask :color="props.color" />
+    </div>
+
+    <div
+      v-if="props.mask === 'slant'"
+      class="hero-mask-slant"
+    >
+      <HeroSlantMask :color="props.color" />
+    </div>
+
+    <div
+      v-if="props.overlay"
+      class="hero-overlay"
+    />
+
+    <slot name="background" />
 
     <div
       v-if="'body' in slots"
@@ -63,6 +97,12 @@ const heroClasses = computed(() => [
       <Container>
         <slot name="body" />
       </Container>
+    </div>
+    <div
+      v-if="'footer' in slots"
+      class="hero-foot"
+    >
+      <slot name="footer" />
     </div>
   </section>
 </template>
@@ -261,7 +301,6 @@ $total: 40;
 }
 /* stylelint-enable */
 
-/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (max-width: 767px) {
   .hero {
     &.is-side {
@@ -277,7 +316,6 @@ $total: 40;
   }
 }
 
-/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .hero {
     &.is-fullheight {
@@ -298,7 +336,6 @@ $total: 40;
   }
 }
 
-/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .hero {
     &.is-fullheight {
