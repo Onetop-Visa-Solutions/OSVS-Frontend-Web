@@ -11,12 +11,12 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/ca.svg',
     content:
-      'Their educational consultancy services played a crucial role in my smooth transition to studying in Canada. They offered detailed guidance and were always available for support, making the whole process a breeze.',
+      'When I came to One Stop Visa Solutions, my morale was low after being unable to continue my education for 4 years due to the civil war. However, One Stop gave me hope by providing quality advice and extraordinarily fast service, allowing me to start a new chapter by beginning my undergraduate degree in Canada.',
   },
   {
     id: 1,
     customer: {
-      name: 'Meklit Mulugeta',
+      name: 'Yordanos Shimelis',
       photo: '/assets/testimonials/meklit-mulugeta.HEIC',
       position: 'Student',
       country:"Italy",
@@ -24,7 +24,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/it.svg',
     content:
-      'Navigating through the educational visa process for Italy was made easier with their outstanding services. I was impressed by their swift responses and professionalism.',
+      'Pursuing my studies in America has been a lifelong dream, yet lacking confidence in my English abilities held me back from even applying. I worried endlessly about struggling through exams or interviews. When I found One Stop Visa Solutions, they understood my frustrations deeply and they guided me through every step - strengthening my language skills and building up my interview confidence until I boldly presented my best self. Now beginning studies in my dream university, I am filled with gratitude as they were true partners who cared intensely about making my wish come true. Their heart is what makes the difference.',
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const testimonials = [
     },
     logo: '/assets/brands/covenant.svg',
     content:
-      'Their excellent visit consultation service made my trip to Australia a success. The team was professional and efficient, providing a personalized approach that suited my needs perfectly.',
+      'I was struggling to get a visa for an urgent business trip to Australia when One Stop Visa Solutions came through for me. Their excellent visit visa consultation service provided personalized guidance that ensured my last-minute travel plans were a success. I highly recommend them for all visa needs, especially when you are in a time crunch.  ',
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/tr.svg',
     content:
-      'My experience with their educational consultancy services was exceptional. Their detailed guidance and constant support made my transition to studying in Turkey incredibly smooth.',
+      'Dreaming of studying abroad on a tight budget, I turned to One Stop Visa Solutions. Understanding my situation, they helped me identify and successfully apply to programs offering substantial international scholarships. Their diligent consultations and guidance in articulating my strengths in a compelling light proved invaluable. Thanks to their efforts, I secured a 70% scholarship to pursue my academic goals in Turkey. To those desiring overseas education with financial limitations, I wholeheartedly recommend consulting One Stop Visa Solutions. Their insight and personalized support make dreams feasible, securing life-changing affiliations and opportunities once seeming impossible.',
   },
 
 
@@ -65,12 +65,12 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/ca.svg',
     content:
-      'My study permit application process for Canada was made easy with their help. Their team was professional, and they guided me through the entire process, right from application to pre-departure.',
+      'As a fresh medical radiography graduate seeking to advance my career, I was unsure how to turn my dreams into reality. When I turned to One Stop Visa Solutions, their exceptional guidance made all the difference. With compassion and expertise, they helped me gain admission and funding for a top Canadian university program perfectly tailored to my goals. Thanks to their diligent consultations and insight, I am now enhancing my training at an acclaimed school, preparing for an exciting future.'
   },
   {
     id: 4,
     customer: {
-      name: 'Natnael Gulilat',
+      name: 'Natnael',
       photo: '/assets/testimonials/nati-tall.png',
       position: 'Student',
       country:"USA",
@@ -78,25 +78,25 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/us.svg',
     content:
-      'The educational visa processing services they provided were top-notch. Their team guided me through the process, ensuring I secured my student visa for the USA with minimal hassles.',
+      'After failing my initial F1 visa interview, I felt lost on what to do next. I stumbled upon One Stop Visa Solutions, and their expertise and kindness turned everything around. Through compassionate listening and extensive training tailored to my situation, they helped me approach the reinterview with confidence and focus. I am now thrilled to have my approved visa thanks to One Stop Visa\'s invaluable support',
   },
   {
     id: 5,
     customer: {
-      name: 'Natnael Alemu',
+      name: 'Dawit',
       photo: 'data:image/gif;base64,replace_with_your_image',
       position: 'Visitor',
-      country:"Australia",
-      countryFlag: "imagepost.com/germany-flag.png"
+      country:"Poland",
+      countryFlag: "imagepost.com/poland-flag.png"
     },
-    logo: '/assets/services/avatars/au.svg',
+    logo: '/assets/services/avatars/pl.svg',
     content:
-      'Their visa processing services are second to none. I was able to get my Australian visa in no time, thanks to their professional and efficient handling.',
+      'Disssatisfied with the educational quality in Ethiopia, I came to One stop Visa Solutions with the dream of taking a computer science degreee abroad, and their services allowed my dream to be a reality, and I am currently taking A CS course at the University of Warsaw in Poland. ',
   },
   {
     id: 6,
     customer: {
-      name: 'Olivia Martinez',
+      name: 'Misgana Huka',
       photo: 'data:image/gif;base64,replace_with_your_image',
       position: 'Visitor',
       country:"Dubai",
@@ -104,21 +104,21 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/ae.svg',
     content:
-      'Their tourist package services were instrumental in helping me to my visit to Dubai. Their team was always ready to assist, making the process simple and less daunting.',
+      'As a working parent, I struggled to juggle my demanding visa paperwork amid career and family responsibilities. One Stop Visa Solutions lifted this burden with their stellar consultation services. Their experts guided me in creating a strong, tailored application and thanks to their diligent handling of every intricate detail and clear accentuation of my strengths, I was swiftly approved my visa to study at Lambton College. I unequivocally recommend One Stop Visa Solutions for their attentive support helping parents like me reach educational goals while handling full plates. Their personalized guidance delivers outstanding efficiency and results.',
   },
 
   {
     id: 7,
     customer: {
-      name: 'Oliver Thomas',
+      name: 'Degol Abraham',
       photo: 'data:image/gif;base64,replace_with_your_image',
       position: 'Visitor',
-      country:"Unite Kingdom",
+      country:"Canada",
       countryFlag: "imagepost.com/japan-flag.png"
     },
     logo: '/assets/services/avatars/gb.svg',
     content:
-      'Their visit consultation services were invaluable during my business trip to UK. Their team was professional and provided excellent guidance.',
+      'After having a visa application rejected, I turned to One Stop Visa Solutions before attempting to visit my brother in Canada again. Their consultation services professionally identified issues undermining my previous application and advised me on impressively improving my case. Thanks to their expert help tailored to my situation, I successfully secured a visa. I am now gratefully reunited with family after 10 long years. I unequivocally recommend One Stop to anyone needing diligent, personalized guidance after facing visa obstacles.',
   },
 
  ]
