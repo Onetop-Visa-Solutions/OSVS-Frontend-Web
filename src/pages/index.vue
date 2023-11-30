@@ -12,6 +12,21 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
 
 <template>
   <div>
+    <!-- <video
+      autoplay
+      loop
+      muted
+      class="video"
+    >
+      <source
+        src="/assets/backgrounds/background.mp4"
+        type="video/webm"
+      >
+      <source
+        src="/assets/backgrounds/background.mp4"
+        type="video/mp4"
+      >
+    </video> -->
     <HeroSection />
     <Section>
       <Container>

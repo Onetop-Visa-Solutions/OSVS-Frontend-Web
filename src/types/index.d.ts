@@ -63,31 +63,20 @@ export interface SocialLink {
   url: string
 }
 
-export interface Job {
-  icon: string
+export interface Requirement  {
   title: string
+  name: string
   slug: string
-  location: string
-  duration: string
-  salary?: string
-  contact?: string
-  content: {
-    description?: {
-      title: string
-      text: string
+  index: number
+  requirementsList: {
+    title: string
+    details:{
+      name: string
+      content: string
     }[]
-    aptitude?: {
-      title: string
-      skills: string[]
-    }[]
-    technologies?: {
-      title: string
-      tools: {
-        title: string
-        icon: string
-      }[]
-    }[]
-  }
+  }[],
+  description: string
+
 }
 
 
@@ -110,6 +99,8 @@ export interface Country {
     requirements: {
         title: string
         name: string
+        slug: string
+        index: number
         requirementsList: {
           title: string
           detail:{

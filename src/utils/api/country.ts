@@ -17,3 +17,17 @@ export async function getCountry(slug: string) {
   return Promise.resolve(country)
 }
 
+
+export async function getRequirement(id: string) {
+  console.log(id);
+  const temp_index = parseInt(id);
+  const country = allCountries.find((country: Country) => country.educationalPackage.requirements[temp_index].index === temp_index)
+  // simulate api call
+  await sleep(200)
+
+  if (!country) {
+    return Promise.reject(new Error(`Country ${id} not found`))
+  }
+
+  return Promise.resolve(country.educationalPackage.requirements[temp_index])
+}

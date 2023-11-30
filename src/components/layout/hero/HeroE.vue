@@ -3,10 +3,8 @@
 </script>
 
 <template>
-  <Hero
+  <HeroVariant
     alignment="center"
-    size="fullheight"
-    color="grey"
   >
     <template #body>
       <div class="columns is-vcentered mt-12">
@@ -55,7 +53,7 @@
           </div>
 
           <!--Hero Faces - student photos-->
-          <div class="hero-faces mt-4">
+          <!-- <div class="hero-faces mt-4">
             <div class="face-column">
               <div
                 v-background="{
@@ -142,7 +140,7 @@
                 class="face-element"
               />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </template>
@@ -156,7 +154,7 @@
         </div>
       </div>
     </template> -->
-  </Hero>
+  </HeroVariant>
 </template>
 
 <style lang="scss" scoped>

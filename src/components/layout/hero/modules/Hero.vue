@@ -45,6 +45,36 @@ const heroClasses = computed(() => [
     class="hero"
     :class="heroClasses"
   >
+    <video
+      autoplay
+      loop
+      muted
+      class="video"
+    >
+      <source
+        src="/assets/backgrounds/bg-video-onestop.mp4"
+        type="video/webm"
+      >
+      <source
+        src="/assets/backgrounds/bg-video-onestop.mp4"
+        type="video/mp4"
+      >
+    </video>
+    <video
+      autoplay
+      loop
+      muted
+      class="video-2"
+    >
+      <source
+        src="/assets/backgrounds/bg-video-onestop.mp4"
+        type="video/webm"
+      >
+      <source
+        src="/assets/backgrounds/bg-video-onestop.mp4"
+        type="video/mp4"
+      >
+    </video>
     <div
       v-if="props.starfall"
       class="starfall"
@@ -84,7 +114,7 @@ const heroClasses = computed(() => [
       class="hero-overlay"
     />
 
-    <slot name="background" />
+    <!-- <slot name="background" /> -->
 
     <div
       v-if="'body' in slots"
@@ -104,6 +134,27 @@ const heroClasses = computed(() => [
 </template>
 
 <style lang="scss">
+.video{
+  // z-index: -1;
+  position: absolute;
+  width: 100%;
+  // height: 300%;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.video-2{
+  // z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .hero {
   position: relative;
   background-color: var(--hero-bg-color);
@@ -185,8 +236,8 @@ const heroClasses = computed(() => [
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--dark-text);
-    opacity: 0.6;
+    background-color: black;
+    opacity: 0.7;
     z-index: 0;
   }
 

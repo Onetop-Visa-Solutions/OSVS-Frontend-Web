@@ -5,10 +5,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 
 <template>
   <Hero
-    v-background="{
-      src: '/assets/backgrounds/bg-main-3.png',
-      placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
-    }"
+    overlay
     class="has-top-bg is-right"
     alignment="center"
     color="grey"
