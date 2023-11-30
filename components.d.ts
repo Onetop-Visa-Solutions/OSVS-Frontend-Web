@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     ActionLink: typeof import('./src/components/base/link/ActionLink.vue')['default']
+    Anomaly: typeof import('./src/layouts/anomaly.vue')['default']
     AppButton: typeof import('./src/components/base/button/AppButton.vue')['default']
     AvatarGroup: typeof import('./src/components/base/avatar/AvatarGroup.vue')['default']
     AvatarPopover: typeof import('./src/components/base/popover/modules/AvatarPopover.vue')['default']
@@ -34,7 +35,7 @@ declare module 'vue' {
     ContactInfo: typeof import('./src/components/advanced/contact/contact-info/ContactInfo.vue')['default']
     Container: typeof import('./src/components/layout/container/Container.vue')['default']
     Control: typeof import('./src/components/base/form/control/Control.vue')['default']
-    copy: typeof import('./src/components/blocks/footer-blocks/Footer copy.vue')['default']
+    copy: typeof import('./src/layouts/default copy.vue')['default']
     Counter: typeof import('./src/components/base/counter/Counter.vue')['default']
     CountryAdvantage: typeof import('./src/components/pages/destinations/country/CountryAdvantage.vue')['default']
     CountryCard: typeof import('./src/components/pages/services/CountryCard.vue')['default']
@@ -96,7 +97,9 @@ declare module 'vue' {
     NavbarA: typeof import('./src/components/blocks/navbar-blocks/NavbarA.vue')['default']
     NavbarDropdown: typeof import('./src/components/blocks/navbar-blocks/modules/NavbarDropdown.vue')['default']
     NavbarSocialItem: typeof import('./src/components/blocks/navbar-blocks/modules/NavbarSocialItem.vue')['default']
+    NavbarSocialItemVar: typeof import('./src/components/blocks/navbar-blocks/modules/NavbarSocialItemVar.vue')['default']
     NavbarVar: typeof import('./src/components/blocks/navbar-blocks/NavbarVar.vue')['default']
+    NavbarVariantA: typeof import('./src/components/blocks/navbar-blocks/NavbarVariantA.vue')['default']
     NinjaToggle: typeof import('./src/components/base/form/toggle/NinjaToggle.vue')['default']
     NumbersSection: typeof import('./src/components/advanced/text/numbers-section/NumbersSection.vue')['default']
     PageTitle: typeof import('./src/components/base/title/PageTitle.vue')['default']

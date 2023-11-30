@@ -52,11 +52,11 @@ const heroClasses = computed(() => [
       class="video"
     >
       <source
-        src="/assets/backgrounds/bg-video-onestop.mp4"
+        src="/assets/backgrounds/bg-video.mp4"
         type="video/webm"
       >
       <source
-        src="/assets/backgrounds/bg-video-onestop.mp4"
+        src="/assets/backgrounds/bg-video.mp4"
         type="video/mp4"
       >
     </video>
@@ -138,7 +138,7 @@ const heroClasses = computed(() => [
   // z-index: -1;
   position: absolute;
   width: 100%;
-  // height: 300%;
+  height: 100%;
   right: 0;
   top: 0;
   left: 0;

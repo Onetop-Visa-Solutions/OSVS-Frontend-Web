@@ -53,7 +53,7 @@ import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandl
         <div class="column is-6 is-offset-1">
           <div class="circle-composition">
             <img
-              src="/assets/demo/img/people/man-circle.png"
+              src="/assets/demo/image/people/girl-smiling-circle.png"
               width="500"
               height="500"
               alt="hero-image"
@@ -65,7 +65,7 @@ import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandl
             <div class="composition-dot composition-dot-1">
               <i
                 class="iconify"
-                data-icon="ic:baseline-gpp-good"
+                data-icon="icon-park-twotone:good-one"
               />
             </div>
             <div class="composition-dot composition-dot-2">
@@ -170,6 +170,12 @@ import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandl
             </div>
           </div>
         </div>
+      </div>
+    </template>
+
+    <template #footer>
+      <div class="mx-auto max-w-8">
+        <div class="tabs is-centered pb-4" />
       </div>
     </template>
   </HeroVariant>
