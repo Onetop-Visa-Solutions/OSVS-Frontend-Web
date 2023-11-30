@@ -26,7 +26,7 @@ const props = defineProps<RequirementDetailsProps>()
       <div class="left">
         <div class="job-icon">
           <img
-            src="/assets/logo/logo.svg"
+            :src="props.requirement.flagImage"
             alt=""
           >
         </div>
@@ -105,25 +105,24 @@ const props = defineProps<RequirementDetailsProps>()
         </div>
         <div class="column is-4 is-offset-1">
           <div
-            v-if="props.requirement.requirementsList"
+            v-if="props.requirement.additionalRequirements"
             class="recommended-skills"
           >
             <h3>Additional Requirements</h3>
             <template
-              v-for="(content, techKey) in props.requirement.requirementsList"
+              v-for="(content, techKey) in props.requirement.additionalRequirements"
               :key="techKey"
             >
               <div
-                v-for="(req, toolKey) in content"
-                :key="toolKey"
+
                 :class="'skill-block'"
               >
                 <img
-                  src="/assets/logo/logo.svg"
-                  alt="Skill icon"
+                  :src="content.icon"
+                  alt="Add icon"
                 >
                 <p>
-                  op req
+                  {{ content.title }}
                 </p>
               </div>
               <hr class="is-invisible">

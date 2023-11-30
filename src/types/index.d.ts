@@ -67,9 +67,18 @@ export interface Requirement  {
   title: string
   name: string
   slug: string
+  flagImage: string
   index: number
   requirementsList: {
     title: string
+    icon: string
+    details:{
+      name: string
+      content: string
+    }[]
+  }[],additionalRequirements: {
+    title: string
+    icon: string
     details:{
       name: string
       content: string
@@ -100,9 +109,19 @@ export interface Country {
         title: string
         name: string
         slug: string
+        flagImage: string
         index: number
         requirementsList: {
           title: string
+          icon: string
+          detail:{
+            name: string
+            content: string
+          }[]
+        }[]
+        additionalRequirements: {
+          title: string
+          icon: string
           detail:{
             name: string
             content: string
