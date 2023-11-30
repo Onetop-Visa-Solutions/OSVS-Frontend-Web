@@ -25,12 +25,13 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
 import {onMounted, onServerPrefetch, watch, ref} from 'vue'
 const route = useRoute()
 const router = useRouter()
-var id = route.params.name as string
+var slug = route.params.name as string
+var id = route.query.index as string
 // get job data
 const requirement = ref<any>()
 async function fetchRequirement() {
   try {
-    requirement.value = await getRequirement(id)
+    requirement.value = await getRequirement(slug, id)
   } catch {
     router.replace({
       name: 'all',

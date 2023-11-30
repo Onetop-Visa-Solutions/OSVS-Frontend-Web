@@ -60,7 +60,8 @@ const activeBox = ref(1)
             raised
             :to="{
               name: 'education-destinations-requirements-name',
-              params: { name: item.index },
+              params: { name: item.slug },
+              query: { index: item.index}
             }"
           >
             <span>Learn More</span>

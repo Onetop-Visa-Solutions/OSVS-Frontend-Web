@@ -18,10 +18,10 @@ export async function getCountry(slug: string) {
 }
 
 
-export async function getRequirement(id: string) {
+export async function getRequirement(slug: string, id: string) {
   console.log(id);
   const temp_index = parseInt(id);
-  const country = allCountries.find((country: Country) => country.educationalPackage.requirements[temp_index].index === temp_index)
+  const country = allCountries.find((country: Country) => country.educationalPackage.requirements[temp_index].slug === slug)
   // simulate api call
   await sleep(200)
 
