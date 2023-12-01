@@ -52,11 +52,11 @@ const heroClasses = computed(() => [
       class="video"
     >
       <source
-        src="/assets/backgrounds/bg-video.mp4"
+        src="/assets/backgrounds/bg-video-osvs.mp4"
         type="video/webm"
       >
       <source
-        src="/assets/backgrounds/bg-video.mp4"
+        src="/assets/backgrounds/bg-video-osvs.mp4"
         type="video/mp4"
       >
     </video>
@@ -100,7 +100,7 @@ const heroClasses = computed(() => [
       class="hero-overlay"
     />
 
-    <!-- <slot name="background" /> -->
+    <slot name="background" />
 
     <div
       v-if="'body' in slots"
@@ -213,7 +213,7 @@ const heroClasses = computed(() => [
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.3;
     z-index: 0;
   }
 
@@ -338,6 +338,17 @@ $total: 40;
       }
     }
   }
+
+//   .video{
+//   // z-index: -1;
+//   position: absolute;
+//   width: 100%;
+//   height: 250;
+//   right: 0;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+// }
 }
 
 /* stylelint-disable-next-line media-feature-range-notation */

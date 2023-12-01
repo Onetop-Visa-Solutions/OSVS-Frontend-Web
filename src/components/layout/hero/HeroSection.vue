@@ -6,7 +6,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 <template>
   <Hero
     overlay
-    class="has-top-bg is-right"
+    class="is-right"
     alignment="center"
     color="grey"
     shape-orientation="right"
@@ -355,6 +355,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
           }
         }
 
+        &:nth-child(3),
         &:nth-child(3),
         &:nth-child(4) {
           display: none;

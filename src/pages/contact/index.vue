@@ -1,6 +1,6 @@
 <route lang="yaml">
   meta:
-    layout: solid-nav
+    layout: anomaly
   </route>
 
   <script setup lang="ts">

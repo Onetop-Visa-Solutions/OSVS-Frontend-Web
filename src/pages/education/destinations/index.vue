@@ -1,6 +1,6 @@
 <route lang="yaml">
   meta:
-    layout: default
+    layout: anomaly
   </route>
 
   <script setup lang="ts">

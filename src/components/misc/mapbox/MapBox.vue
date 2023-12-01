@@ -7,7 +7,7 @@
       width="600"
       height="400"
       style="border:0;"
-      allowfullscreen=""
+      allowfullscreen="true"
       loading=""
       referrerpolicy="no-referrer-when-downgrade"
     />

@@ -1,4 +1,8 @@
-<script setup lang="ts">
+<route lang="yaml">
+  meta:
+    layout: anomaly
+  </route>
+  <script setup lang="ts">
 import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandler'
 import { socialLinks } from '/@src/data/blocks/advanced/social'
 import { customerLogos } from '/@src/data/pages/logos'
