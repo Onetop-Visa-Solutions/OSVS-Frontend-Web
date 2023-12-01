@@ -37,11 +37,10 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
             <Subtitle
               tag="p"
               :size="5"
-              weight="thin"
+              weight=""
               class="mx-auto max-w-6 b-centered-tablet-p pt-2 text-white"
             >
-              Embark on unforgettable journeys.
-              Let us be your trusted partner in crafting remarkable experiences that exceed your expectations.
+              All your travel affairs under roof.
             </Subtitle>
             <!--Buttons-->
             <div class="buttons is-relative z-1">
