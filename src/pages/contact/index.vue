@@ -4,10 +4,9 @@
   </route>
 
   <script setup lang="ts">
-  import { socialLinks } from '/@src/data/blocks/advanced/social'
+  import { socialLinks } from '/@src/data/blocks/advanced/social'  </script>
   import { contactInfo } from '/@src/data/pages/contact'
 
-</script>
 <template>
   <div>
     <HeroContact

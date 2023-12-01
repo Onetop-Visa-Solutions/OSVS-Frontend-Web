@@ -1,58 +1,80 @@
-<template>
-  <div id="googlemaps" />
-</template>
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-<script type="text/javascript">
-
-// The latitude and longitude of your business / place
-var position = [27.1959739, 78.02423269999997];
-
-function showGoogleMaps() {
-
-    var latLng = new google.maps.LatLng(position[9.015174311565113], position[38.78747441332159]); ,
-
-    var mapOptions = {
-        zoom: 16, // initialize zoom level - the max value is 21
-        streetViewControl: false, // hide the yellow Street View pegman
-        scaleControl: true, // allow users to zoom the Google Map
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: latLng
-    };
-
-    map = new google.maps.Map(document.getElementById('googlemaps'),
-        mapOptions);
-
-    // Show the default red marker at the location
-    marker = new google.maps.Marker({
-        position: latLng,
-        map: map,
-        draggable: false,
-        animation: google.maps.Animation.DROP
-    });
-}
-
-google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+<script lang="ts">
+import 'mapbox-gl/src/css/mapbox-gl.css'
 </script>
 
-<style>
-#googlemaps {
-  height: 100%;
-  width: 100%;
-  position:absolute;
-  top: 0;
-  left: 0;
-  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+<script setup lang="ts">
+import mapboxgl from 'mapbox-gl'
+import { useDarkmode } from '/@src/stores/darkmode'
+
+export interface MapBoxProps {
+  lng: number
+  lat: number
+  zoom?: number
+  absolute?: boolean
 }
 
-#contactform {
-  position: relative;
-  z-index: 1; /* The z-index should be higher than Google Maps */
-  width: 300px;
-  margin: 60px auto 0;
-  padding: 10px;
-  background: black;
-  height: auto;
-  opacity: .45; /* Set the opacity for a slightly transparent Google Form */
-  color: white;
-}</style>
+const props = withDefaults(defineProps<MapBoxProps>(), {
+  zoom: 9,
+  absolute: false,
+})
+
+// You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+
+let map: mapboxgl.Map | undefined
+const container = ref<HTMLElement>()
+
+const darkmode = useDarkmode()
+const style = computed(() =>
+  darkmode.isDark
+    ? 'mapbox://styles/mapbox/dark-v10'
+    : 'mapbox://styles/mapbox/light-v10'
+)
+
+const markerOptions = {
+  color: 'red',
+}
+
+onMounted(() => {
+  if (container.value) {
+    map = new mapboxgl.Map({
+      container: container.value,
+      style: style.value, // style URL
+      center: [props.lng, props.lat], // starting position [lng, lat]
+      zoom: props.zoom, // starting zoom
+    })
+
+    // Create a marker and add it to the map.
+    new mapboxgl.Marker(markerOptions)
+      .setLngLat([props.lng, props.lat])
+      .addTo(map)
+  }
+})
+
+watch(style, (newStyle, oldStyle) => {
+  console.log('STYLES', newStyle, oldStyle)
+  map?.setStyle(newStyle)
+})
+</script>
+
+<template>
+  <div
+    ref="container"
+    class="map"
+    :class="props.absolute && 'is-absolute'"
+  />
+</template>
+
+<style scoped lang="scss">
+.map {
+  height: 100%;
+  width: 100%;
+
+  &.is-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+</style>

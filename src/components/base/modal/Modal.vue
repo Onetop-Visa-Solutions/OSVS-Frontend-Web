@@ -59,7 +59,7 @@ es:
 fr:
   cancel-label: 'Annuler'
 zh-CN:
-  cancel-label: '坖消'
+  cancel-label: '取消'
 </i18n-->
 
 <template>
