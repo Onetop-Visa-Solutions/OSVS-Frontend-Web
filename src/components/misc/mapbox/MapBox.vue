@@ -7,7 +7,7 @@
       width="600"
       height="400"
       style="border:0;"
-      allowfullscreen="true"
+      allowfullscreen=""
       loading=""
       referrerpolicy="no-referrer-when-downgrade"
     />
@@ -22,7 +22,7 @@
 .bg-map{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 92%;
   z-index: 0;
   top: 10%
 }

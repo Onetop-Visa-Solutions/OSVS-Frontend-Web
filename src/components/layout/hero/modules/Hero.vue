@@ -60,21 +60,7 @@ const heroClasses = computed(() => [
         type="video/mp4"
       >
     </video>
-    <video
-      autoplay
-      loop
-      muted
-      class="video-2"
-    >
-      <source
-        src="/assets/backgrounds/bg-video-onestop.mp4"
-        type="video/webm"
-      >
-      <source
-        src="/assets/backgrounds/bg-video-onestop.mp4"
-        type="video/mp4"
-      >
-    </video>
+
     <div
       v-if="props.starfall"
       class="starfall"
@@ -138,19 +124,9 @@ const heroClasses = computed(() => [
   // z-index: -1;
   position: absolute;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   right: 0;
   top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.video-2{
-  // z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  right: 0;
   left: 0;
   bottom: 0;
 }

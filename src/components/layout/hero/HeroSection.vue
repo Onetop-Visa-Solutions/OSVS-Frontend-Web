@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { customerLogos } from '/@src/data/pages/logos'
+// import { customerLogos } from '/@src/data/pages/logos'
 import { serviceAvatars } from '/@src/data/pages/home/services'
 </script>
 
@@ -210,7 +210,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
         </div>
       </div>
     </template>
-    <template #footer>
+    <!-- <template #footer>
       <div class="mx-auto max-w-8">
         <p class="paragraph rem-100 text-white has-text-centered">
           Collaborating with companies
@@ -219,7 +219,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
           <HeroClients :logos="customerLogos" />
         </div>
       </div>
-    </template>
+    </template> -->
   </Hero>
 </template>
 

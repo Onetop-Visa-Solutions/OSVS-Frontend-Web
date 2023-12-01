@@ -8,12 +8,21 @@ import {ourDifference} from '/@src/data/pages/company'
 import { resources } from '/@src/data/pages/blog/resource'
 import { testimonials } from '/@src/data/blocks/advanced/testimonials'
 import { socialLinks } from '/@src/data/blocks/advanced/social'
+import { customerLogos } from '/@src/data/pages/logos'
+
 </script>
 
 <template>
   <div>
-    
     <HeroSection />
+    <div class="mx-auto mt-8 max-w-8">
+      <p class="paragraph rem-100  has-text-centered">
+        Collaborating with companies
+      </p>
+      <div class="tabs is-centered pb-6">
+        <HeroClients :logos="customerLogos" />
+      </div>
+    </div>
     <Section>
       <Container>
         <SectionTitle

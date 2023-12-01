@@ -19,9 +19,7 @@ const props = withDefaults(defineProps<MapHeroProps>(), {
     color="grey"
   >
     <template #background>
-      <MapBox
-       
-      />
+      <MapBox />
     </template>
     <template #body>
       <div class="columns">
