@@ -20,10 +20,7 @@ const props = withDefaults(defineProps<MapHeroProps>(), {
   >
     <template #background>
       <MapBox
-        :lng="props.lng"
-        :lat="props.lat"
-        :zoom="props.zoom"
-        absolute
+       
       />
     </template>
     <template #body>

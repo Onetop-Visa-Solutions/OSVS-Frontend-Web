@@ -1,80 +1,29 @@
-<script lang="ts">
-import 'mapbox-gl/src/css/mapbox-gl.css'
-</script>
-
-<script setup lang="ts">
-import mapboxgl from 'mapbox-gl'
-import { useDarkmode } from '/@src/stores/darkmode'
-
-export interface MapBoxProps {
-  lng: number
-  lat: number
-  zoom?: number
-  absolute?: boolean
-}
-
-const props = withDefaults(defineProps<MapBoxProps>(), {
-  zoom: 9,
-  absolute: false,
-})
-
-// You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
-
-let map: mapboxgl.Map | undefined
-const container = ref<HTMLElement>()
-
-const darkmode = useDarkmode()
-const style = computed(() =>
-  darkmode.isDark
-    ? 'mapbox://styles/mapbox/dark-v10'
-    : 'mapbox://styles/mapbox/light-v10'
-)
-
-const markerOptions = {
-  color: 'red',
-}
-
-onMounted(() => {
-  if (container.value) {
-    map = new mapboxgl.Map({
-      container: container.value,
-      style: style.value, // style URL
-      center: [props.lng, props.lat], // starting position [lng, lat]
-      zoom: props.zoom, // starting zoom
-    })
-
-    // Create a marker and add it to the map.
-    new mapboxgl.Marker(markerOptions)
-      .setLngLat([props.lng, props.lat])
-      .addTo(map)
-  }
-})
-
-watch(style, (newStyle, oldStyle) => {
-  console.log('STYLES', newStyle, oldStyle)
-  map?.setStyle(newStyle)
-})
-</script>
-
 <template>
-  <div
-    ref="container"
-    class="map"
-    :class="props.absolute && 'is-absolute'"
-  />
+  <div>
+    <iframe
+      class="bg-map"
+      title="onestop-map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.976859251836!2d38.78255309138019!3d9.01912966416712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8513717161e5%3A0xc629c38e8f892784!2sOne%20Stop%20Visa%20Solutions%20Travel%20Agent!5e0!3m2!1sen!2set!4v1701412612677!5m2!1sen!2set"
+      width="600"
+      height="400"
+      style="border:0;"
+      allowfullscreen="true"
+      loading=""
+      referrerpolicy="no-referrer-when-downgrade"
+    />
+  </div>
 </template>
 
-<style scoped lang="scss">
-.map {
-  height: 100%;
-  width: 100%;
+<script setup>
 
-  &.is-absolute {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-  }
+</script>
+
+<style lang="scss" scoped>
+.bg-map{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 10%
 }
 </style>

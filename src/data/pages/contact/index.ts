@@ -14,7 +14,7 @@ export const contactInfo = [
     info: 'tel: 0966698535',
     name: 'Call us now',
     type: 'link',
-    text: 'You can call us during our office hours for any assistance or inquiries. We look forward to speaking with you.',
+    text: 'You can call us on +251966698535 during our office hours for any assistance or inquiries. We look forward to speaking with you.',
     color: 'success',
   },
   {
