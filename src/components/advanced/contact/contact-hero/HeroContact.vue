@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<MapHeroProps>(), {
 </script>
 
 <template>
-  <Hero
+  <HeroVariant
     class="map-hero"
     size="fullheight"
     color="grey"
@@ -46,7 +46,7 @@ const props = withDefaults(defineProps<MapHeroProps>(), {
         </div>
       </div>
     </template>
-  </Hero>
+  </HeroVariant>
 </template>
 
 <style scoped lang="scss">
