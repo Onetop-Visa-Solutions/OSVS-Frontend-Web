@@ -44,10 +44,12 @@ const countriesList = country.allCountries
             >
               <!--Grid item-->
 
-              <div
+              <Card
                 v-for="item in countriesList"
                 :key="item.slug"
                 class="hero-box-item"
+                padding="0rem"
+                animated
               >
                 <RouterLink
                   :to="{
@@ -85,7 +87,7 @@ const countriesList = country.allCountries
                     </div>
                   </div>
                 </RouterLink>
-              </div>
+              </Card>
             </div>
           </div>
 
@@ -183,7 +185,7 @@ const countriesList = country.allCountries
     margin: 0.5rem;
     padding: 1.5rem 1rem;
     background: var(--card-bg-color);
-    border: 1px solid var(--card-border-color);
+    border: 1px solid rgba(128, 128, 128, 0.347);
     border-radius: 0.85rem;
     box-shadow: var(--spread-shadow);
     cursor: pointer;
