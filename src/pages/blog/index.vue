@@ -53,7 +53,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
 
           <div class="column is-4">
             <BlogStickySide>
-              <BlogSearch />
+              <!-- <BlogSearch /> -->
 
               <BlogRecentPosts :posts="posts" />
             </BlogStickySide>

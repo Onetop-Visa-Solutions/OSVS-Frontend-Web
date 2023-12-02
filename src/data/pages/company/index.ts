@@ -3,9 +3,16 @@ import type { IconFeature } from '/@src/types'
 export const ourDifference: IconFeature[] = [
   {
     title: 'Established Reputation',
-    text: ' Founded in 2019, we have over a decade of experience assisting thousands of clients with visas globally. Our experts stay up to date on constantly changing visa regulations and requirements',
+    text: ' We have over a decade of experience assisting thousands of clients with visas globally. Our experts stay up to date on constantly changing visa regulations and requirements',
     color: 'primary',
     icon: 'ion:trophy-outline',
+    link: '/',
+  },
+  {
+    title: 'No Advanced Payments',
+    text: 'We do not require any upfront payments for our visa consultation services. Fees are only due once you are satisfied with the results of our guidance',
+    color: 'yellow',
+    icon: 'uil:money-bill-slash',
     link: '/',
   },
   {
@@ -15,6 +22,7 @@ export const ourDifference: IconFeature[] = [
     icon: 'streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form',
     link: '/',
   },
+
   {
     title: 'Wide range of services',
     text: 'Whether pursuing visas for visits, education, medical care or more, our expert consultants offer personalized guidance every step of the way - skilled at clearing obstacles so you can readily embark upon your journey.',
