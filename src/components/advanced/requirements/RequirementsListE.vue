@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<RequirementProps>(), {
 })
 
 const activePricing = ref('requirement')
-</script>
+</script>z
 
 <template>
   <div class="requirements-list">

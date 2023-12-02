@@ -30,7 +30,6 @@
       <PageTitle
         title="Requirements for Programs"
         subtitle="Basic Requirements"
-        :text="country.educationalPackage.requirementsDescription"
       />
       <RequirementsListE
         :requirements-item="country.educationalPackage.requirements"
