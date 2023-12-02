@@ -26,7 +26,7 @@ const subtitleClasses = computed(() => [
   props.inverted ? `text-white` : 'text-gradient',
 ])
 
-const textClasses = computed(() => [props.aligned ? `` : 'mx-auto'])
+// const textClasses = computed(() => [props.aligned ? `` : 'mx-auto'])
 </script>
 
 <template>
@@ -56,7 +56,7 @@ const textClasses = computed(() => [props.aligned ? `` : 'mx-auto'])
         <slot>{{ title }}</slot>
       </span>
     </Title>
-    <div
+    <!-- <div
       v-if="props.text"
       class="max-w-5"
       :class="textClasses"
@@ -64,14 +64,14 @@ const textClasses = computed(() => [props.aligned ? `` : 'mx-auto'])
       <p class="paragraph rem-125">
         {{ props.text }}
       </p>
-    </div>
+    </div> -->
     <slot name="content" />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .page-title {
-  padding: 5rem 0;
+  // padding: 5rem 0;
   text-align: center;
 
   &.is-leading {

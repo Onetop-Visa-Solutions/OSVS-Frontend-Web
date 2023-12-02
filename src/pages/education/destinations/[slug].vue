@@ -27,7 +27,7 @@
 
     <!-- Requirements Section -->
     <Section>
-      <PageTitle
+      <PageTitleVariant
         title="Requirements for Programs"
         subtitle="Basic Requirements"
       />
