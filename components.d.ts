@@ -93,6 +93,7 @@ declare module 'vue' {
     PlaceloadText: typeof import('./src/components/base/placeload/PlaceloadText.vue')['default']
     Player: typeof import('./src/components/base/player/Player.vue')['default']
     Popover: typeof import('./src/components/base/popover/Popover.vue')['default']
+    PulseCards: typeof import('./src/components/base/card/PulseCards.vue')['default']
     Radio: typeof import('./src/components/base/form/radio/Radio.vue')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     RequirementDetails: typeof import('./src/components/advanced/requirements/requirement-details.vue/RequirementDetails.vue')['default']

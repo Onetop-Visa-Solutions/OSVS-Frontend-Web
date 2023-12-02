@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import { customerLogos } from '/@src/data/pages/logos'
-import { serviceAvatars } from '/@src/data/pages/home/services'
+// import { serviceAvatars } from '/@src/data/pages/home/services'
+import {serviceSolutions} from '/@src/data/pages/home/services'
 </script>
 
 <template>
@@ -69,10 +70,11 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
           <!--Hero Cards-->
           <div class="hero-composition-container">
             <div class="columns b-columns-third-tablet-p">
-              <div class="column is-3">
+              <div class="column">
                 <!--Service card-->
-                <div class="service-card">
-                  <DarkImage
+                <!-- <div class="service-card"> -->
+                <PulseCards :features="serviceSolutions" />
+                <!-- <DarkImage
                     src="/assets/services/education/study-abroad-2.jpg"
                     alt="Service image"
                     width="600"
@@ -92,10 +94,10 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                       link="/education"
                       size="small"
                     />
-                  </div>
-                </div>
+                  </div> -->
+                <!-- </div> -->
               </div>
-              <div class="column is-3">
+              <!-- <div class="column is-3">
                 <div class="panel-card authors-card">
                   <Title
                     tag="h3"
@@ -112,7 +114,6 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                     counter
                   />
                 </div>
-                <!--Service card-->
                 <div class="service-card">
                   <DarkImage
                     src="/assets/services/visit/visit-1.jpg"
@@ -138,72 +139,69 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
                 </div>
               </div>
               <div class="column is-3">
-                <!--Service card-->
-                <div class="service-card pushed">
-                  <DarkImage
-                    src="/assets/services/consultation/consultation-1.jpg"
-                    alt="Service image"
-                    width="600"
-                    height="510"
-                  />
-                  <div class="card-head">
-                    <Title
-                      tag="h3"
-                      :size="6"
-                      weight="semi"
-                    >
-                      Visa Application Consultations
-                    </Title>
-                  </div>
-                  <div class="card-foot">
-                    <ActionLink
-                      link="/consultation"
-                      size="small"
-                    />
-                  </div>
+              <div class="service-card pushed">
+                <DarkImage
+                  src="/assets/services/consultation/consultation-1.jpg"
+                  alt="Service image"
+                  width="600"
+                  height="510"
+                />
+                <div class="card-head">
+                  <Title
+                    tag="h3"
+                    :size="6"
+                    weight="semi"
+                  >
+                    Visa Application Consultations
+                  </Title>
                 </div>
-                <!--Panel Card-->
-                <div class="panel-card popular-card">
-                  <AvatarSimple
-                    picture="/assets/services/solutions.png"
-                    size="medium"
+                <div class="card-foot">
+                  <ActionLink
+                    link="/consultation"
+                    size="small"
                   />
-                  <div class="meta">
-                    <p class="paragraph is-uppercase rem-80 weight-5">
-                      Offerings
-                    </p>
-                    <h3>
-                      Customized Solutions.
-                    </h3>
-                  </div>
                 </div>
               </div>
-              <div class="column is-3">
-                <!--Service card-->
-                <div class="service-card">
-                  <DarkImage
-                    src="/assets/services/test-prep/test-prep-2.jpg"
-                    alt="Service image"
-                    width="600"
-                    height="510"
-                  />
-                  <div class="card-head">
-                    <Title
-                      tag="h3"
-                      :size="6"
-                      weight="semi"
-                    >
-                      Test Prep Assistance
-                    </Title>
-                  </div>
-                  <div class="card-foot">
-                    <ActionLink
-                      link="/test"
-                      size="small"
-                    />
-                  </div>
+              <div class="panel-card popular-card">
+                <AvatarSimple
+                  picture="/assets/services/solutions.png"
+                  size="medium"
+                />
+                <div class="meta">
+                  <p class="paragraph is-uppercase rem-80 weight-5">
+                    Offerings
+                  </p>
+                  <h3>
+                    Customized Solutions.
+                  </h3>
                 </div>
               </div>
+            </div>
+            <div class="column is-3">
+              <div class="service-card">
+                <DarkImage
+                  src="/assets/services/test-prep/test-prep-2.jpg"
+                  alt="Service image"
+                  width="600"
+                  height="510"
+                />
+                <div class="card-head">
+                  <Title
+                    tag="h3"
+                    :size="6"
+                    weight="semi"
+                  >
+                    Test Prep Assistance
+                  </Title>
+                </div>
+                <div class="card-foot">
+                  <ActionLink
+                    link="/test"
+                    size="small"
+                  />
+                </div>
+              </div>
+            </div> -->
             </div>
           </div>
         </div>
@@ -239,7 +237,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
 
 .hero-composition-container {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 0;
   text-align: left;
 
   .panel-card {

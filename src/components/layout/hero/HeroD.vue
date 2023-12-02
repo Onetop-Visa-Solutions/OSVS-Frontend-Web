@@ -1,3 +1,4 @@
+/* stylelint-disable alpha-value-notation */
 <script setup lang="ts">
 import { viaPlaceholderErrorHandler } from '/@src/utils/viaPlaceholderErrorHandler'
 import { useCountryStore } from '/@src/stores/country'
@@ -185,6 +186,8 @@ const countriesList = country.allCountries
     margin: 0.5rem;
     padding: 1.5rem 1rem;
     background: var(--card-bg-color);
+    /* stylelint-disable-next-line alpha-value-notation */
+    /* stylelint-disable-next-line color-function-notation */
     border: 1px solid rgba(128, 128, 128, 0.347);
     border-radius: 0.85rem;
     box-shadow: var(--spread-shadow);
