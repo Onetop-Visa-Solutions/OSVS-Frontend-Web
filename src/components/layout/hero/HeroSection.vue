@@ -37,7 +37,7 @@ import { serviceAvatars } from '/@src/data/pages/home/services'
             <Subtitle
               tag="p"
               :size="5"
-              weight=""
+              weight="bold"
               class="mx-auto max-w-6 b-centered-tablet-p pt-2 text-white"
             >
               All your travel affairs under roof.

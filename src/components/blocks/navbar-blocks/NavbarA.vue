@@ -96,10 +96,10 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
             :boxed="props.dropdownBoxed"
           >
             <RouterLink
-              :to="{ name: 'education' }"
+              :to="{ name: 'education-destinations' }"
               class="navbar-item"
             >
-              Educational Consultation
+              Study Abroad
             </RouterLink>
             <RouterLink
               :to="{ name: 'visit' }"
