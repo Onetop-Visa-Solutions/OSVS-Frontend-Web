@@ -45,50 +45,47 @@ const countriesList = country.allCountries
             >
               <!--Grid item-->
 
-              <Card
+              <RouterLink
                 v-for="item in countriesList"
                 :key="item.slug"
                 class="hero-box-item"
                 padding="0rem"
                 animated
+                :to="{
+                  name: 'education-destinations-slug',
+                  params: { slug: item.slug },
+                }"
               >
-                <RouterLink
-                  :to="{
-                    name: 'education-destinations-slug',
-                    params: { slug: item.slug },
-                  }"
-                >
-                  <div class="box-inner">
-                    <IconBox
-                      color="white"
-                      size="medium"
+                <div class="box-inner">
+                  <IconBox
+                    color="white"
+                    size="medium"
+                  >
+                    <img
+                      :src="item.flagImage"
+                      alt="country-flag"
                     >
-                      <img
-                        :src="item.flagImage"
-                        alt="country-flag"
-                      >
-                    </IconBox>
-                    <Title
-                      tag="h3"
-                      :size="7"
-                      weight="semi"
-                      leading
+                  </IconBox>
+                  <Title
+                    tag="h3"
+                    :size="7"
+                    weight="semi"
+                    leading
+                  >
+                    {{ item.name }}
+                  </Title>
+                  <div class="go-icon">
+                    <RouterLink
+                      :to="{
+                        name: 'education-destinations-slug',
+                        params: { slug: item.slug },
+                      }"
                     >
-                      {{ item.name }}
-                    </Title>
-                    <div class="go-icon">
-                      <RouterLink
-                        :to="{
-                          name: 'education-destinations-slug',
-                          params: { slug: item.slug },
-                        }"
-                      >
-                        <i-ion-arrow-forward-outline />
-                      </RouterLink>
-                    </div>
+                      <i-ion-arrow-forward-outline />
+                    </RouterLink>
                   </div>
-                </RouterLink>
-              </Card>
+                </div>
+              </RouterLink>
             </div>
           </div>
 
@@ -184,14 +181,21 @@ const countriesList = country.allCountries
     width: calc(33.3% - 1rem);
     text-align: center;
     margin: 0.5rem;
-    padding: 1.5rem 1rem;
+    padding:  1rem;
     background: var(--card-bg-color);
+    transition:
+    box-shadow 0.3s,
+    transform 0.3s;
     /* stylelint-disable-next-line alpha-value-notation */
     /* stylelint-disable-next-line color-function-notation */
     border: 1px solid rgba(128, 128, 128, 0.347);
     border-radius: 0.85rem;
     box-shadow: var(--spread-shadow);
     cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
 
     :deep(.icon-box) {
       margin: 0 auto 0.5rem;

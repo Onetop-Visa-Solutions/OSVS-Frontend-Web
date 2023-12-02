@@ -23,6 +23,7 @@ const boxClasses = computed(() => [props.animated && `animated`])
         v-for="(feature, index) in props.features.slice(0, props.limit)"
         :key="index"
         class="column"
+        animated
       >
         <RouterLink
           :to="feature.link"
