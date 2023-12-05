@@ -51,6 +51,8 @@ import {serviceSolutions} from '/@src/data/pages/home/services'
                 raised
                 bold
                 rounded
+                href="https://book.morgen.so/info589"
+                target="_blank"
               >
                 Book a consultation
               </Button>
