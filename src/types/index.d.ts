@@ -130,17 +130,18 @@ export interface Country {
         description: string
     }[]
     requirementsDescription: string
-    scholarshipsAndFunding:{
-      description: string
-      minimumTuitionCost: number
-      maximumTuitionCost: number
-      averageLivingCost: number
-      costLabel: string
-      scholarships: {
-        name: string
-        minimumAmount:number
-        maximumAmount: number}[]
-    }
+
+  }
+  scholarshipAndFunding:{
+    description: string
+    minimumTuitionCost: number
+    maximumTuitionCost: number
+    averageLivingCost: number
+    costLabel: string
+    scholarships: {
+      name: string
+      minimumAmount:number
+      maximumAmount: number}[]
   }
   aboutCountry:{
     currency: string

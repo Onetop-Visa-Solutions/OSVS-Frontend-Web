@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ScholarshipTable from '../../pages/destinations/country/ScholarshipTable.vue'
+
 export interface RequirementProps {
   requirementsItem: {
         title: string
@@ -13,16 +15,26 @@ export interface RequirementProps {
           }[]
         }[],
         description: string
-      }[]
+      }[],
+
+    scholarshipItem                 : {
+      description: string
+      minimumTuitionCost: number
+      maximumTuitionCost: number
+      averageLivingCost: number
+      costLabel: string
+      scholarships: {
+        name: string
+        minimumAmount:number
+        maximumAmount: number}[]
+
+    }
 }
+const props = defineProps<RequirementProps>()
 
-const props = withDefaults(defineProps<RequirementProps>(), {
-  requirementsItem: () => [],
-
-})
 
 const activePricing = ref('requirement')
-</script>z
+</script>
 
 <template>
   <div class="requirements-list">
@@ -39,7 +51,7 @@ const activePricing = ref('requirement')
             :class="activePricing === 'funding' && 'is-active'"
             @click="activePricing = 'funding'"
           >
-            Scholarship and funding
+            Funding and Scholarship
           </button>
           <div class="naver" />
         </div>
@@ -53,7 +65,8 @@ const activePricing = ref('requirement')
       />
     </div>
     <div v-else>
-      Scholarship and Funding
+      <!-- {{ props.scholarshipItem }} -->
+      <ScholarshipTable :scholarship-item="props.scholarshipItem" />
     </div>
   </div>
 </template>

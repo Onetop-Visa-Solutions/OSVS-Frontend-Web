@@ -33,6 +33,7 @@
       />
       <RequirementsListE
         :requirements-item="country.educationalPackage.requirements"
+        :scholarship-item="country.scholarshipAndFunding"
       />
     </Section>
 
