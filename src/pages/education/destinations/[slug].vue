@@ -62,10 +62,10 @@
         />
 
         <VideoBlockB
-          title="Our Product"
+          title="Country Information"
           :features="countryTestimonials"
-          source="/assets/video/meeting.mp4"
-          poster="/assets/demo/img/posters/poster-2h.jpg"
+          source=""
+          poster=""
         />
       </Container>
     </Section>
@@ -105,7 +105,7 @@ async function fetchCountry() {
 
 onMounted(fetchCountry)
 onServerPrefetch(fetchCountry)
-watch(() => route.fullPath, fetchCountry)
+// watch(() => route.fullPath, fetchCountry)
 
 </script>
 

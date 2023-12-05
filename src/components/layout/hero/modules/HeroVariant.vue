@@ -76,12 +76,6 @@ const heroClasses = computed(() => [
       <HeroWaveMask :color="props.color" />
     </div>
 
-    <div
-      v-if="props.mask === 'slant'"
-      class="hero-mask-slant"
-    >
-      <HeroSlantMask :color="props.color" />
-    </div>
 
     <div
       v-if="props.overlay"
@@ -301,6 +295,7 @@ $total: 40;
 }
 /* stylelint-enable */
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (max-width: 767px) {
   .hero {
     &.is-side {
@@ -316,6 +311,7 @@ $total: 40;
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .hero {
     &.is-fullheight {
@@ -336,6 +332,7 @@ $total: 40;
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .hero {
     &.is-fullheight {

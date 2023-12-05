@@ -1,10 +1,14 @@
 import { type Country } from './../../types/index.d';
 import sleep from '/@src/utils/sleep'
-import { useCountryStore } from '/@src/stores/country'
-const countryData = useCountryStore()
-const allCountries = countryData.allCountries
+// import { useCountryStore } from '/@src/stores/country'
+// const countryData = useCountryStore()
+// const allCountries = countryData.allCountries
 
 export async function getCountry(slug: string) {
+
+  const retString: any = localStorage.getItem("countries")
+  const allCountries = JSON.parse(retString)
+
   const country = allCountries.find((country: Country) => country.slug === slug)
 
   // simulate api call
@@ -19,6 +23,8 @@ export async function getCountry(slug: string) {
 
 
 export async function getRequirement(slug: string, id: string) {
+  const retString: any = localStorage.getItem("countries")
+  const allCountries = JSON.parse(retString)
   console.log(id);
   const temp_index = parseInt(id);
   const country = allCountries.find((country: Country) => country.educationalPackage.requirements[temp_index].slug === slug)
