@@ -58,23 +58,23 @@ const footerClasses = computed(() => [
                   <ul class="link-list">
                     <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'education-destinations' }"
                         class="level-item footer-link"
                       >
                         Destinations
                       </RouterLink>
                     </li>
-                    <li>
+                    <!-- <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'about' }"
                         class="level-item footer-link"
                       >
                         Travel Guides
                       </RouterLink>
-                    </li>
+                    </li> -->
                     <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'blog' }"
                         class="level-item footer-link"
                       >
                         Experiences
@@ -98,7 +98,7 @@ const footerClasses = computed(() => [
                   <ul class="link-list">
                     <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'about' }"
                         class="level-item footer-link"
                       >
                         Learn About Us
@@ -106,20 +106,20 @@ const footerClasses = computed(() => [
                     </li>
                     <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'about' }"
                         class="level-item footer-link"
                       >
                         Meet Our Team
                       </RouterLink>
                     </li>
-                    <li>
+                    <!-- <li>
                       <RouterLink
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
                         Explore Partnerships
                       </RouterLink>
-                    </li>
+                    </li> -->
                   </ul>
                 </slot>
               </div>
@@ -138,7 +138,7 @@ const footerClasses = computed(() => [
                   <ul class="link-list">
                     <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'contact' }"
                         class="level-item footer-link"
                       >
                         Contact Us
@@ -146,20 +146,20 @@ const footerClasses = computed(() => [
                     </li>
                     <li>
                       <RouterLink
-                        :to="{ name: 'index' }"
+                        :to="{ name: 'contact' }"
                         class="level-item footer-link"
                       >
                         Help Center
                       </RouterLink>
                     </li>
-                    <li>
+                    <!-- <li>
                       <RouterLink
                         :to="{ name: 'index' }"
                         class="level-item footer-link"
                       >
                         Privacy Policy
                       </RouterLink>
-                    </li>
+                    </li> -->
                   </ul>
                 </slot>
               </div>

@@ -21,7 +21,7 @@ import {serviceSolutions} from '/@src/data/pages/home/services'
             <p
               class="paragraph is-uppercase rem-100 weight-6 text-primary mb-2"
             >
-              Speak to a Visa Specialist
+              Speak to a consultant
             </p>
             <Title
               tag="h1"
