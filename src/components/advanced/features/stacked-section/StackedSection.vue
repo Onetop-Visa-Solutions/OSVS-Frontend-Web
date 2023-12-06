@@ -69,7 +69,7 @@ const shapeClasses = computed(() => [props.inverted && 'opacity-10'])
             <div class="character">
               <DarkImage
                 :src="props.image"
-                :src-dark="props.darkImage"
+                :src-dark="props.image"
                 alt="Featured Image"
                 :width="props.imageWidth"
                 :height="props.imageHeight"
@@ -110,7 +110,7 @@ const shapeClasses = computed(() => [props.inverted && 'opacity-10'])
     .character {
       position: absolute;
       bottom: 0;
-      right: -3rem;
+      // right: -3rem;
       height: 100%;
       display: block;
       z-index: 1;
@@ -132,6 +132,7 @@ const shapeClasses = computed(() => [props.inverted && 'opacity-10'])
   }
 }
 
+/* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .stacked-section {
     .color-box {

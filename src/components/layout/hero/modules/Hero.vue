@@ -14,6 +14,7 @@ export interface HeroProps {
   overlay?: boolean
   starfall?: boolean
   mask?: HeroMask
+  video?: boolean
 }
 
 const slots = useSlots()
@@ -26,6 +27,7 @@ const props = withDefaults(defineProps<HeroProps>(), {
   overlay: false,
   starfall: false,
   mask: undefined,
+  video: false,
 })
 
 const heroClasses = computed(() => [
@@ -43,6 +45,22 @@ const heroClasses = computed(() => [
     class="hero"
     :class="heroClasses"
   >
+    <video
+      autoplay
+      loop
+      muted
+      class="video"
+    >
+      <source
+        src="/assets/backgrounds/bg-video-osvs.mp4"
+        type="video/webm"
+      >
+      <source
+        src="/assets/backgrounds/bg-video-osvs.mp4"
+        type="video/mp4"
+      >
+    </video>
+
     <div
       v-if="props.starfall"
       class="starfall"
@@ -102,6 +120,17 @@ const heroClasses = computed(() => [
 </template>
 
 <style lang="scss">
+.video{
+  // z-index: -1;
+  position: absolute;
+  width: 100%;
+  // height: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .hero {
   position: relative;
   background-color: var(--hero-bg-color);
@@ -183,8 +212,8 @@ const heroClasses = computed(() => [
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--dark-text);
-    opacity: 0.6;
+    background-color: black;
+    opacity: 0.3;
     z-index: 0;
   }
 
@@ -309,6 +338,17 @@ $total: 40;
       }
     }
   }
+
+//   .video{
+//   // z-index: -1;
+//   position: absolute;
+//   width: 100%;
+//   height: 250;
+//   right: 0;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+// }
 }
 
 /* stylelint-disable-next-line media-feature-range-notation */

@@ -65,8 +65,11 @@ const props = withDefaults(defineProps<ResourceItemProps>(), {
       >
         <div>
           <RouterLink
-            :to="{ name: 'index' }"
-            class="is-flex is-align-items-center"
+            :to="{
+              name: 'blog-id',
+              params: { id: props.post.id },
+            }"
+
             rounded
           >
             <span class="mr-2">Read More</span>
@@ -76,7 +79,7 @@ const props = withDefaults(defineProps<ResourceItemProps>(), {
             />
           </RouterLink>
         </div>
-        <div class="card-stats is-flex is-align-items-center">
+        <!-- <div class="card-stats is-flex is-align-items-center">
           <div class="is-flex is-align-items-center">
             <i
               class="iconify"
@@ -84,7 +87,7 @@ const props = withDefaults(defineProps<ResourceItemProps>(), {
             />
             <span class="ml-1">{{ props.post.likes }}</span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div

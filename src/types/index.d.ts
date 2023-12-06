@@ -63,31 +63,29 @@ export interface SocialLink {
   url: string
 }
 
-export interface Job {
-  icon: string
+export interface Requirement  {
   title: string
+  name: string
   slug: string
-  location: string
-  duration: string
-  salary?: string
-  contact?: string
-  content: {
-    description?: {
-      title: string
-      text: string
+  flagImage: string
+  index: number
+  requirementsList: {
+    title: string
+    icon: string
+    details:{
+      name: string
+      content: string
     }[]
-    aptitude?: {
-      title: string
-      skills: string[]
+  }[],additionalRequirements: {
+    title: string
+    icon: string
+    details:{
+      name: string
+      content: string
     }[]
-    technologies?: {
-      title: string
-      tools: {
-        title: string
-        icon: string
-      }[]
-    }[]
-  }
+  }[],
+  description: string
+
 }
 
 
@@ -110,26 +108,40 @@ export interface Country {
     requirements: {
         title: string
         name: string
+        slug: string
+        flagImage: string
+        index: number
         requirementsList: {
           title: string
+          icon: string
           detail:{
             name: string
-            content: content
+            content: string
           }[]
         }[]
+        additionalRequirements: {
+          title: string
+          icon: string
+          detail:{
+            name: string
+            content: string
+          }[]
+        }[]
+        description: string
     }[]
     requirementsDescription: string
-    scholarshipsAndFunding:{
-      description: string
-      minimumTuitionCost: number
-      maximumTuitionCost: number
-      averageLivingCost: number
-      costLabel: string
-      scholarships: {
-        name: string
-        minimumAmount:number
-        maximumAmount: number}[]
-    }
+
+  }
+  scholarshipAndFunding:{
+    description: string
+    minimumTuitionCost: number
+    maximumTuitionCost: number
+    averageLivingCost: number
+    costLabel: string
+    scholarships: {
+      name: string
+      minimumAmount:number
+      maximumAmount: number}[]
   }
   aboutCountry:{
     currency: string

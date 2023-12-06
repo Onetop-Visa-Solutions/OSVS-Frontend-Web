@@ -3,6 +3,7 @@ export interface SectionTitleProps {
   title: string
   subtitle: string
   inverted?: boolean
+  name?: string
   spaced?: boolean
 }
 
@@ -11,6 +12,7 @@ const props = withDefaults(defineProps<SectionTitleProps>(), {
   subtitle: undefined,
   inverted: false,
   spaced: false,
+  name: undefined,
 })
 
 const titleClasses = computed(() => [props.inverted && `is-inverted`])
@@ -33,7 +35,7 @@ const subtitleClasses = computed(() => [
       weight="bold"
     >
       <span :class="subtitleClasses">
-        <slot name="subtitle">{{ props.subtitle }}</slot>
+        <slot name="subtitle">{{ props.subtitle }} {{ props.name }}</slot>
       </span>
     </Subtitle>
     <Title
@@ -43,7 +45,7 @@ const subtitleClasses = computed(() => [
       :class="titleClasses"
     >
       <span>
-        <slot>{{ props.title }}</slot>
+        <slot>{{ props.title }} </slot>
       </span>
     </Title>
   </div>

@@ -83,6 +83,9 @@ dependencies:
   vue-prism-component:
     specifier: 2.0.0
     version: 2.0.0
+  vue-responsive-video-background-player:
+    specifier: ^2.3.1
+    version: 2.3.1
   vue-scrollto:
     specifier: 2.20.0
     version: 2.20.0
@@ -9655,6 +9658,10 @@ packages:
 
   /vue-prism-component@2.0.0:
     resolution: {integrity: sha512-1ofrL+GCZOv4HqtX5W3EgkhSAgadSeuD8FDTXbwhLy8kS+28RCR8t2S5VTeM9U/peAaXLBpSgRt3J25ao8KTeg==}
+    dev: false
+
+  /vue-responsive-video-background-player@2.3.1:
+    resolution: {integrity: sha512-9IdFfmHe1cY0PvTw51sYcSO5+gPJya5einLIoktVzBMALEC3yok36X/1+hDfbgihapRYxz3fmyv1o5M1u+0xEA==}
     dev: false
 
   /vue-router@4.2.4(vue@3.3.4):

@@ -8,11 +8,21 @@ import {ourDifference} from '/@src/data/pages/company'
 import { resources } from '/@src/data/pages/blog/resource'
 import { testimonials } from '/@src/data/blocks/advanced/testimonials'
 import { socialLinks } from '/@src/data/blocks/advanced/social'
+import { customerLogos } from '/@src/data/pages/logos'
+
 </script>
 
 <template>
   <div>
     <HeroSection />
+    <div class="mx-auto mt-8 max-w-8">
+      <p class="paragraph rem-100  has-text-centered">
+        Collaborating with companies
+      </p>
+      <div class="tabs is-centered pb-6">
+        <HeroClients :logos="customerLogos" />
+      </div>
+    </div>
     <Section>
       <Container>
         <SectionTitle
@@ -23,7 +33,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
         <!-- Why choose us section -->
         <StackedSection
           :features="ourDifference"
-          image="/assets/illustrations/features/ensuring.svg"
+          image="/assets/services/exceptional-service/exceptional-service-6.svg"
           dark-image="/assets/illustrations/features/ensuring-dark.svg"
           rounded
         />
@@ -58,11 +68,12 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
             <Button
               color="primary"
               :long="3"
+              to="/blog"
               raised
               bold
               rounded
             >
-              Load More
+              Show More
             </Button>
           </div>
         </div>
@@ -70,6 +81,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
         <!-- Testimonials Section -->
         <TestimonialMarquee
           :testimonials="testimonials"
+          :limit="12"
           color="default"
         />
 
@@ -83,7 +95,7 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
           title-secondary="More info?"
           content-secondary="Get in touch with our team for personalized assistance and further information."
           cta-secondary="Contact Us"
-          cta-secondary-link="/"
+          cta-secondary-link="/contact"
           boxed
           shapes
           animated
@@ -91,10 +103,13 @@ import { socialLinks } from '/@src/data/blocks/advanced/social'
       </Container>
     </section>
     <Footer
+      v-background="{
+        src: '/assets/shapes/lowpoly-pattern-blue.jpg',
+        placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
+      }"
       text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
       color="light"
       :social-links="socialLinks"
-      bubbles
     />
   </div>
 </template>

@@ -4,12 +4,14 @@ import {computed} from 'vue'
 
 export interface ContentBlockAProps {
   title: string
+  alias: string
   text: string
   link?: RouteLocationRaw
   linkLabel?: string
   images: {name: string, icon: string, link:string}[]
   squared?: boolean
   inverted?: boolean
+  institutionsDescription: string
 }
 
 const props = withDefaults(defineProps<ContentBlockAProps>(), {
@@ -34,13 +36,13 @@ const textClasses = computed(() => [props.inverted && 'text-light'])
             leading
             :inverted="props.inverted"
           >
-            <span>{{ props.title }}</span>
+            <span>{{ props.title }} {{ props.alias }}</span>
           </Title>
           <p
             class="paragraph rem-95 small:text-centered"
             :class="textClasses"
           >
-            {{ props.text }}
+            {{ props.institutionsDescription }}
           </p>
         </slot>
       </div>

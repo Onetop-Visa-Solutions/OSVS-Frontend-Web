@@ -1,15 +1,15 @@
 export const resources = [
   {
     id: 0,
-    image: '/assets/posts/post-13.svg',
-    title: 'How to Choose the Right Study Abroad Program for You',
+    image: '/assets/pages/blog/post-9.png',
+    title: 'Achieve Your Study Abroad Dreams Before Paying',
     likes: '0',
     categories: [
       {
         name: 'Visas',
       },
       {
-        name: 'Programs',
+        name: 'Abroad',
       },
       {
         name: 'Study',
@@ -20,15 +20,15 @@ export const resources = [
   },
   {
     id: 1,
-    image: '/assets/posts/post-14.svg',
-    title: 'A Guide to US Student Visas: Everything You Need to Know',
+    image: '/assets/pages/blog/post-1.png',
+    title: 'How to Choose the Right Study Abroad Program for You',
     likes: '0',
     categories: [
       {
         name: 'Student',
       },
       {
-        name: 'US',
+        name: 'Programs',
       },
       {
         name: 'Study',
@@ -39,8 +39,8 @@ export const resources = [
   },
   {
     id: 2,
-    image: '/assets/posts/post-15.svg',
-    title: 'How We Helped Kalkidan get a study permit to Study in Canada',
+    image: '/assets/pages/blog/post-6.png',
+    title: 'A Guide to US Student Visas: Everything You Need to Know',
     likes: '0',
     categories: [
       {

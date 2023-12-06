@@ -12,7 +12,7 @@ const props = defineProps<NavbarSocialItemProps>()
   <a
     :href="props.link"
     target="_blank"
-    class="social-item px-2"
+    class="social-item is-scrolled px-2"
   >
     <span class="icon">
       <i
@@ -26,7 +26,7 @@ const props = defineProps<NavbarSocialItemProps>()
 
 <style scoped lang="scss">
 .social-item {
-  color: var(--medium-text);
+  color: var(--navbar-link-color-inverted);
   transition: color 0.3s;
 
   &:hover {
@@ -36,11 +36,17 @@ const props = defineProps<NavbarSocialItemProps>()
 
 .is-inverted {
   .social-item {
-    color: var(--white-smoke);
+    color: var(--navbar-link-color-inverted);
 
     &:hover {
       color: var(--primary);
     }
   }
+
+  &.is-scrolled {
+      .social-item {
+        color: var(--navbar-link-color-medium);
+      }
+    }
 }
 </style>

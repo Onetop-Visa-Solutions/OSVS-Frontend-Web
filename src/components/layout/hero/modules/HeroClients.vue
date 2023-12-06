@@ -28,8 +28,8 @@ const listClasses = computed(() => [props.inverted && 'is-inverted'])
       <img
         :src="logo.logo"
         alt="Hero client logo"
-        class="image"
-        width="300"
+        class="image text-white"
+        width="80"
         height="88"
       >
     </li>

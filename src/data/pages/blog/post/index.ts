@@ -4,7 +4,7 @@ export const post: PostItem = {
   id: 7,
   image: '/assets/posts/post-1.svg',
   title: 'How 3D and augmented reality are changing our world',
-  category: 'Technology',
+  category: 'USA',
   abstract:
     'In 2022, ecommerce is thriving like never before, and Amazon is the leading marketplace. If you’re...',
   date: 'March 17th, 2022',
@@ -23,7 +23,7 @@ export const post: PostItem = {
       abstract:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vides, quid faciat. Mihi vero, inquit placet delorum relopus...',
       views: '1.1k',
-      category: 'jobs',
+      category: 'Canada',
       date: 'March 17th, 2022',
       duration: 2,
       author: {
@@ -41,7 +41,7 @@ export const post: PostItem = {
       abstract:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vides, quid faciat. Mihi vero, inquit placet delorum relopus...',
       views: '1.2k',
-      category: 'ecology',
+      category: 'Poland',
       date: 'March 17th, 2022',
       duration: 2,
       author: {
@@ -59,7 +59,7 @@ export const post: PostItem = {
       abstract:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vides, quid faciat. Mihi vero, inquit placet delorum relopus...',
       views: '1.4k',
-      category: 'business',
+      category: 'Canada',
       date: 'March 17th, 2022',
       duration: 2,
       author: {

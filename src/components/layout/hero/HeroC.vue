@@ -38,9 +38,9 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
 </script>
 
 <template>
-  <Hero
+  <HeroVariant
     class="country-hero"
-    size="fullheight"
+    size="medium"
   >
     <template #body>
       <div
@@ -99,7 +99,7 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
         </div>
       </div>
     </template>
-  </Hero>
+  </HeroVariant>
 </template>
 
 <style lang="scss" scoped>
@@ -216,3 +216,4 @@ const textClasses = computed(() => [props.inverted && `is-inverted`])
   }
 }
 </style>
+

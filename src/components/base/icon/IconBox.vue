@@ -3,6 +3,7 @@ export type IconBoxSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
 export type IconBoxColor =
   | 'default'
   | 'primary'
+  | 'white'
   | 'info'
   | 'success'
   | 'warning'
@@ -54,7 +55,7 @@ const props = withDefaults(defineProps<IconBoxProps>(), {
   width: 40px;
   min-width: 40px;
   border-radius: 0.5rem;
-  background: var(--icon-bg-color);
+  // background: var(--icon-bg-color);
   transition: all 0.3s;
 
   &.is-small {
@@ -158,6 +159,12 @@ const props = withDefaults(defineProps<IconBoxProps>(), {
   &.is-default {
     :deep(svg) {
       color: var(--icon-color);
+    }
+  }
+
+  &.is-white {
+    :deep(svg) {
+      color: var(--icon-white);
     }
   }
 

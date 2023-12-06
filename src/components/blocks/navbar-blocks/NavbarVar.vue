@@ -10,7 +10,7 @@ export interface NavbarProps {
 const props = withDefaults(defineProps<NavbarProps>(), {
   fixed: true,
   dropdownBoxed: false,
-  mode: 'fade',
+  mode: 'inverted',
 })
 const socialItems = [
   {
@@ -96,22 +96,22 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
             :boxed="props.dropdownBoxed"
           >
             <RouterLink
-              :to="{ name: 'education' }"
+              :to="{ name: 'education-destinations' }"
               class="navbar-item"
             >
-              Educational Visas
+              Study Abroad
             </RouterLink>
             <RouterLink
               :to="{ name: 'visit' }"
               class="navbar-item"
             >
-              Visit Visas
+              Tourist Visa Application
             </RouterLink>
             <RouterLink
               :to="{ name: 'consultation' }"
               class="navbar-item"
             >
-              Consultations
+              Visa Application Consultation
             </RouterLink>
           </NavbarDropdown>
           <RouterLink

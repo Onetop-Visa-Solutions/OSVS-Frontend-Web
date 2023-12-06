@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import { customerLogos } from '/@src/data/pages/logos'
-import { nftAvatars } from '/@src/data/pages/nft'
+// import { customerLogos } from '/@src/data/pages/logos'
+// import { serviceAvatars } from '/@src/data/pages/home/services'
+import {serviceSolutions} from '/@src/data/pages/home/services'
 </script>
 
 <template>
   <Hero
-    v-background="{
-      src: '/assets/backgrounds/collage.png',
-      placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
-    }"
-    class="has-top-bg is-right"
+    overlay
+    class="is-right"
     alignment="center"
     color="grey"
     shape-orientation="right"
+    video
   >
     <template #body>
       <div class="columns is-vcentered mt-12">
@@ -26,6 +25,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
             </p>
             <Title
               tag="h1"
+              class="text-white"
               :size="1"
               weight="bold"
             >
@@ -38,11 +38,10 @@ import { nftAvatars } from '/@src/data/pages/nft'
             <Subtitle
               tag="p"
               :size="5"
-              weight="thin"
-              class="mx-auto max-w-6 b-centered-tablet-p pt-2"
+              weight="bold"
+              class="mx-auto max-w-6 b-centered-tablet-p pt-2 text-white"
             >
-              Embark on unforgettable journeys.
-              Let us be your trusted partner in crafting remarkable experiences that exceed your expectations.
+              All your travel affairs under roof.
             </Subtitle>
             <!--Buttons-->
             <div class="buttons is-relative z-1">
@@ -52,12 +51,15 @@ import { nftAvatars } from '/@src/data/pages/nft'
                 raised
                 bold
                 rounded
+                href="https://book.morgen.so/info589"
+                target="_blank"
               >
                 Book a consultation
               </Button>
               <Button
                 elevated
                 bold
+                to="/contact"
                 :long="2"
                 icon-left="ic:baseline-support-agent"
                 rounded
@@ -70,10 +72,11 @@ import { nftAvatars } from '/@src/data/pages/nft'
           <!--Hero Cards-->
           <div class="hero-composition-container">
             <div class="columns b-columns-third-tablet-p">
-              <div class="column is-3">
+              <div class="column">
                 <!--Service card-->
-                <div class="service-card">
-                  <DarkImage
+                <!-- <div class="service-card"> -->
+                <PulseCards :features="serviceSolutions" />
+                <!-- <DarkImage
                     src="/assets/services/education/study-abroad-2.jpg"
                     alt="Service image"
                     width="600"
@@ -85,35 +88,34 @@ import { nftAvatars } from '/@src/data/pages/nft'
                       :size="6"
                       weight="semi"
                     >
-                      Educational Visas
+                      Educational Consultation
                     </Title>
                   </div>
                   <div class="card-foot">
                     <ActionLink
-                      link=""
+                      link="/education"
                       size="small"
                     />
-                  </div>
-                </div>
+                  </div> -->
+                <!-- </div> -->
               </div>
-              <div class="column is-3">
+              <!-- <div class="column is-3">
                 <div class="panel-card authors-card">
                   <Title
                     tag="h3"
                     :size="5"
                     weight="bold"
                   >
-                    Our Services
+                    Destinations
                   </Title>
                   <AvatarGroup
                     size="medium"
-                    :avatars="nftAvatars"
+                    :avatars="serviceAvatars"
                     :limit="5"
                     compact
                     counter
                   />
                 </div>
-                <!--Service card-->
                 <div class="service-card">
                   <DarkImage
                     src="/assets/services/visit/visit-1.jpg"
@@ -127,99 +129,96 @@ import { nftAvatars } from '/@src/data/pages/nft'
                       :size="6"
                       weight="semi"
                     >
-                      Visit Visas
+                      Tourist Visa Application
                     </Title>
                   </div>
                   <div class="card-foot">
                     <ActionLink
-                      link=""
+                      link="/visit"
                       size="small"
                     />
                   </div>
                 </div>
               </div>
               <div class="column is-3">
-                <!--Service card-->
-                <div class="service-card pushed">
-                  <DarkImage
-                    src="/assets/services/consultation/consultation-1.jpg"
-                    alt="Service image"
-                    width="600"
-                    height="510"
-                  />
-                  <div class="card-head">
-                    <Title
-                      tag="h3"
-                      :size="6"
-                      weight="semi"
-                    >
-                      Consultations
-                    </Title>
-                  </div>
-                  <div class="card-foot">
-                    <ActionLink
-                      link=""
-                      size="small"
-                    />
-                  </div>
+              <div class="service-card pushed">
+                <DarkImage
+                  src="/assets/services/consultation/consultation-1.jpg"
+                  alt="Service image"
+                  width="600"
+                  height="510"
+                />
+                <div class="card-head">
+                  <Title
+                    tag="h3"
+                    :size="6"
+                    weight="semi"
+                  >
+                    Visa Application Consultations
+                  </Title>
                 </div>
-                <!--Panel Card-->
-                <div class="panel-card popular-card">
-                  <AvatarSimple
-                    picture="/assets/services/solutions.png"
-                    size="medium"
+                <div class="card-foot">
+                  <ActionLink
+                    link="/consultation"
+                    size="small"
                   />
-                  <div class="meta">
-                    <p class="paragraph is-uppercase rem-80 weight-5">
-                      Offerings
-                    </p>
-                    <h3>
-                      Customized Solutions.
-                    </h3>
-                  </div>
                 </div>
               </div>
-              <div class="column is-3">
-                <!--Service card-->
-                <div class="service-card">
-                  <DarkImage
-                    src="/assets/services/test-prep/test-prep-2.jpg"
-                    alt="Service image"
-                    width="600"
-                    height="510"
-                  />
-                  <div class="card-head">
-                    <Title
-                      tag="h3"
-                      :size="6"
-                      weight="semi"
-                    >
-                      Test Prep
-                    </Title>
-                  </div>
-                  <div class="card-foot">
-                    <ActionLink
-                      link=""
-                      size="small"
-                    />
-                  </div>
+              <div class="panel-card popular-card">
+                <AvatarSimple
+                  picture="/assets/services/solutions.png"
+                  size="medium"
+                />
+                <div class="meta">
+                  <p class="paragraph is-uppercase rem-80 weight-5">
+                    Offerings
+                  </p>
+                  <h3>
+                    Customized Solutions.
+                  </h3>
                 </div>
               </div>
+            </div>
+            <div class="column is-3">
+              <div class="service-card">
+                <DarkImage
+                  src="/assets/services/test-prep/test-prep-2.jpg"
+                  alt="Service image"
+                  width="600"
+                  height="510"
+                />
+                <div class="card-head">
+                  <Title
+                    tag="h3"
+                    :size="6"
+                    weight="semi"
+                  >
+                    Test Prep Assistance
+                  </Title>
+                </div>
+                <div class="card-foot">
+                  <ActionLink
+                    link="/test"
+                    size="small"
+                  />
+                </div>
+              </div>
+            </div> -->
             </div>
           </div>
         </div>
       </div>
     </template>
-    <template #footer>
+    <!-- <template #footer>
       <div class="mx-auto max-w-8">
-        <p class="paragraph rem-100 text-light has-text-centered">
+        <p class="paragraph rem-100 text-white has-text-centered">
           Collaborating with companies
         </p>
         <div class="tabs is-centered pb-6">
           <HeroClients :logos="customerLogos" />
         </div>
       </div>
-    </template>
+    </template> -->
   </Hero>
 </template>
 
@@ -240,7 +239,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
 
 .hero-composition-container {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 0;
   text-align: left;
 
   .panel-card {
@@ -355,6 +354,7 @@ import { nftAvatars } from '/@src/data/pages/nft'
           }
         }
 
+        &:nth-child(3),
         &:nth-child(3),
         &:nth-child(4) {
           display: none;
