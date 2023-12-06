@@ -1,15 +1,15 @@
 export const posts = [
   {
     id: 0,
-    image: '/assets/pages/blog/post-1.jpg',
-    imageFull: "/assets/pages/blog/post-1-full.jpeg",
+    image: '/assets/pages/blog/post-0.jpg',
+    imageFull: "/assets/pages/blog/post-0-full.png",
     title: 'Achieve Your Study Abroad Dreams Before Paying',
-    abstract: 'Work with our advisors to get accepted to your ideal university abroad. You\'ll only pay our reasonable fees after receiving an offer of admission.',
+    abstract: 'Work with our advisors to get accepted to your ideal university abroad. You\'ll only pay our reasonable fees after receiving full consultation.',
     category: 'Study Abroad',
     date: 'March 31st, 2022',
     duration: 3,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
@@ -59,7 +59,7 @@ export const posts = [
     date: 'April 15th, 2022',
     duration: 4,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `<h1>
@@ -100,25 +100,25 @@ export const posts = [
 
   {
     id: 2,
-    image: '/assets/pages/blog/post-2.png',
+    image: '/assets/pages/blog/post-2.jpeg',
     imageFull: "/assets/pages/blog/post-2-full.jpeg",
-    title: 'A Guide to US Student Visas: Everything You Need to Know',
+    title: 'Understanding US Student Visa Types',
     abstract: 'Navigating the various types of US student visas can be confusing. This guide covers eligibility requirements, application processes, and tips for each one.',
-    category: 'Student Visas',
+    category: 'Student Applications',
     date: 'May 1st, 2022',
     duration: 5,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
-      <h1>Your Comprehensive Guide to US Student Visas</h1>
+      <h1>Exploring US Student Visa Options: An Informative Overview</h1>
 
-      <h2>Demystifying Eligibility, Applications, and Interviews for Each Type </h2>
+      <h2>Eligibility, Applications, and Interviews for Each Type </h2>
 
-      <p>Are you an international student planning to study in the US? The first step is understanding the visa application process, which can be confusing.</p>
+      <p>Are you an international student looking to study in the US? Understanding the visa application process is essential, but it can be overwhelming.</p>
 
-      <p>This comprehensive guide breaks down all you need to know about the different US student visa programs available:</p>
+      <p>This informative guide offers a broad look at the different US student visa programs, providing essential information on eligibility, application processes, and interview expectations:</p>
 
       <h3>F-1 Student Visa</h3>
 
@@ -155,12 +155,12 @@ export const posts = [
     image: '/assets/pages/blog/post-3.png',
     imageFull: "/assets/pages/blog/post-3-full.jpeg",
     title: 'How We Helped Kalkidan Obtain a Canadian Study Permit',
-    abstract: 'Read Kalkidan\'s experience working with our team to succesfully secure her Canadian study permit, enabling her dream of studying Engineering in Toronto.',
-    category: 'Student Visa Success Stories',
+    abstract: 'Read Kalkidan\'s experience working with our team to succesfully secure her Canadian study permit.',
+    category: 'Student Application Success Stories',
     date: 'June 5th, 2022',
     duration: 6,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
@@ -200,21 +200,20 @@ export const posts = [
     id: 4,
     image: '/assets/pages/blog/post-4.png',
     imageFull: "/assets/pages/blog/post-4-full.jpeg",
-    title: 'How to Get a UK Student Visa: A Step-by-Step Guide',
-    abstract: 'Overview of eligibility criteria, documents required, application process and interview tips for UK student visas.',
-    category: 'Student Visas',
+    title: "Understanding the UK Student Visa Process",
+    abstract: 'Overview of eligibility criteria, documents required, application process.',
+    category: 'Student Application',
     date: 'July 10th, 2022',
     duration: 5,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
-      <h1>Your Step-by-Step Guide to Getting a UK Student Visa</h1>
+      <h1>Implementing Successful Strategies for a Smooth Visa Application Process</h1>
 
-      <h2>Follow These Tried-and-True Strategies For Stress-Free Approval</h2>
 
-      <p>Have your sights set on studying in the UK? As an international student, you'll need to obtain a valid UK student visa first. Here is a failproof step-by-step guide:</p>
+      <p>Considering studying in the UK? As an international student, obtaining a UK student visa is essential. Here's a helpful guide to assist you.</p>
 
       <h3>Ensure You Meet All Eligibility Requirements</h3>
 
@@ -242,9 +241,8 @@ export const posts = [
 
       <h3>Prepare for the Visa Interview at the Consulate</h3>
 
-      <p>Attend your biometrics appointment then gear up for the visa interview questions. We cover exact strategies for assurance and success!</p>
+      <p>Attend your biometrics appointment then gear up for the visa interview questions. </p>
 
-      <p>Following these key steps with diligence sets you up for a smooth visa approval experience. Contact our experts for personalized assistance!</p>
     `,
     related: [2,1,3]
 
@@ -254,23 +252,23 @@ export const posts = [
     id: 5,
     image: '/assets/pages/blog/post-5.png',
     imageFull: "/assets/pages/blog/post-5-full.jpeg",
-    title: 'Acing Your F-1 Visa Interview: Dos and Don\'ts',
-    abstract: 'Strategies to prepare for and successfully pass your F-1 student visa interview at the US consulate. Common mistakes to avoid.',
-    category: 'Student Visas',
+    title: 'F-1 Visa Interview: Dos and Don\'ts',
+    abstract: 'Strategies to prepare for your F-1 student visa interview at the US consulate.',
+    category: 'Student Applications',
     date: 'August 24th, 2022',
     duration: 6,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
-      <h1>Expert Tips to Ace Your F-1 Visa Interview</h1>
+      <h1>Tips to perform well on Your F-1 Visa Interview</h1>
 
       <h2>How to Confidently Prove Your Eligibility During Scrutiny</h2>
 
-      <p>The F-1 student visa interview at your local US consulate can be daunting. Equip yourself to make a stellar impression so you can get hassle-free approval.</p>
+      <p>The F-1 student visa interview at your local US consulate can be difficult. Equip yourself to make a good first impression during your interview.</p>
 
-      <h3>Do's: Best Practices for Success</h3>
+      <h3>Do's: Best Practices for the interview</h3>
 
       <ul>
         <li>Research your program and responses to common questions</li>
@@ -287,7 +285,7 @@ export const posts = [
         <li>Don't make unsupported statements or lie</li>
       </ul>
 
-      <p>With thorough preparation, you can anticipate the F-1 visa interview experience and shine. Contact our experts for the exact tactics to get approved hassle-free!</p>
+      <p>With thorough preparation, you can anticipate the F-1 visa interview experience and perform relatively well. Contact our experts for valuable insights and support!</p>
     `
   }, {
     id: 6,
@@ -299,7 +297,7 @@ export const posts = [
     date: 'September 1st, 2022',
     duration: 7,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
@@ -346,7 +344,7 @@ export const posts = [
     image: '/assets/pages/blog/post-7.png',
     imageFull: "/assets/pages/blog/post-7-full.jpeg",
     title: 'Top 10 Dream Destinations to Study Abroad',
-    abstract: 'Our guide to the best countries worldwide for international students - ranking study destinations on academics, affordability, quality of living and global immersion.',
+    abstract: 'The best countries worldwide for international students based on academics, affordability, and quality of living.',
     category: 'Study Abroad',
     date: 'October 12th, 2022',
     duration: 8,
@@ -407,7 +405,7 @@ export const posts = [
     date: 'November 22nd, 2022',
     duration: 9,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
@@ -463,7 +461,7 @@ export const posts = [
     date: 'December 2nd, 2022',
     duration: 10,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
@@ -509,7 +507,7 @@ export const posts = [
     date: 'January 11th, 2023',
     duration: 11,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
@@ -541,21 +539,21 @@ export const posts = [
 
   {
     id: 11,
-    image: '/assets/pages/blog/post-11.jpg',
+    image: '/assets/pages/blog/post-11.png',
     imageFull: "/assets/pages/blog/post-11-full.jpeg",
-    title: 'Avoid Losing Student Visa Status Through Vigilance',
-    abstract: 'An international student\'s guide to strictly follow overseas study permit rules – from maintaining enrollment to proper paperwork upkeep.',
-    category: 'Student Visas',
+    title: 'Preserving Student Visa Status: Important Considerations',
+    abstract: 'An international student\'\s guide to strictly follow overseas study permit rules – from maintaining enrollment to proper paperwork upkeep.',
+    category: 'Student Application',
     date: 'February 15th, 2023',
     duration: 12,
     author: {
-      name: 'Onestop Visa Solutions',
+      name: 'Onestop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
-      <h1>Foolproof Guide to Maintain Legal Student Status Abroad </h1>
+      <h1> Guide to Maintain Legal Student Status Abroad </h1>
 
-      <h2>Diligently Follow Every Visa Regulation to Avoid Severe Consequences</h2>
+      <h2> Follow Visa Regulation to Avoid Severe Consequences</h2>
 
       <p>As an international student, you must vigilantly adhere to the precise terms of your overseas study permit. Falling out of status leads to cancellation or even deportation.</p>
 

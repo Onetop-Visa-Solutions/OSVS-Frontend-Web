@@ -2,7 +2,7 @@ import type { PostItem } from '/@src/components/advanced/blog/blog-grid-item/Blo
 
 export const post: PostItem = {
   id: 7,
-  image: '/assets/posts/post-1.svg',
+  image: '/assets/posts/post-0.svg',
   title: 'How 3D and augmented reality are changing our world',
   category: 'USA',
   abstract:

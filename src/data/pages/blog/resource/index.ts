@@ -1,7 +1,7 @@
 export const resources = [
   {
     id: 0,
-    image: '/assets/pages/blog/post-9.png',
+    image: '/assets/pages/blog/post-0.jpg',
     title: 'Achieve Your Study Abroad Dreams Before Paying',
     likes: '0',
     categories: [
@@ -39,7 +39,7 @@ export const resources = [
   },
   {
     id: 2,
-    image: '/assets/pages/blog/post-6.png',
+    image: '/assets/pages/blog/post-2.jpeg',
     title: 'A Guide to US Student Visas: Everything You Need to Know',
     likes: '0',
     categories: [
