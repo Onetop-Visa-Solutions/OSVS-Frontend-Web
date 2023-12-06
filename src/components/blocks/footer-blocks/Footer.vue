@@ -218,7 +218,7 @@ const footerClasses = computed(() => [
             2023 Onestop IT Solutions. All rights reserved.
           </span>
         </div>
-        <div class="has-text-centered">
+        <!-- <div class="has-text-centered">
           <Field grouped>
             <Control
               icon="feather:mail"
@@ -240,7 +240,7 @@ const footerClasses = computed(() => [
               </Button>
             </Control>
           </Field>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>

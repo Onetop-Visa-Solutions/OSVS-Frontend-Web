@@ -68,6 +68,7 @@ declare module 'vue' {
     IFeatherMoon: typeof import('~icons/feather/moon')['default']
     IFeatherSun: typeof import('~icons/feather/sun')['default']
     IIonArrowForwardOutline: typeof import('~icons/ion/arrow-forward-outline')['default']
+    IIonFlagOutline: typeof import('~icons/ion/flag-outline')['default']
     IIonHappyOutline: typeof import('~icons/ion/happy-outline')['default']
     IIonSchoolOutline: typeof import('~icons/ion/school-outline')['default']
     ImageRatio: typeof import('./src/components/base/image/ImageRatio.vue')['default']
