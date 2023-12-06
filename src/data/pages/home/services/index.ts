@@ -27,7 +27,7 @@ export const serviceSolutions: ImageFeature[] = [
     link: '/education/destinations',
   },
   {
-    title: 'Tourist Visa',
+    title: 'Travel Abroad',
     text: 'Discover tourist destinations.',
     image: '/assets/icons/gradient/tourist-gradient-icon.svg',
     darkImage: '/assets/icons/gradient/tourist-gradient-icon.svg',
