@@ -37,7 +37,7 @@ import { values } from '/@src/data/blocks/advanced/values'
           </div>
 
           <img
-            src="/assets/demo/img/bg/about-team-2.jpg"
+            src="/assets/pages/about/our-company.jpg"
             alt="About image"
             width="1152"
             height="547"
@@ -81,8 +81,8 @@ import { values } from '/@src/data/blocks/advanced/values'
             subtitle="Our Company"
             title=" Your Guide to Personal, Academic, and Career Success!"
             content=" From general consultations to visiting guidance and educational consultation, our services are designed to provide valuable insights, support, and guidance to help you achieve your goals. Get ready to unlock your full potential as we take you through the various aspects of our services."
-            source="/assets/video/meeting.mp4"
-            poster="/assets/demo/img/posters/poster-1c.jpg"
+            source="/assets/pages/about/about.mp4"
+            poster="/assets/pages/about/about-poster.jpg"
             to="/"
             blob
           />

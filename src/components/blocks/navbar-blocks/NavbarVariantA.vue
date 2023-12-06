@@ -105,7 +105,7 @@ const navbarMenuClasses = computed(() => [isNavbarOpen.value && `is-active`])
               :to="{ name: 'visit' }"
               class="navbar-item"
             >
-              TraveVl Abroad
+              Travel Abroad
             </RouterLink>
             <RouterLink
               :to="{ name: 'consultation' }"
