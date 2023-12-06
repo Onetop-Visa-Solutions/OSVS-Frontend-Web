@@ -1,33 +1,51 @@
 <script setup lang="ts">
-export type FooterColors = 'light' | 'dark' | 'default'
+export type FooterColor = 'light' | 'dark'
 
-export interface FooterDSocialLink {
-  url: string
-  name: string
+export interface FooterLink {
+  label: string
+  to: string
+}
+
+export interface FooterSocial {
   icon: string
+  link: string
+  name: string
 }
 
-export interface FooterDProps {
-  text: string
-  color?: FooterColors
-  socialLinks?: FooterDSocialLink[]
-  bubbles?: boolean
-  curved?: boolean
-  image?: string
+export interface FooterColumn {
+  title: string
+  links: FooterLink[]
 }
 
-const props = withDefaults(defineProps<FooterDProps>(), {
-  color: 'default',
-  socialLinks: undefined,
-  bubbles: false,
-  curved: false,
-  image: undefined,
-})
+export interface FooterCtaBenefit {
+  label: string
+}
+
+export interface FooterCta {
+  title: string
+  subtitle: string
+  benefits: FooterCtaBenefit[]
+  links: FooterLink[]
+}
+
+export interface Footer {
+  columns: FooterColumn[]
+  socials: FooterSocial[]
+  links: FooterLink[]
+  cta?: FooterCta
+  copyright: string
+}
+
+export interface FooterProps {
+  content: Footer
+  color: FooterColor
+}
+
+const props = defineProps<FooterProps>()
 
 const footerClasses = computed(() => [
   props.color && `footer-${props.color}`,
-  props.curved && `footer-curved`,
-  props.bubbles && 'footer-overflow',
+  props.content.cta && `has-cta`,
 ])
 </script>
 
@@ -36,253 +54,122 @@ const footerClasses = computed(() => [
     class="footer"
     :class="footerClasses"
   >
-    <FooterBubbles v-if="props.bubbles" />
-
-    <div class="container footer-inner">
-      <div class="columns is-multiline">
-        <div class="column is-8 b-centered-tablet-p b-centered-mobile">
-          <div class="columns is-flex-tablet is-flex-mobile">
-            <div class="column is-4">
-              <div class="footer-group">
-                <slot name="column-1">
-                  <Title
-                    tag="h3"
-                    :size="6"
-                    weight="thin"
-                    :inverted="props.color === 'dark'"
-                  >
-                    <span>Discover</span>
-                  </Title>
-                  <ul class="link-list">
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Get Started
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Product
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Features
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Sign Up
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Sign In
-                      </RouterLink>
-                    </li>
-                  </ul>
-                </slot>
-              </div>
-            </div>
-            <div class="column is-4">
-              <div class="footer-group">
-                <slot name="column-2">
-                  <Title
-                    tag="h3"
-                    :size="6"
-                    weight="thin"
-                    :inverted="props.color === 'dark'"
-                  >
-                    <span>Company</span>
-                  </Title>
-                  <ul class="link-list">
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Company
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        About
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Training
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        FAQs
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Contact
-                      </RouterLink>
-                    </li>
-                  </ul>
-                </slot>
-              </div>
-            </div>
-            <div class="column is-4">
-              <div class="footer-group">
-                <slot name="column-3">
-                  <Title
-                    tag="h3"
-                    :size="6"
-                    weight="thin"
-                    :inverted="props.color === 'dark'"
-                  >
-                    <span>Support</span>
-                  </Title>
-                  <ul class="link-list">
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Help Center
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Guides
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        API Docs
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Terms
-                      </RouterLink>
-                    </li>
-                    <li>
-                      <RouterLink
-                        :to="{ name: 'index' }"
-                        class="level-item footer-link"
-                      >
-                        Privacy
-                      </RouterLink>
-                    </li>
-                  </ul>
-                </slot>
-              </div>
-            </div>
+    <FooterMap />
+    <FooterCta
+      v-if="props.content.cta"
+      :content="props.content.cta"
+    />
+    <div class="container">
+      <div class="columns footer-columns is-bordered pt-4 pb-6">
+        <div
+          v-for="(column, index) in props.content.columns"
+          :key="index"
+          class="column is-one-fifth"
+        >
+          <div class="footer-column">
+            <Subtitle
+              :size="6"
+              weight="thin"
+              tag="h4"
+              leading
+              inverted
+              uppercase
+            >
+              <span>{{ column.title }}</span>
+            </Subtitle>
+            <ul class="footer-column-list">
+              <li
+                v-for="(link, l) in column.links"
+                :key="l"
+              >
+                <RouterLink
+                  :to="link.to"
+                  class="footer-link"
+                >
+                  {{ link.label }}
+                </RouterLink>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="column is-4 b-centered-mobile b-centered-tablet-p">
-          <div class="footer-group">
-            <a
-              class="is-flex j-center-mobile j-center-tablet-p footer-logo-left css-ninja"
-              href="#"
-            >
-              <img
-                class="size-44x44"
-                src="/assets/logo/logo.svg"
-                alt="Footer logo"
-              >
-              <span class="is-sr-only">Logo</span>
-            </a>
-            <p class="footer-text rem-90 max-w-3 mt-4 b-centered-tablet-p">
-              {{ props.text }}
-            </p>
-
-            <div class="level is-mobile py-4 max-w-1 small:mx-auto">
+        <div class="column is-one-fifth has-text-centered">
+          <div class="social-block">
+            <Field>
+              <Control icon="feather:mail">
+                <VInput
+                  placeholder="Subscribe"
+                  inverted
+                />
+              </Control>
+            </Field>
+            <Field>
+              <Control>
+                <Button
+                  color="primary"
+                  fullwidth
+                >
+                  Subscribe
+                </Button>
+              </Control>
+            </Field>
+            <div class="socials">
               <RouterLink
-                v-for="(link, index) in props.socialLinks"
-                :key="index"
-                class="level-item footer-link"
-                :to="link.url"
+                v-for="(social, s) in props.content.socials"
+                :key="s"
+                class="footer-link"
+                :to="social.link"
               >
-                <span class="icon">
-                  <i
-                    class="iconify"
-                    :data-icon="link.icon"
-                  />
-                  <span class="is-sr-only">{{ link.name }}</span>
-                </span>
+                <i
+                  class="iconify"
+                  :data-icon="social.icon"
+                  data-inline="false"
+                />
+                <span class="is-sr-only">{{ social.name }}</span>
               </RouterLink>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container copyright pt-12">
-      <div
-        class="is-flex is-align-items-center is-justify-content-space-between d-column-r-mobile d-column-r-tablet-p"
-      >
-        <div class="py-4">
-          <span class="footer-text rem-90">
-            <span
-              role="img"
-              aria-label="copyright"
-            >©</span>
-            2020-2021 Vulk. All rights reserved.
-          </span>
-        </div>
-        <div class="has-text-centered">
-          <Field grouped>
-            <Control
-              icon="feather:mail"
-              expanded
+      <div class="columns is-vcentered pt-6 pb-6">
+        <div class="column is-8">
+          <div
+            class="is-flex d-column-mobile d-column-tablet-p is-align-items-center"
+          >
+            <a
+              class="footer-logo-left"
+              href="#"
             >
-              <VInput
-                placeholder="Email Address"
-                :inverted="props.color === 'dark'"
-              />
-            </Control>
-            <Control>
-              <Button
-                color="primary"
-                size="form"
+              <img
+                class="small:mx-auto large:mx-0"
+                src="/assets/logo/logo.svg"
+                alt="logo"
               >
-                Subscribe
-              </Button>
-            </Control>
-          </Field>
+              <span class="footer-logo-text">Vulk</span>
+            </a>
+            <ul class="py-2">
+              <li
+                v-for="(link, l) in content.links"
+                :key="l"
+                class="inline-block px-2"
+              >
+                <RouterLink
+                  :to="link.to"
+                  class="footer-link rem-90"
+                >
+                  {{ link.label }}
+                </RouterLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column is-4 has-text-centered">
+          <p
+            class="paragraph medium:text-right is-6"
+            data-config-id="copyright"
+          >
+            {{ content.copyright }}
+          </p>
         </div>
       </div>
     </div>
@@ -294,17 +181,14 @@ const footerClasses = computed(() => [
   position: relative;
   padding-top: 6rem;
   padding-bottom: 3rem;
-  background: var(--footer-default-bg-color);
 
-  &.footer-overflow {
-    :global(body) {
-      //overflow-x: hidden;
-    }
+  &.has-cta {
+    margin-top: 6rem;
+    padding-top: 10rem;
   }
 
-  &.footer-curved {
-    border-top-left-radius: 50% 20%;
-    border-top-right-radius: 50% 20%;
+  &.footer-primary {
+    background: var(--primary);
   }
 
   &.footer-light {
@@ -314,70 +198,103 @@ const footerClasses = computed(() => [
   &.footer-dark {
     background: var(--footer-dark-bg-color);
 
+    .columns {
+      &.is-bordered {
+        border-bottom: 1px solid var(--footer-dark-border-color);
+      }
+    }
+
     .title {
-      //color: var(--white-smoke);
+      color: var(--footer-dark-heading-color);
       opacity: 0.6;
     }
 
     .footer-link {
-      color: var(--white-smoke);
+      color: var(--footer-dark-link-color);
       opacity: 0.8;
 
       &:hover {
-        color: var(--primary-light-10) !important;
+        color: var(--footer-dark-link-color-hover) !important;
         opacity: 1;
       }
     }
+  }
 
-    .footer-text {
-      color: var(--white-smoke);
+  .columns {
+    position: relative;
+    z-index: 1;
+
+    &.is-bordered {
+      border-bottom: 1px solid var(--border);
     }
   }
 
-  .footer-link,
-  :deep(.footer-link) {
+  .footer-column {
+    .footer-column-list {
+      li {
+        padding: 0.25rem 0;
+      }
+    }
+  }
+
+  .footer-link {
     font-family: var(--font);
-    color: var(--medium-text);
+    font-weight: 300;
+    color: var(--footer-light-link-color);
     transition: color 0.3s;
-    justify-content: flex-start;
-    font-size: 0.95rem;
+    padding: 0.25rem 0;
 
     &:hover {
-      color: var(--primary);
+      color: var(--footer-light-link-color-hover);
     }
   }
 
-  .footer-text {
-    font-family: var(--font);
-    color: var(--medium-text);
-  }
+  .social-block {
+    .socials {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem 0;
 
-  .footer-logo-centered {
-    display: block;
-    width: 100%;
-
-    img {
-      margin: 0 auto;
+      a,
+      .router-link {
+        color: var(--white);
+        font-size: 1rem;
+        margin: 0 0.5rem;
+      }
     }
   }
 
   .footer-logo-left {
+    display: flex;
+    align-items: center;
+
     img {
       display: block;
+      width: 100%;
+      max-width: 36px;
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-alt);
+      font-weight: 300;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin-left: 0.5rem;
+      margin-right: 1.5rem;
+      color: var(--white);
     }
   }
 }
-
+/* stylelint-disable-next-line at-rule-empty-line-before */
 /* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (max-width: 767px) {
   .footer {
-    :deep(.level-item) {
-      justify-content: center !important;
+    &.has-cta {
+      margin-top: 12rem;
     }
 
-    &.footer-curved {
-      border-top-left-radius: 80% 20%;
-      border-top-right-radius: 80% 20%;
+    .social-block .socials {
+      justify-content: center;
     }
   }
 }
@@ -385,8 +302,14 @@ const footerClasses = computed(() => [
 /* stylelint-disable-next-line media-feature-range-notation */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .footer {
-    :deep(.level-item) {
-      justify-content: center !important;
+    .footer-columns {
+      display: flex;
+      padding-bottom: 0 !important;
+    }
+
+    .columns.pt-6.pb-6 {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
     }
   }
 }
