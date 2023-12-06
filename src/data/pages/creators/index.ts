@@ -61,23 +61,29 @@ export const creatorFeatures: IconFeature[] = [
 
 export const educationFeatures: SimpleFeature[] = [
   {
-    title: 'Academic Advising',
-    text: 'Personalized guidance to help you make informed decisions about your academic journey.',
+    title: 'Program Guidance and Scholarship Counseling',
+    text: 'Our experts guide students to academic programs optimally aligned with career ambitions and match qualifications with scholarships and funding opportunities.',
+    link: '/',
+  },
+  {
+    title: 'post-departure support',
+    text: 'Our experts ease every logistical aspect associated with a move overseas for studies, assisting with flights, housing, arrivals, orientations, and much more',
+    link: '/',
+  },
+   {
+    title: 'Test Preparation',
+    text: 'Targeted preparation for english proficiency tests such as IELTS, TOEFL, or Duolingo English Tests with personalized one on one sessions guaranteeed to bring success.',
     link: '/',
   },
   {
     title: 'College Application Support',
-    text: 'Expert assistance in navigating the college application process.',
+    text: 'We provide flawless application preparation and review to convey students’ value, aiding with document preparation, essays, and interviews.',
     link: '/',
   },
-  {
-    title: 'Test Preparation',
-    text: 'Targeted preparation for english proficiency tests such as IELTS, TOEFL, or Duolingo English Tests.',
-    link: '/',
-  },
-  {
+
+   {
     title: 'Career Counseling',
-    text: 'Insightful guidance to explore career options and align your academic choices with your professional goals.',
+    text: 'Get personalized guidance to explore career options and align your academic choices with your professional goals.',
     link: '/',
   },
 ]
