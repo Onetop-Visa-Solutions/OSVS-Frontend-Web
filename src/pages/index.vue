@@ -107,7 +107,7 @@ import { customerLogos } from '/@src/data/pages/logos'
         src: '/assets/shapes/lowpoly-pattern-blue.jpg',
         placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
       }"
-      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      text="One Stop Solutions empowers students and visitors to achieve their academic and travel aspirations worldwide. As a leading provider of study abroad programs and visa assistance services, we are dedicated to facilitating transformative educational experiences globally. Subscribe to our newsletter for valuable insights and updates as we help guide you towards realizing your goals."
       color="light"
       :social-links="socialLinks"
     />
