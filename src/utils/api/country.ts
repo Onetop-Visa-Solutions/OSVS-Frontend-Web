@@ -26,6 +26,7 @@ export async function getRequirement(slug: string, id: string) {
   const retString: any = localStorage.getItem("countries")
   const allCountries = JSON.parse(retString)
   console.log(id);
+  console.log(slug);
   const temp_index = parseInt(id);
   const country = allCountries.find((country: Country) => country.educationalPackage.requirements[temp_index].slug === slug)
   // simulate api call

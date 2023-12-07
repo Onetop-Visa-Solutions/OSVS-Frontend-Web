@@ -9,8 +9,8 @@ const props = defineProps<NavbarSocialItemProps>()
 </script>
 
 <template>
-  <RouterLink
-    :to="props.link"
+  <a
+    :href="props.link"
     target="_blank"
     class="social-item px-2"
   >
@@ -21,7 +21,7 @@ const props = defineProps<NavbarSocialItemProps>()
       />
       <span class="is-sr-only">{{ props.label }}</span>
     </span>
-  </RouterLink>
+  </a>
 </template>
 
 <style scoped lang="scss">

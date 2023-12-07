@@ -56,15 +56,16 @@ const textClasses = computed(() => [props.inverted && 'text-light'])
               :key="index"
               class="image-wrap"
             >
-              <!-- <RouterLink
-                :to="image.link
+              <a
+                :href="image.link
                 "
-              > -->
-              <AvatarSimple
-                :picture="image.icon"
-                :squared="props.squared"
-              />
-              <!-- </RouterLink> -->
+                target="_blank"
+              >
+                <AvatarSimple
+                  :picture="image.icon"
+                  :squared="props.squared"
+                />
+              </a>
             </div>
           </div>
         </slot>

@@ -9,7 +9,7 @@
       :subtitle="country.name"
       title="Enrich Your Education  Prospects "
       :content="country.description"
-      image="/assets/demo/img/features/usa-photo.png"
+      :image="country.descriptionImages[0]"
       image-width="744"
       image-height="558"
       reverse
@@ -21,7 +21,6 @@
       :text="country.name"
       :alias="country.alias"
       :institutions-description="country.educationalPackage.institutionsDescription"
-      link="/"
       :images="country.educationalPackage.institutions"
     />
 

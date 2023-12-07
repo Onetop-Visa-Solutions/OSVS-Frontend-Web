@@ -37,7 +37,7 @@ import { values } from '/@src/data/blocks/advanced/values'
           </div>
 
           <img
-            src="/assets/demo/img/bg/about-team-2.jpg"
+            src="/assets/pages/about/our-company.jpg"
             alt="About image"
             width="1152"
             height="547"
@@ -81,8 +81,8 @@ import { values } from '/@src/data/blocks/advanced/values'
             subtitle="Our Company"
             title=" Your Guide to Personal, Academic, and Career Success!"
             content=" From general consultations to visiting guidance and educational consultation, our services are designed to provide valuable insights, support, and guidance to help you achieve your goals. Get ready to unlock your full potential as we take you through the various aspects of our services."
-            source="/assets/video/meeting.mp4"
-            poster="/assets/demo/img/posters/poster-1c.jpg"
+            source="/assets/pages/about/about.mp4"
+            poster="/assets/pages/about/about-poster.jpg"
             to="/"
             blob
           />
@@ -143,7 +143,7 @@ import { values } from '/@src/data/blocks/advanced/values'
         src: '/assets/shapes/lowpoly-pattern-blue.jpg',
         placeholder: 'https://dummyimage.com/1920x1080/ededed/000000',
       }"
-      text="Onestop Visa Solutions is a leading provider of study abroad programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
+      text="Onestop Solutions is a leading provider of study abroad consultation programs and visa assistance services, dedicated to empowering students and visitors alike with transformative educational experiences worldwide. Subscribe to our newsletter for valuable insights and updates as we guide you towards your academic and travel aspirations. "
       color="light"
       :social-links="socialLinks"
     />
