@@ -30,18 +30,4 @@ export const ourDifference: IconFeature[] = [
     icon: 'material-symbols:settings-account-box-outline-sharp',
     link: '/',
   },
-  {
-    title: 'Availability ',
-    text: 'Our dedicated consultants are readily available around the clock to provide meticulous consultation services for customers via phone, email and social media platforms. With our accessible office open 6 days per week, our team remains steadfastly attendant to inquiries surrounding the clock',
-    color: 'yellow',
-    icon: 'material-symbols:event-available-outline-sharp',
-    link: '/',
-  },
-  {
-    title: 'No Advanced Payments',
-    text: 'We do not require any upfront payments for our visa consultation services. Fees are only due once you are satisfied with the results of our guidance',
-    color: 'yellow',
-    icon: 'uil:money-bill-slash',
-    link: '/',
-  },
-]
+  ]

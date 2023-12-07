@@ -3,7 +3,7 @@ export const testimonials = [
   {
     id: 0,
     customer: {
-      name: 'William Misgina',
+      name: 'William from Mekelle',
       photo: '/assets/testimonials/william-misgina.png',
       position: 'Student',
       country:"Canada",
@@ -16,26 +16,26 @@ export const testimonials = [
   {
     id: 1,
     customer: {
-      name: 'Yordanos Shimelis',
-      photo: '/assets/testimonials/meklit-mulugeta.HEIC',
+      name: 'Yordanos from Adama',
+      photo: '/assets/testimonials/yordanos.png',
       position: 'Student',
       country:"Italy",
-      countryFlag: "imagepost.com/italy-flag.png"
+      countryFlag: "imagepost.com/usa-flag.png"
     },
-    logo: '/assets/services/avatars/it.svg',
+    logo: '/assets/services/avatars/us.svg',
     content:
       'Pursuing my studies in America has been a lifelong dream, yet lacking confidence in my English abilities held me back from even applying. When I found One Stop Visa Solutions, they understood my frustrations and guided me through every step - strengthening my language skills and building up my interview confidence until I boldly presented my best self. Now beginning studies in my dream university, I am filled with gratitude as they were true partners who cared about making my dreams come true.',
   },
   {
     id: 2,
     customer: {
-      name: 'Yirgalem Fisseha',
+      name: 'Yirgalem from Addis Ababa',
       photo: 'data:image/gif;base64,replace_with_your_image',
       position: 'Visitor',
       country:"Australia",
       countryFlag: "imagepost.com/australia-flag.png"
     },
-    logo: '/assets/brands/covenant.svg',
+    logo: '/assets/services/avatars/au.svg',
     content:
       'I was struggling to get a visa for an urgent business trip to Australia when One Stop Visa Solutions came through for me. Their excellent visit visa consultation service provided personalized guidance that ensured my last-minute travel plans were a success. I highly recommend them for all visa needs, especially when you are in a time crunch.  ',
   },
@@ -43,7 +43,7 @@ export const testimonials = [
     id: 2,
     customer: {
       name: 'Biruk Shiferaw',
-      photo: '/assets/testimonials/biruk-shiferaw.png',
+      photo: '/assets/testimonials/biruk.png',
       position: 'Student',
       country:"Turkey",
       countryFlag: "imagepost.com/turkey-flag.png"
@@ -57,7 +57,7 @@ export const testimonials = [
   {
     id: 3,
     customer: {
-      name: 'Kalkidan Tamiru',
+      name: 'Kalkidan from Hawassa',
       photo: '/assets/testimonials/kalkidan-tamiru.png',
       position: 'Student',
       country:"Canada",
@@ -70,7 +70,7 @@ export const testimonials = [
   {
     id: 4,
     customer: {
-      name: 'Natnael',
+      name: 'Natnael from Addis Ababa',
       photo: '/assets/testimonials/nati-tall.png',
       position: 'Student',
       country:"USA",
@@ -78,31 +78,31 @@ export const testimonials = [
     },
     logo: '/assets/services/avatars/us.svg',
     content:
-      'After failing my initial F1 visa interview, I felt lost on what to do next. I stumbled upon One Stop Visa Solutions, and their expertise and kindness turned everything around. Through compassionate listening and extensive training tailored to my situation, they helped me approach the reinterview with confidence and focus. I am now thrilled to have my approved visa thanks to One Stop Visa\'s invaluable support',
+      'After failing my initial F1 visa interview, I felt lost on what to do next. I stumbled upon One Stop Visa Solutions, and their expertise and kindness turned everything around. Through compassionate listening and extensive training tailored to my situation, they helped me approach my interview with confidence and focus. I am now thrilled to have my approved visa thanks to One Stop Visa\'s invaluable support',
   },
   {
     id: 5,
     customer: {
-      name: 'Dawit',
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      position: 'Visitor',
+      name: 'Dawit from Halaba',
+      photo: '/assets/testimonials/dawit-pol.png',
+      position: 'Poland',
       country:"Poland",
       countryFlag: "imagepost.com/poland-flag.png"
     },
     logo: '/assets/services/avatars/pl.svg',
     content:
-      'Disssatisfied with the educational quality in Ethiopia, I came to One stop Visa Solutions with the dream of taking a computer science degreee abroad, and their services allowed my dream to be a reality, and I am currently taking A CS course at the University of Warsaw in Poland. ',
+      'Dissatisfied with the educational quality in Ethiopia, I came to One stop Visa Solutions with the dream of taking a computer science degree abroad, and their services allowed my dream to be a reality, and I am currently taking A CS course at the University of Warsaw in Poland. ',
   },
   {
     id: 6,
     customer: {
-      name: 'Misgana Huka',
-      photo: 'data:image/gif;base64,replace_with_your_image',
-      position: 'Visitor',
+      name: 'Misgana from Addis Ababa',
+      photo: '/assets/testimonials/misgana.jpg',
+      position: 'Student Consultation',
       country:"Dubai",
-      countryFlag: "imagepost.com/spain-flag.png"
+      countryFlag: "imagepost.com/Canada-flag.png"
     },
-    logo: '/assets/services/avatars/ae.svg',
+    logo: '/assets/services/avatars/ca.svg',
     content:
       'As a working parent, I struggled to juggle my demanding visa paperwork amid career and family responsibilities. One Stop Visa Solutions lifted this burden with their stellar consultation services. Their experts guided me in creating a strong, tailored application and thanks to their diligent handling of every intricate detail, I was swiftly approved my visa to study at Lambton College.',
   },
@@ -110,13 +110,13 @@ export const testimonials = [
   {
     id: 7,
     customer: {
-      name: 'Degol Abraham',
-      photo: 'data:image/gif;base64,replace_with_your_image',
+      name: 'Degol from Addis Ababa',
+      photo: '/assets/testimonials/degol-canada.jpg',
       position: 'Visitor',
       country:"Canada",
-      countryFlag: "imagepost.com/japan-flag.png"
+      countryFlag: "imagepost.com/canada-flag.png"
     },
-    logo: '/assets/services/avatars/gb.svg',
+    logo: '/assets/services/avatars/ca.svg',
     content:
       'After having a visa application rejected, I turned to One Stop Visa Solutions before attempting to visit my brother in Canada again. Their consultation services professionally identified issues undermining my previous application and advised me on impressively improving my case. Thanks to their expert help tailored to my situation, I successfully secured a visa.',
   },
