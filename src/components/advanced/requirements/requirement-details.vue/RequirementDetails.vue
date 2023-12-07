@@ -117,10 +117,10 @@ const props = defineProps<RequirementDetailsProps>()
 
                 :class="'skill-block'"
               >
-                <img
-                  :src="content.icon"
-                  alt="Add icon"
-                >
+                <i
+                  class="iconify"
+                  :data-icon="content.icon"
+                />
                 <p>
                   {{ content.title }}
                 </p>
