@@ -7,7 +7,7 @@ export interface Scholarship {
       costLabel: string
       scholarships: {
         name: string
-        icon: string
+        logo: string
         link: string
         minimumAmount:number
         maximumAmount: number}[]
@@ -24,34 +24,32 @@ const props = defineProps<ScholarshipProps>()
 
 <template>
   <div v-if="props.scholarshipItem">
-    <div class="py-2">
+    <div class="pt-4">
       <div class="job-topics">
         <div class="columns is-multiline b-columns-half-tablet-p">
-          <p>{{ scholarshipItem?.description }}</p>
+          <!-- <p class="paragraph mb-6">
+            {{ scholarshipItem?.icon }}
+          </p> -->
           <div
             v-for="(topic, index) in props.scholarshipItem.scholarships"
             :key="index"
             class="column is-4"
           >
-            <RouterLink
-              :to="topic.name"
+            <a
+              :href="topic.name"
+              target="_blank"
               class="job-topic"
             >
               <div class="topic-icon">
-                <ClientOnly>
-                  <img
-                    :src="topic.icon"
-                    alt="s"
-                  >
-                </ClientOnly>
+                <img
+                  :src="topic.logo"
+                  alt="s"
+                >
               </div>
               <div class="meta">
-                <h3>{{ topic.name }}</h3>
-                <p class="paragraph rem-90">
-                  {{ topic.name }}
-                </p>
+                <h3>{{ topic.name.slice(0,30) }}</h3>
               </div>
-            </RouterLink>
+            </a>
           </div>
         </div>
       </div>

@@ -140,6 +140,8 @@ export interface Country {
     costLabel: string
     scholarships: {
       name: string
+      logo: string
+      link: string
       minimumAmount:number
       maximumAmount: number}[]
   }
