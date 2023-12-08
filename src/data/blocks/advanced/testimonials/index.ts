@@ -4,7 +4,7 @@ export const testimonials = [
     id: 0,
     customer: {
       name: 'William from Mekelle',
-      photo: '/assets/testimonials/william-misgina.png',
+      photo: '/assets/testimonials/william-misgina.jpg',
       position: 'Student',
       country:"Canada",
       countryFlag: "imagepost.com/canada-flag.png"
@@ -17,7 +17,7 @@ export const testimonials = [
     id: 1,
     customer: {
       name: 'Yordanos from Adama',
-      photo: '/assets/testimonials/yordanos.png',
+      photo: '/assets/testimonials/yordanos.jpg',
       position: 'Student',
       country:"Italy",
       countryFlag: "imagepost.com/usa-flag.png"
@@ -43,7 +43,7 @@ export const testimonials = [
     id: 2,
     customer: {
       name: 'Biruk Shiferaw',
-      photo: '/assets/testimonials/biruk.png',
+      photo: '/assets/testimonials/biruk.jpg',
       position: 'Student',
       country:"Turkey",
       countryFlag: "imagepost.com/turkey-flag.png"
@@ -58,7 +58,7 @@ export const testimonials = [
     id: 3,
     customer: {
       name: 'Kalkidan from Hawassa',
-      photo: '/assets/testimonials/kalkidan-tamiru.png',
+      photo: '/assets/testimonials/kalkidan-tamiru.jpg',
       position: 'Student',
       country:"Canada",
       countryFlag: "/assets/services/avatars/ca.svg"
@@ -71,7 +71,7 @@ export const testimonials = [
     id: 4,
     customer: {
       name: 'Natnael from Addis Ababa',
-      photo: '/assets/testimonials/nati-tall.png',
+      photo: '/assets/testimonials/nati-usa.jpg',
       position: 'Student',
       country:"USA",
       countryFlag: "imagepost.com/usa-flag.png"
@@ -84,7 +84,7 @@ export const testimonials = [
     id: 5,
     customer: {
       name: 'Dawit from Halaba',
-      photo: '/assets/testimonials/dawit-pol.png',
+      photo: '/assets/testimonials/dawit-pol.jpg',
       position: 'Poland',
       country:"Poland",
       countryFlag: "imagepost.com/poland-flag.png"
@@ -106,9 +106,21 @@ export const testimonials = [
     content:
       'As a working parent, I struggled to juggle my demanding visa paperwork amid career and family responsibilities. One Stop Visa Solutions lifted this burden with their stellar consultation services. Their experts guided me in creating a strong, tailored application and thanks to their diligent handling of every intricate detail, I was swiftly approved my visa to study at Lambton College.',
   },
-
   {
     id: 7,
+    customer: {
+      name: 'Leul from Addis Ababa',
+      photo: '/assets/testimonials/leul.jpg',
+      position: 'Student Consultation',
+      country:"Dubai",
+      countryFlag: "imagepost.com/Canada-flag.png"
+    },
+    logo: '/assets/services/avatars/us.svg',
+    content:
+      'My journey began in Ethiopia, fresh out of high school, with a dream to study Computer Science abroad. I approached One Stop Visa Solutions, who provided excellent services that turned my dream into reality. Today, I am proud to say that I am pursuing a Computer Science degree at Northern Arizona University in the USA. To top it all, I have been honored with the International Pioneer Scholarship. This journey has been nothing short of a dream come true.',
+  },
+  {
+    id: 8,
     customer: {
       name: 'Degol from Addis Ababa',
       photo: '/assets/testimonials/degol-canada.jpg',
