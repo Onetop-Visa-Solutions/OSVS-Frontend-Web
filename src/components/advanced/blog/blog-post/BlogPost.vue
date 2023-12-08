@@ -28,7 +28,7 @@ const props = defineProps<SinglePostProps>()
   <div v-if="props.post">
     <div
 
-      class="post-header pt-10"
+      class="post-header pt-24"
       :class="props.centered && 'is-centered'"
     >
       <div class="columns is-vcentered">
@@ -42,11 +42,11 @@ const props = defineProps<SinglePostProps>()
               props.centered && 'mx-auto max-w-3 is-justify-content-center'
             "
           >
-            <Tag
+            <!-- <Tag
               color="primary"
               :label="props.post.category"
               outlined
-            />
+            /> -->
           </div>
           <div
             class="mb-4"

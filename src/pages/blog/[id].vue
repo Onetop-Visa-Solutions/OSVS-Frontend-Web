@@ -1,3 +1,7 @@
+<route lang="yaml">
+  meta:
+    layout: anomaly
+  </route>
 <script setup lang="ts">
 import { getPost } from '/@src/utils/api/blog'
 import { socialLinks } from '/@src/data/blocks/advanced/social'
