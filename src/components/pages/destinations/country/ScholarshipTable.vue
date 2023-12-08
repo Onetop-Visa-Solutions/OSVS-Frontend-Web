@@ -7,6 +7,8 @@ export interface Scholarship {
       costLabel: string
       scholarships: {
         name: string
+        icon: string
+        link: string
         minimumAmount:number
         maximumAmount: number}[]
 
@@ -25,6 +27,7 @@ const props = defineProps<ScholarshipProps>()
     <div class="py-2">
       <div class="job-topics">
         <div class="columns is-multiline b-columns-half-tablet-p">
+          <p>{{ scholarshipItem?.description }}</p>
           <div
             v-for="(topic, index) in props.scholarshipItem.scholarships"
             :key="index"
@@ -36,10 +39,10 @@ const props = defineProps<ScholarshipProps>()
             >
               <div class="topic-icon">
                 <ClientOnly>
-                  <i
-                    class="iconify"
-                    :data-icon="topic.name"
-                  />
+                  <img
+                    :src="topic.icon"
+                    alt="s"
+                  >
                 </ClientOnly>
               </div>
               <div class="meta">

@@ -25,6 +25,8 @@ export interface RequirementProps {
       costLabel: string
       scholarships: {
         name: string
+        icon: string
+        link: string
         minimumAmount:number
         maximumAmount: number}[]
 
