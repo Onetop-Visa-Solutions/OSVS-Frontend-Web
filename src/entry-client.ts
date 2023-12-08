@@ -1,6 +1,6 @@
 import { createApp } from '/@src/app'
 import initCookiesPlugin from '/@src/utils/cookies'
-
+import '@purge-icons/generated'
 initCookiesPlugin()
 
 createApp().then(async ({ app, router }) => {
