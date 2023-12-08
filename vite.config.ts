@@ -21,6 +21,7 @@ const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
 const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
+
   // Project root directory (where index.html is located).
   root: process.cwd(),
   // Base public path when served in development or production.

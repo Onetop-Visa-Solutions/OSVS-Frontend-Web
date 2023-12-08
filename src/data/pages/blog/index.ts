@@ -9,31 +9,31 @@ export const posts = [
     date: 'March 31st, 2022',
     duration: 3,
     author: {
-      name: 'Onestop Solutions',
+      name: 'One Stop Solutions',
       photo: '/assets/logo/logo.svg'
     },
     content: `
     <h1>Turning Your Study Abroad Dreams into Reality, Without the Upfront Costs</h1>
 
-    <p>Imagine studying in the pulsating heart of New York, or exploring the rich, layered history of Rome, or immersing yourself in the vibrant cultural tapestry of London. Sounds like the stuff of dreams, doesn't it? That\’s the allure of studying abroad, and with OneStop Visa Solutions, we make those dreams tangible and achievable.</p>
+    <p>Imagine studying in the pulsating heart of New York, or exploring the rich, layered history of Rome, or immersing yourself in the vibrant cultural tapestry of London. Sounds like the stuff of dreams, doesn't it? That\'s the allure of studying abroad, and with One Stop Solutions, we make those dreams tangible and achievable.</p>
 
     <p>We believe that everyone deserves the opportunity to reach for the stars and grab hold of an international education. That\'s why we're committed to making international education accessible and affordable for all. Our team of experienced advisors are here, ready and waiting, to help you get accepted into your dream university abroad.</p>
 
     <h2>Our Advisors: Your Personal Guides to Your Dream University</h2>
 
-    <p>Studying abroad is a gateway to incredible, life-changing opportunities and experiences. But the application process can be a labyrinth of confusion. Choosing the right program, compiling the necessary documents, acing the interviews - it can all be quite overwhelming. But that\’s where we come in. Our team of study abroad experts are here to guide you every step of the way. We provide end-to-end guidance to ensure a smooth, hassle-free journey to your international education goals, and the best part? There are no upfront costs.</p>
+    <p>Studying abroad is a gateway to incredible, life-changing opportunities and experiences. But the application process can be a labyrinth of confusion. Choosing the right program, compiling the necessary documents, acing the interviews - it can all be quite overwhelming. But that\'s where we come in. Our team of study abroad experts are here to guide you every step of the way. We provide end-to-end guidance to ensure a smooth, hassle-free journey to your international education goals, and the best part? There are no upfront costs.</p>
 
     <h3>Custom-Made University and Program Selection Just for You</h3>
 
     <p>We believe in a personalized approach. We take the time to get to know you, your aspirations, your interests, and your dreams. We then identify study abroad programs that align perfectly with your goals. Whether you dream of studying business in the bustling city of New York, mastering Spanish amidst the beautiful architecture of Madrid, or earning your Master's at the prestigious London School of Economics, we've got you covered. Our extensive database and close connections with universities worldwide ensure you apply to institutions where you have high chances of admission.</p>
 
-    <h3>Application Strategy and Submission: We’ve Got Your Back</h3>
+    <h3>Application Strategy and Submission: We've Got Your Back</h3>
 
-    <p>The application process is about much more than just filling out forms. It involves crafting compelling, heart-felt essays, compiling a list of supporting documents, and meeting strict deadlines. But don’t worry, we handle all these intricate details for you. Our team stays by your side every step of the way, tracking your application status, coordinating with universities, and submitting completed applications that are sure to impress.</p>
+    <p>The application process is about much more than just filling out forms. It involves crafting compelling, heart-felt essays, compiling a list of supporting documents, and meeting strict deadlines. But don't worry, we handle all these intricate details for you. Our team stays by your side every step of the way, tracking your application status, coordinating with universities, and submitting completed applications that are sure to impress.</p>
 
     <h3>Pay Only After You Get Your Golden Ticket</h3>
 
-    <p>Our unique success-based pricing model means you pay nothing until you finalize your study abroad process. In simple terms, you only pay after you realize your study abroad dreams. So don’t let financial worries hold you back. Reach out to our advisors today and embark on your exciting journey!</p>
+    <p>Our unique success-based pricing model means you pay nothing until you finalize your study abroad process. In simple terms, you only pay after you realize your study abroad dreams. So don't let financial worries hold you back. Reach out to our advisors today and embark on your exciting journey!</p>
 
     <h2>Why Choose OneStop Visa Solutions?</h2>
 
@@ -67,7 +67,7 @@ export const posts = [
 
       <h2>Set Your Priorities and Preference to Find the Ideal Fit</h2>
 
-      <p>The prospect of studying abroad is exciting and exhilarating. It’s an opportunity to immerse in a new culture, absorb new knowledge, and forge lifelong friendships with diverse individuals. But with countless destinations and a variety of programs, finding the perfect fit can feel like finding a needle in a haystack. But don’t fret, we’re here to help you navigate through your choices, and make an informed decision that aligns with your academic and personal goals.</p>
+      <p>The prospect of studying abroad is exciting and exhilarating. It's an opportunity to immerse in a new culture, absorb new knowledge, and forge lifelong friendships with diverse individuals. But with countless destinations and a variety of programs, finding the perfect fit can feel like finding a needle in a haystack. But don't fret, we're here to help you navigate through your choices, and make an informed decision that aligns with your academic and personal goals.</p>
 
       <h2>Define Your Goals: Your Personal Compass to Navigate Program Selection</h2>
 
@@ -542,7 +542,7 @@ export const posts = [
     image: '/assets/pages/blog/post-11.png',
     imageFull: "/assets/pages/blog/post-11-full.jpeg",
     title: 'Preserving Student Visa Status: Important Considerations',
-    abstract: 'An international student\'\s guide to strictly follow overseas study permit rules – from maintaining enrollment to proper paperwork upkeep.',
+    abstract: 'An international student\'\s guide to strictly follow overseas study permit rules ï¿½ from maintaining enrollment to proper paperwork upkeep.',
     category: 'Student Application',
     date: 'February 15th, 2023',
     duration: 12,
