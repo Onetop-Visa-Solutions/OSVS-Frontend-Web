@@ -30,7 +30,7 @@ export const testimonials = [
     id: 2,
     customer: {
       name: 'Yirgalem from Addis Ababa',
-      photo: 'data:image/gif;base64,replace_with_your_image',
+      photo: '/assets/testimonials/yirgalem.jpg',
       position: 'Visitor',
       country:"Australia",
       countryFlag: "imagepost.com/australia-flag.png"
