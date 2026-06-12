@@ -52,6 +52,18 @@ npm run serve
 npm run build
 ```
 
+## Cloudflare Workers
+
+Use these project settings for a Workers Git integration:
+
+```text
+Build command: pnpm build
+Deploy command: npx wrangler deploy
+```
+
+The `wrangler.jsonc` static-assets configuration serves `dist` and provides the
+Vue Router fallback for direct links.
+
 ## Backend APIs
 
 The frontend consumes REST APIs served from the [backend repository](https://github.com/company/website-api).

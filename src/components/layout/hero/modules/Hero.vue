@@ -49,12 +49,10 @@ const heroClasses = computed(() => [
       autoplay
       loop
       muted
+      playsinline
+      preload="metadata"
       class="video"
     >
-      <source
-        src="/assets/backgrounds/bg-video-osvs.mp4"
-        type="video/webm"
-      >
       <source
         src="/assets/backgrounds/bg-video-osvs.mp4"
         type="video/mp4"
