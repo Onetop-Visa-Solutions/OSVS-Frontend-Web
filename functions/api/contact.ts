@@ -1,7 +1,7 @@
 interface Env {
   CONTACT_DB: D1Database
-  TELEGRAM_BOT_TOKEN: string
-  TELEGRAM_CHAT_IDS: string
+  TELEGRAM_BOT_TOKEN?: string
+  TELEGRAM_CHAT_IDS?: string
   ALLOWED_ORIGINS?: string
 }
 
@@ -65,11 +65,11 @@ async function handleContactRequest(request: Request, env: Env, headers: Headers
     return json({ error: validation.error }, 400, headers)
   }
 
-  const chatIds = parseChatIds(env.TELEGRAM_CHAT_IDS)
-
   if (!env.CONTACT_DB) {
     return json({ error: 'Contact database is not configured.' }, 500, headers)
   }
+
+  const chatIds = parseChatIds(env.TELEGRAM_CHAT_IDS)
 
   if (!env.TELEGRAM_BOT_TOKEN || chatIds.length === 0) {
     return json({ error: 'Contact notification is not configured.' }, 500, headers)
@@ -181,8 +181,8 @@ function cleanString(value: unknown) {
   return typeof value === 'string' ? value.trim() : ''
 }
 
-function parseChatIds(value: string) {
-  return value
+function parseChatIds(value?: string) {
+  return (value ?? '')
     .split(',')
     .map((chatId) => chatId.trim())
     .filter(Boolean)
