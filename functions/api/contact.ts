@@ -135,11 +135,7 @@ async function handleContactRequest(request: Request, env: Env, headers: Headers
       error instanceof Error ? error.message : 'Unknown Telegram delivery error',
     )
 
-    return json(
-      { error: 'Submission was saved, but Telegram notification failed.' },
-      500,
-      headers,
-    )
+    return json({ ok: true, id: insert.id, notification: 'failed' }, 200, headers)
   }
 }
 
