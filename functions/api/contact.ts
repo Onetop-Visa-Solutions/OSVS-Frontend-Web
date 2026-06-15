@@ -79,33 +79,41 @@ async function handleContactRequest(request: Request, env: Env, headers: Headers
   const now = new Date().toISOString()
   const metadata = getRequestMetadata(request)
 
-  const insert = await env.CONTACT_DB.prepare(
-    `INSERT INTO contact_submissions (
-      first_name,
-      last_name,
-      email,
-      message,
-      source,
-      user_agent,
-      ip_address,
-      telegram_status,
-      created_at,
-      updated_at
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
-  )
-    .bind(
-      submission.firstName,
-      submission.lastName,
-      submission.email,
-      submission.message,
-      'website_contact_form',
-      metadata.userAgent,
-      metadata.ipAddress,
-      'pending',
-      now,
-      now,
+  let insert: { id: number } | null
+
+  try {
+    insert = await env.CONTACT_DB.prepare(
+      `INSERT INTO contact_submissions (
+        first_name,
+        last_name,
+        email,
+        message,
+        source,
+        user_agent,
+        ip_address,
+        telegram_status,
+        created_at,
+        updated_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
     )
-    .first<{ id: number }>()
+      .bind(
+        submission.firstName,
+        submission.lastName,
+        submission.email,
+        submission.message,
+        'website_contact_form',
+        metadata.userAgent,
+        metadata.ipAddress,
+        'pending',
+        now,
+        now,
+      )
+      .first<{ id: number }>()
+  } catch (error) {
+    console.error('Contact database insert failed', error)
+
+    return json({ error: 'Contact database is not ready.' }, 500, headers)
+  }
 
   if (!insert?.id) {
     return json({ error: 'Unable to save contact submission.' }, 500, headers)
