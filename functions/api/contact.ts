@@ -137,7 +137,7 @@ async function handleContactRequest(request: Request, env: Env, headers: Headers
 
     return json(
       { error: 'Submission was saved, but Telegram notification failed.' },
-      502,
+      500,
       headers,
     )
   }
