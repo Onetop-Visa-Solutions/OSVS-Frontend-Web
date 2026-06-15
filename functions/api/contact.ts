@@ -37,6 +37,16 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     ...corsHeaders(request, env),
   }
 
+  try {
+    return await handleContactRequest(request, env, headers)
+  } catch (error) {
+    console.error('Unhandled contact form error', error)
+
+    return json({ error: 'Unable to send your message right now.' }, 500, headers)
+  }
+}
+
+async function handleContactRequest(request: Request, env: Env, headers: HeadersInit) {
   let payload: ContactPayload
 
   try {
@@ -56,6 +66,10 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   }
 
   const chatIds = parseChatIds(env.TELEGRAM_CHAT_IDS)
+
+  if (!env.CONTACT_DB) {
+    return json({ error: 'Contact database is not configured.' }, 500, headers)
+  }
 
   if (!env.TELEGRAM_BOT_TOKEN || chatIds.length === 0) {
     return json({ error: 'Contact notification is not configured.' }, 500, headers)
