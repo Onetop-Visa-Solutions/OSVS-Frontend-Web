@@ -54,17 +54,4 @@ useHead({
 
 <template>
   <component :is="LayoutComponent" />
-
-  <ClientOnly>
-    <ReloadPrompt app-name="Onestop Visa Solutions">
-      <template #logo>
-        <img
-          src="/assets/logo/logo.svg"
-          alt="logo"
-          width="80"
-          height="80"
-        >
-      </template>
-    </ReloadPrompt> 
-  </ClientOnly>
 </template>

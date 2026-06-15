@@ -11,14 +11,11 @@ import { VitePluginRadar } from 'vite-plugin-radar'
 import Components from 'unplugin-vue-components/vite'
 import Unfonts from 'unplugin-fonts/vite'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
-import { VitePWA } from 'vite-plugin-pwa'
 import AutoImport from 'unplugin-auto-import/vite'
 import UnheadVite from '@unhead/addons/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
-
-const isProd = process.env.NODE_ENV === 'production'
 
 export default defineConfig({
 
@@ -215,59 +212,5 @@ export default defineConfig({
       },
     }),
 
-    /**
-     * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
-     *
-     * @see https://github.com/antfu/vite-plugin-pwa
-     */
-    VitePWA({
-      base: '/',
-      mode: isProd ? 'production' : 'development',
-      // registerType: 'autoUpdate',
-      workbox: {
-        /**
-         * precache files that match the glob pattern
-         *
-         * @see https://vite-pwa-org.netlify.app/guide/service-worker-precache.html
-         */
-        globPatterns: ['**/*.{js,css,ico,png,svg,webp,jpg,jpeg}'],
-
-        /**
-         * add external cache of google fonts
-         *
-         * @see https://vite-pwa-org.netlify.app/workbox/generate-sw.html
-         */
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'google-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'gstatic-fonts-cache',
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
-        ],
-      },
-    }),
   ],
 })
